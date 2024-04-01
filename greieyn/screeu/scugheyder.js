@@ -66,7 +66,7 @@ function scugh () {
         const freggyrt = raaghyn[earrooFeysht].gaelg;
         const freggyrtElley = raaghyn[earrooFeysht].gaelgB;
         crammanFreggyrt.classList.add("cramman-reihit");
-        if (curStiagh == freggyrt || curStiagh == freggyrtElley || curStiagh.length == 0) {
+        if (curStiagh == freggyrt || curStiagh == freggyrtElley) {
             const caslys = document.getElementById("caslys");
             caslys.classList.add("kiart");
             for (let i = 0; i < 6; i++) {
