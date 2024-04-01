@@ -110,9 +110,8 @@ function nahAyrn () {
     };
     // prow dagh cooish d'akin vel ad er n'gheddyn gorrym ny ny share
     for (let i = 0; i < staydCooishyn.length; i++) {
-        if (!localStorage.getItem(`ayrn-${i}`) && staydCooishyn[i].length == cleeahyn[i].children.length && !staydCooishyn[i].includes("jiarg")) {
-            localStorage.setItem(`ayrn-${i}`, "jeant");
-            console.log(i)
+        if (!localStorage.getItem(`ayrn-${i + 1}`) && staydCooishyn[i].length == cleeahyn[i].children.length && !staydCooishyn[i].includes("jiarg")) {
+            localStorage.setItem(`ayrn-${i + 1}`, "jeant");
             if (i < staydCooishyn.length - 1) foshilGlass(i);
             else {
                 jerreyMie.play();
