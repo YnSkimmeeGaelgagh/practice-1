@@ -1,0 +1,951 @@
+html {
+    font-family: Abeezee, sans-serif;
+    font-size: 14pt;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    text-align: center;
+}
+
+:root {
+    --doo: #555555;
+    --cheeid-oirr: 2px;
+    --linney-mooie: transparent;
+    --lheead-crammanyn: 150px;
+    --yrjid-crammanyn: 50px;
+    --corneillyn: 20px;
+    --sollyssid: 1.1;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+h3 {
+    margin: .75rem;
+}
+
+figure {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    gap: 1rem;
+    max-width: 100px;
+}
+
+figcaption {
+    font-size: 1em;
+}
+
+#logo-toshiaght {
+    transform: scale(0);
+    width: 30%;
+    animation: logo-chyndaa 1s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: .2s;
+    -webkit-animation: logo-chyndaa 1s ease-out;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: .2s;
+}
+
+#logo-bun {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+#manx-language {
+    margin-top: 0;
+}
+
+#coyrle-toshiaght-gamman {
+    margin-top: .5rem;
+    background: white;
+    max-width: 400px;
+    border: var(--cheeid-oirr) solid var(--doo);
+    padding: 1rem 1.5rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    border-radius: var(--corneillyn);
+    animation: screeyn-gaase .5s ease-out;
+    -webkit-animation: screeyn-gaase .5s ease-out;
+}
+
+#rollage-saraghyn {
+    display: inline;
+}
+
+#saagh-dooney {
+    background-color: var(--doo);
+    padding: 2rem;
+}
+
+#cramman-dooney {
+    font-size: 1.25rem;
+    width: var(--lheead-crammanyn);
+    border: none;
+    color: white;
+    border-radius: var(--corneillyn);
+    padding: .5rem;
+    background-color: crimson;
+}
+
+#saagh-dooney div:hover {
+    cursor: pointer;
+    color: gray;
+}
+
+#saagh-bun-duillag {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+
+#saagh-ennym {
+    background-color: var(--doo);
+    color: white;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.cleeah-cooish {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+#cleeah-2, #cleeah-3 {
+    filter: grayscale(100%);
+    pointer-events: none;
+}
+
+.caslys-chooish {
+    position: relative;
+}
+
+.caslys-chooish img {
+    width: 100%;
+}
+
+.saagh-rollage {
+    grid-column: 1;
+    grid-row: 1;
+    position: absolute;
+    height: 16rem;
+    pointer-events: none;
+}
+
+.rollage-beggey {
+    opacity: 0;
+}
+
+.saagh-rollage-yesh {
+    animation: aae-hoshtal-1 1s linear;
+    -webkit-animation: aae-hoshtal-1 1s linear;
+}
+
+.saagh-rollage-hoshtal {
+    animation: aae-yesh-1 1s linear;
+    -webkit-animation: aae-yesh-1 1s linear;
+}
+
+.rollage-beggey-yesh {
+    animation: aae-hoshtal-2 1s linear;
+    -webkit-animation: aae-hoshtal-2 1s linear;
+}
+
+.rollage-beggey-hoshtal {
+    animation: aae-yesh-2 1s linear;
+    -webkit-animation: aae-yesh-2 1s linear;
+}
+
+.rollage {
+    position: absolute;
+    right: 1.5rem;
+    top: .5rem;
+    transform: rotate(22.5deg);
+    animation: chyndaa-rollage 2s ease-in-out;
+    -webkit-animation: chyndaa-rollage 2s ease-in-out;
+}
+
+.caslys-chooish:hover {
+    cursor: pointer;
+}
+
+#kishtey-buill {
+    grid-column: span 2;
+}
+
+.saagh-linney {
+    padding: 1rem;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.linney-scarrey {
+    grid-row: 1;
+    grid-column: 1;
+    width: 100%;
+}
+
+.glass {
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 1;
+}
+
+#saagh-lessoon {
+    visibility: hidden;
+    position: fixed;
+    display: grid;
+    justify-items: center;
+    align-items: baseline;
+    font-size: 1.25rem;
+    text-align: center;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: rgb(100, 100, 100, 0.5);
+    z-index: 2;
+}
+
+#coyrle-lessoon {
+    margin-top: 2rem;
+    background: white;
+    width: 90%;
+    max-width: 500px;
+    height: 90dvh;
+    border: var(--cheeid-oirr) solid var(--doo);
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: var(--corneillyn);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#caslys-lessoon {
+    margin-top: 2rem;
+    width: 60%;
+}
+
+#saagh-rolley-focklyn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#saagh-rolley-focklyn hr {
+    grid-column: span 2;
+    border-top: 2px solid var(--doo);
+    width: 100%;
+}
+
+.fockle-noa {
+    color: rgba(255, 69, 0);
+}
+
+.fockle-toshiaght {
+    color: rgba(255, 160, 122);
+}
+
+.fockle-bunnys {
+    color: rgba(0, 191, 255);
+}
+
+.fockle-jeant {
+    color: #B3D334;
+}
+
+#coyrle-reih {
+    margin-top: 1rem;
+}
+
+#crammanyn-lessoon {
+    display: grid;
+    gap: .5rem;
+    justify-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.saagh-cramman-lessoon {
+    position: relative;
+}
+
+.saagh-cramman-lessoon:hover {
+    cursor: pointer;
+}
+
+.cramman-lessoon {
+    color: var(--doo);
+    border: var(--cheeid-oirr) solid var(--doo);
+    border-radius: 5px;
+    width: var(--yrjid-crammanyn);
+}
+
+.cramman-lessoon:hover {
+    transform: scale(1.1);
+    filter: brightness(var(--sollyssid));
+}
+
+.ennym-gamman {
+    margin-top: .5rem;
+    font-size: .75em;
+}
+
+.cowrey-jeant {
+    visibility: hidden;
+    position: absolute;
+    top: -1rem;
+    pointer-events: none;
+}
+
+#cramman-lessoon-doon {
+    grid-row: 2;
+    font-size: 1rem;
+    width: var(--lheead-crammanyn);
+    height: var(--yrjid-crammanyn);
+    margin-top: 1rem;
+    grid-column: span 3;
+    background-color: crimson;
+    color: white;
+    border: var(--cheeid-oirr) solid white;
+    border-radius: var(--corneillyn);
+}
+
+#cramman-lessoon-doon:hover {
+    filter: brightness(var(--sollyssid));
+}
+
+#cramman-aahoiaghey {
+    font-size: 1rem;
+    width: 200px;
+    height: var(--yrjid-crammanyn);
+    margin-top: 1rem;
+    background-color: crimson;
+    color: white;
+    border: var(--cheeid-oirr) solid white;
+    border-radius: var(--corneillyn);
+}
+
+#raue {
+    visibility: hidden;
+    position: fixed;
+    display: grid;
+    justify-items: center;
+    align-items: baseline;
+    font-size: 1.25rem;
+    text-align: center;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: rgb(100, 100, 100, 0.5);
+    top: 0;
+    z-index: 2;
+}
+
+#coyrle-raue {
+    margin-top: 2rem;
+    background-color: crimson;
+    color: white;
+    width: 90%;
+    max-width: 500px;
+    border: var(--cheeid-oirr) solid var(--doo);
+    padding: 0 2rem 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: var(--corneillyn);
+}
+
+#shickyr-aahoiaghey {
+    font-size: 1rem;
+    width: 200px;
+    height: 50px;
+    margin-top: 1rem;
+    color: white;
+    background-color: var(--doo);
+    border: var(--cheeid-oirr) solid white;
+}
+
+#neuhickyr-aahoiaghey {
+    font-size: 1rem;
+    width: 200px;
+    height: 50px;
+    margin-top: 1rem;
+    background-color: white;
+    border: var(--cheeid-oirr) solid white;
+}
+
+.aahoit {
+    animation: chyndaa .5s ease-out;
+    -webkit-animation: chyndaa .5s ease-out;
+}
+
+#saagh-toshiaght, #saagh-ooilley-jeant {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    display: grid;
+    justify-items: center;
+    align-items: baseline;
+    font-size: 1.25rem;
+    text-align: center;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: rgb(100, 100, 100, 0.5);
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    z-index: 2;
+}
+
+#coyrle-ooilley-jeant {
+    background-image: url("caslyssyn/feailley.webp");
+    background-size: 500px;
+    margin-top: 2rem;
+    max-width: 400px;
+    border: var(--cheeid-oirr) solid var(--doo);
+    padding: 7rem 2rem 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: var(--corneillyn);
+}
+
+.gaelg-toshiaght {
+    color: #2196F3;
+}
+
+#coyrle-toshiaght {
+    margin-top: 2rem;
+    background: white;
+    max-width: 400px;
+    border: var(--cheeid-oirr) solid var(--doo);
+    padding: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: var(--corneillyn);
+}
+
+#cramman-toshiaght, #cramman-ooilley-jeant {
+    background-color: var(--doo);
+    color: white;
+    border-radius: var(--corneillyn);
+}
+
+.reih {
+    display: block;
+    width: var(--lheead-crammanyn);
+    height: var(--yrjid-crammanyn);
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    color: var(--doo);
+    font-size: 1.25em;
+    border: var(--cheeid-oirr) solid var(--doo);
+}
+
+.cramman-faagail {
+    background-color: crimson;
+    color: white;
+    margin-top: 1rem;
+    border: none;
+    border-radius: var(--corneillyn);
+}
+
+#saagh-corragyn {
+    margin-top: 1rem;
+}
+
+.saagh-corrag {
+    display: inline-block;
+    padding: 1rem;
+    text-align: center;
+}
+
+.lipaid {
+    margin-bottom: 1rem;
+}
+
+.corrag {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.corrag input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.skirreyder {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 34px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.skirreyder:before {
+    position: absolute;
+    border-radius: 50%;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .skirreyder {
+    background-color: #2196F3;
+}
+
+input:focus + .skirreyder {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .skirreyder:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+#cleeah {
+    display: flex;
+    position: relative;
+    overflow-x: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    border: 6px solid transparent;
+}
+
+#greinnaghey {
+    font-size: 1.1rem;
+    padding: 2rem 0 1rem;
+    line-height: 1.65rem;
+}
+
+#saagh-caslys {
+    display: grid;
+    justify-items: center;
+    position: relative;
+}
+
+#caslys {
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+}
+
+#caslys-eaishtagh {
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    z-index: 1;
+}
+
+#caslys-eaishtagh:hover {
+    filter: brightness(120%);
+    cursor: pointer;
+}
+
+#saraghyn-eaishtagh {
+    color: grey;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    user-select: none;
+}
+
+#saagh-faaue {
+    display: grid;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+#cramman-faaue {
+    grid-row: 1;
+    grid-column: 1;
+    border: 2px solid var(--doo);
+    padding: .5rem 1rem;
+    border-radius: var(--corneillyn);
+}
+
+#cramman-faaue:hover {
+    cursor: pointer;
+    background-color: grey;
+    color: white;
+}
+
+.cramman-faaue-follit {
+    pointer-events: none;
+    animation: foll-cramman-faaue .5s ease-out;
+    animation-fill-mode: forwards;
+    -webkit-animation: foll-cramman-faaue .5s ease-out;
+    -webkit-animation-fill-mode: forwards;
+}
+
+#faaue {
+    opacity: 0;
+    color: crimson;
+    grid-row: 1;
+    grid-column: 1;
+    pointer-events: none;
+}
+
+.faaue-neuollit {
+    animation: jeeagh-faaue .5s ease-out;
+    animation-fill-mode: forwards;
+    -webkit-animation: jeeagh-faaue .5s ease-out;
+    -webkit-animation-fill-mode: forwards;
+}
+
+#saagh-freggyrt, #saagh-focklyn {
+    padding: 0.5rem 0.5rem;
+    border: var(--cheeid-oirr) solid grey;
+    min-height: 7rem;
+}
+
+#saagh-freggyrt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    user-select: none;
+}
+
+#saagh-freggyrt div, #saagh-focklyn div {
+    margin: 0.25rem;
+}
+
+#saagh-freggyrt div {
+    background-color: lightblue;
+}
+
+.fockle {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border: var(--cheeid-oirr) solid grey;
+    user-select: none;
+    border-radius: var(--corneillyn);
+}
+
+.fockle:hover {
+    cursor: pointer;
+}
+
+#cramman-freggyrt {
+    padding: 1rem;
+    font-size: 1.1rem;
+    background-color: lightblue;
+    user-select: none;
+    border-radius: var(--corneillyn);
+}
+
+#saagh-jeant {
+    position: fixed;
+    font-size: 1.25em;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: white;
+    z-index: 2;
+}
+
+#teks-agg-jerrinagh {
+    padding-bottom: 1rem;
+}
+
+#agg-jerrinagh {
+    background-color: var(--doo);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 30pt;
+    width: 150px;
+    height: 100px;
+    border-radius: 50%;
+    outline: 0px solid var(--linney-mooie);
+    animation: agg-ec-jerrey 0.5s ease-out, groin 1.5s infinite;
+    animation-delay: 0s, 0.4s;
+    -webkit-animation: agg-ec-jerrey 0.5s ease-out, groin 1.5s infinite;
+    -webkit-animation-delay: 0s, 0.4s;;
+}
+
+#cramman-reesht, #cramman-jeant {
+    font-size: 20pt;
+    width: var(--lheead-crammanyn);
+    height: var(--yrjid-crammanyn);
+    max-height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#cramman-reesht {
+    border: var(--cheeid-oirr) solid white;
+    background-color: var(--doo);
+    color: white;
+}
+
+#cramman-jeant {
+    border: var(--cheeid-oirr) solid var(--doo);
+    background-color: white;
+}
+
+#boayrd-agg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    max-width: 300px;
+    min-height: 200px;
+    padding: 1rem;
+    background-color: var(--doo);
+    color: white;
+}
+
+.aggyn {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.agg-ennym {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.nyn-agg {
+    background-color: var(--linney-mooie);
+    animation: daunsey .5s infinite alternate steps(3);
+    -webkit-animation: daunsey .5s infinite alternate steps(3);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.reihit {
+    animation: goll-stiagh 0.25s ease-out;
+    -webkit-animation: goll-stiagh 0.25s ease-out;
+}
+
+.cramman-reihit {
+    animation: goll-stiagh 0.25s ease-out;
+    -webkit-animation: goll-stiagh 0.25s ease-out;
+    pointer-events: none;
+}
+
+.cloan {
+    background-color: gainsboro;
+    color: gainsboro;
+    border: none;
+    pointer-events: none;
+}
+
+.cramman-faagail {
+    background-color: crimson;
+}
+
+.kiart {
+    animation: freggyrt-kiart 2s ease-in-out;
+    -webkit-animation: freggyrt-kiart 2s ease-in-out;
+}
+
+.gaase-screeyn {
+    animation: screeyn-gaase .5s ease-out;
+    -webkit-animation: screeyn-gaase .5s ease-out;
+}
+
+.nah-ayrn {
+    animation: gaase-ny-sloo 2s ease-in-out;
+    animation-fill-mode: forwards;
+    -webkit-animation: gaase-ny-sloo 2s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.glass-brisht {
+    animation: glass-ersooyl .5s ease-out;
+    animation-fill-mode: forwards;
+    -webkit-animation: glass-ersooyl .5s ease-out;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.ayrn-jeant {
+    animation: skiolley-shollane 1s ease-out;
+    animation-fill-mode: forwards;
+    -webkit-animation: skiolley-shollane 2s ease-out;
+    -webkit-animation-fill-mode: forwards;
+}
+
+#raueSFX {
+    color: crimson;
+    margin-top: 1rem;
+}
+
+.sheean {
+    animation: sheean-cloie .6s ease-in-out infinite;
+}
+
+@keyframes logo-chyndaa {
+    0% {transform: scale(0) rotate(0deg);}
+    70% {transform: scale(1.2) rotate(725deg);}
+    100% {transform: scale(1) rotate(720deg);}
+}
+
+@keyframes foll-cramman-faaue {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@keyframes jeeagh-faaue {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes skiolley-shollane {
+    from {filter: grayscale(100%);}
+    to {filter: grayscale(0%);}
+}
+
+@keyframes gaase-ny-sloo {
+    0% {width: 100%}
+    20% {width: 105%;}
+    100% {width: 0%;}
+}
+
+@keyframes glass-ersooyl {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@keyframes agg-ec-jerrey {
+    0% {transform: scale(0);}
+    70% {transform: scale(1.4);}
+    100% {transform: scale(1);}
+}
+
+@keyframes chyndaa {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(1080deg)}
+}
+
+@keyframes groin {
+    0% {outline-width: 0px;}
+    70% {outline-width: 24px;}
+    100% {outline-width: 32px; outline-color: transparent;}
+}
+
+@keyframes goll-stiagh {
+    0% {transform: scale(1)}
+    70% {transform: scale(1.3)}
+    100% {transform: scale(1)}
+}
+
+@keyframes daunsey {
+    from {transform: rotate(-6deg) scale(0.95);}
+    to {transform: rotate(6deg) scale(1.05);}
+}
+
+@keyframes freggyrt-kiart {
+    0% {transform: rotate(0deg) scale(1);}
+    30% {transform: rotate(720deg) scale(1.3);}
+    100% {transform: scale(1);}
+}
+
+@keyframes chyndaa-rollage {
+    0% {transform: rotate(22.5deg) scale(1);}
+    30% {transform: rotate(742.5deg) scale(2);}
+    100% {transform: rotate(742.5deg) scale(1);}
+}
+
+@keyframes aae-yesh-1 {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(-180deg)}
+}
+
+@keyframes aae-yesh-2 {
+    from {opacity: 1; transform: rotate(-360deg)}
+    to {opacity: 0; transform: rotate(360deg)}
+}
+
+@keyframes aae-hoshtal-1 {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(180deg)}
+}
+
+@keyframes aae-hoshtal-2 {
+    from {opacity: 1; transform: rotate(360deg);}
+    to {opacity: 0; transform: rotate(-360deg);}
+}
+
+@keyframes screeyn-gaase {
+    0% {transform: scale(0)}
+    70% {transform: scale(1.3)}
+    100% {transform: scale(1)}
+}
+
+@keyframes sheean-cloie {
+    0% {transform: scale(1); filter: brightness(100%);}
+    70% {transform: scale(1.1); filter: brightness(120%);}
+    100% {transform: scale(1); filter: brightness(100%);}
+}
+
+@media screen and (min-width: 700px) {
+    #shickyr-aahoiaghey, #neuhickyr-aahoiaghey {
+        margin-top: 3rem;
+    }
+
+    #caslys-eaishtagh {
+        width: 15%;
+    }
+
+    #coyrle-toshiaght {
+        margin-top: 5rem;
+    }
+
+    #saagh-freggyrt, #saagh-focklyn {
+        padding: 1rem;
+    }
+}
