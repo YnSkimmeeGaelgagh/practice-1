@@ -24,7 +24,7 @@ function troggDuillag () {
             trogAyrn({red: "div", ennym: "cleeah", cheuSthie: [
                 trogAyrn({red: "div", ennym: "saagh-greinnaghey", cheuSthie: [
                     trogAyrn({red: "div", ennym: "saagh-caslys", cheuSthie: [
-                        trogAyrn({red: "img", ennym: "caslys-eaishtagh", cheuSthie: "../../../caslyssyn/cramman-eaishtagh.webp", click: eaishtReesht}),
+                        trogAyrn({red: "img", ennym: "caslys-eaishtagh", cheuSthie: "../../../caslyssyn/cramman-eaishtagh-100px.webp", click: eaishtReesht}),
                         trogAyrn({red: "div", ennym: "saraghyn-eaishtagh", cheuSthie: ["Click on the speaker to listen again."]}),
                         trogAyrn({red: "div", ennym: "saagh-faaue", cheuSthie: [
                             trogAyrn({red: "div", ennym: "faaue"}),
