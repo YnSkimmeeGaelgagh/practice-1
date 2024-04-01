@@ -8,7 +8,7 @@ const raaghyn = {
     },
     2: {
         baarle: "I like cheese.",
-        gaelg: "S'laik lhiam caashey.",
+        gaelg: "S'laik lhiam caashey .",
         caslys: "../caslyssyn/caashey.webp",
         sheean: "../sheeanyn/raaghyn-screeu-2.mp3",
         focklyn: ["s'laik lhiam", "caashey"]
