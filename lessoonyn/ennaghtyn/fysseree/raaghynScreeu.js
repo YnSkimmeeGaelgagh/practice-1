@@ -57,14 +57,14 @@ const raaghyn = {
     },
     9: {
         baarle: "Are you tired? I'm not tired. I'm excited!",
-        gaelg: "Vel oo skee ? Cha nel mee skee . Ta mee greesit .",
+        gaelg: "Vel oo skee ? Cha nel mee skee . Ta mee greesit !",
         caslys: "../caslyssyn/greesit.webp",
         sheean: "../sheeanyn/ennaghtyn-screeu-9.mp3",
         focklyn: ["greesit"]
     },
     10: {
         baarle: "I'm happy! How are you? You're not sad!",
-        gaelg: "Ta mee maynrey . Kys t'ou ? Cha nel oo trimshagh !",
+        gaelg: "Ta mee maynrey ! Kys t'ou ? Cha nel oo trimshagh !",
         caslys: "../caslyssyn/maynrey.webp",
         sheean: "../sheeanyn/ennaghtyn-screeu-10.mp3",
         focklyn: ["maynrey"]
