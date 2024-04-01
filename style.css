@@ -400,9 +400,9 @@ figcaption {
     visibility: hidden;
     position: fixed;
     top: 0;
-    display: grid;
-    justify-items: center;
-    align-items: baseline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1.25rem;
     text-align: center;
     width: 100dvw;
@@ -430,7 +430,6 @@ figcaption {
 }
 
 #coyrle-toshiaght {
-    margin-top: 2rem;
     background: white;
     max-width: 400px;
     border: var(--cheeid-oirr) solid var(--doo);
@@ -444,6 +443,7 @@ figcaption {
     background-color: var(--doo);
     color: white;
     border-radius: var(--corneillyn);
+    font-size: 1.25rem;
 }
 
 .reih {
@@ -461,6 +461,7 @@ figcaption {
 
 .cramman-faagail {
     background-color: crimson;
+    font-size: 1.25rem;
     color: white;
     margin-top: 1rem;
     border: none;
@@ -784,10 +785,6 @@ input:checked + .skirreyder:before {
     pointer-events: none;
 }
 
-.cramman-faagail {
-    background-color: crimson;
-}
-
 .kiart {
     animation: freggyrt-kiart 2s ease-in-out;
     -webkit-animation: freggyrt-kiart 2s ease-in-out;
@@ -826,6 +823,7 @@ input:checked + .skirreyder:before {
 
 .sheean {
     animation: sheean-cloie .6s ease-in-out infinite;
+    -webkit-animation: sheean-cloie .6s ease-in-out infinite;
 }
 
 @keyframes logo-chyndaa {
@@ -939,10 +937,6 @@ input:checked + .skirreyder:before {
 
     #caslys-eaishtagh {
         width: 15%;
-    }
-
-    #coyrle-toshiaght {
-        margin-top: 5rem;
     }
 
     #saagh-freggyrt, #saagh-focklyn {
