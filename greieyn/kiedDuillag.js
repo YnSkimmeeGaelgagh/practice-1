@@ -1,4 +1,4 @@
-const saaghToshiaght = document.getElementById("saagh-toshiaght");
+const saaghToshiaght = document.getElementById("kied-saagh-toshiaght");
 const arraghToshiaght = () => {
     saaghToshiaght.remove();
     window.onkeyup = null;
