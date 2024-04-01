@@ -1,72 +1,62 @@
 const raaghyn = {
     1: {
-        baarle: "How's the weather today?",
-        gaelg: "Kys ta'n emshyr jiu ?",
-        caslys: "../../../caslyssyn/cowrey-feysht.webp",
-        sheean: "../sheeanyn/screeu-1.mp3",
-        focklyn: ["emshyr", "ta'n"]
+        baarle: "Is it cold in Doulgas?",
+        gaelg: "Vel eh feayr ayns Doolish ?",
+        sheean: "../sheeanyn/eaishtagh-1.mp3",
+        focklyn: ["vel eh?"]
     },
     2: {
-        baarle: "Is the weather fine today?",
-        gaelg: "Vel yn emshyr braew jiu ?",
-        caslys: "../caslyssyn/braew.webp",
-        sheean: "../sheeanyn/screeu-2.mp3",
-        focklyn: ["vel yn emshyr?"]
+        baarle: "How's the weather in Ramsey?",
+        gaelg: "Kys ta'n emshyr ayns Rhumsaa ?",
+        sheean: "../sheeanyn/eaishtagh-2.mp3",
+        focklyn: ["ta'n", "emshyr"]
     },
     3: {
-        baarle: "Is it stormy today? No, it's sunny.",
-        gaelg: "Vel eh sterrymagh ? Cha nel , t'eh grianagh .",
-        caslys: "../caslyssyn/neu-sterrymagh.webp",
-        sheean: "../sheeanyn/screeu-3.mp3",
-        focklyn: ["vel eh?", "sterrymagh", "grianagh"]
-    },
-    4: {
-        baarle: "The weather's not fine in Ramsey today. Do you live in Ramsey?",
-        gaelg: "Cha nel yn emshyr braew ayns Rhumsaa jiu . Vel oo beaghey ayns Rhumsaa ?",
-        caslys: "../caslyssyn/neu-braew.webp",
-        sheean: "../sheeanyn/screeu-4.mp3",
+        baarle: "The weather's not fine in Laxey.",
+        gaelg: "Cha nel yn emshyr braew ayns Laksaa .",
+        sheean: "../sheeanyn/eaishtagh-3.mp3",
         focklyn: ["cha nel yn emshyr"]
     },
+    4: {
+        baarle: "It's snowing today. It's Thursday.",
+        gaelg: "T'eh ceau sniaghtey jiu . She Jerdein t'ayn .",
+        sheean: "../sheeanyn/eaishtagh-4.mp3",
+        focklyn: ["t'eh", "ceau sniaghtey"]
+    },
     5: {
-        baarle: "Do you like fine weather? It's not raining in Port Erin.",
-        gaelg: "Laik lhiat emshyr braew ? Cha nel eh ceau fliaghey ayns Purt Çhiarn .",
-        caslys: "../caslyssyn/neu-ceau fliaghey.webp",
-        sheean: "../sheeanyn/screeu-5.mp3",
-        focklyn: ["ceau fliaghey"]
+        baarle: "Are you tired? Is the weather hot?",
+        gaelg: "Vel oo skee ? Vel yn emshyr çheh ?",
+        sheean: "../sheeanyn/eaishtagh-5.mp3",
+        focklyn: ["vel yn emshyr?"]
     },
     6: {
-        baarle: "I'm nine years old. I live in Port St. Mary. It's windy.",
-        gaelg: "Ta mee nuy bleeaney d'eash . Ta mee beaghey ayns Purt-le-Moirrey . T'eh geayagh .",
-        caslys: "../caslyssyn/geayagh.webp",
-        sheean: "../sheeanyn/screeu-6.mp3",
-        focklyn: ["geayagh"]
+        baarle: "It's not stormy. I like stormy weather.",
+        gaelg: "Cha nel eh sterrymagh . S'laik lhiam emshyr sterrymagh .",
+        sheean: "../sheeanyn/eaishtagh-6.mp3",
+        focklyn: ["cha nel eh", "sterrymagh"]
     },
     7: {
-        baarle: "It's Monday today. It's hot in Douglas. Do you like the bread in Douglas?",
-        gaelg: "She Jelune t'ayn jiu . T'eh çheh ayns Doolish . Laik lhiat yn arran ayns Doolish ?",
-        caslys: "../caslyssyn/cheh.webp",
-        sheean: "../sheeanyn/screeu-7.mp3",
+        baarle: "Do you like the fish? I like fish in Peel on a Friday.",
+        gaelg: "Laik lhiat yn eeast ? S'laik lhiam eeast ayns Purt-ny-hInshey Jeheiney .",
+        sheean: "../sheeanyn/eaishtagh-7.mp3",
         focklyn: ["yn"]
     },
     8: {
-        baarle: "What day is it? It's snowing in Castletown. How's it in Ramsey? Is it cold?",
-        gaelg: "Cre'n laa t'ayn ? T'eh ceau sniaghtey ayns Balley Chashtal . Kys t'eh ayns Rhumsaa ? Vel eh feayr ?",
-        caslys: "../caslyssyn/ceau sniaghtey.webp",
-        sheean: "../sheeanyn/screeu-8.mp3",
-        focklyn: ["ceau sniaghtey"]
+        baarle: "Where do you live? Is it stormy? Is it raining?",
+        gaelg: "C'raad t'ou beaghey ? Vel eh sterrymagh ? Vel eh ceau fliaghey ?",
+        sheean: "../sheeanyn/eaishtagh-8.mp3",
+        focklyn: ["sterrymagh", "ceau fliaghey"]
     },
     9: {
-        baarle: "I'm eight years old. I like cloudy weather. Is it cloudy today?",
-        gaelg: "Ta mee hoght bleeaney d'eash . S'laik lhiam emshyr bodjallagh . Vel eh bodjallagh jiu ?",
-        caslys: "../caslyssyn/bodjallagh.webp",
-        sheean: "../sheeanyn/screeu-9.mp3",
-        focklyn: ["bodjallagh"]
+        baarle: "How old are you? It's windy. Where do you live?",
+        gaelg: "Cre'n eash t'ort ? T'eh geayagh . C'raad t'ou beaghey ?",
+        sheean: "../sheeanyn/eaishtagh-9.mp3",
+        focklyn: ["geayagh"]
     },
     10: {
-        baarle: "Do you like chips in Laksey in fine weather? Wednesday, I like sausages in windy weather.",
-        gaelg: "Laik lhiat spollagyn ayns Laksaa ayns emshyr braew ? Jecrean , s'laik lhiam pronnagyn ayns emshyr geayagh .",
-        caslys: "../caslyssyn/geayagh.webp",
-        sheean: "../sheeanyn/screeu-10.mp3",
-        focklyn: []
+        baarle: "It's sunny today. Is it cloudy in Castletown? Do you like hot weather?",
+        gaelg: "T'eh grianagh jiu . Vel eh bodjallagh ayns Balley Chashtal ? Laik lhiat emshyr çheh ?",
+        sheean: "../sheeanyn/eaishtagh-10.mp3",
+        focklyn: ["grianagh", "bodjallagh"]
     }
 }
