@@ -56,7 +56,7 @@ const raaghyn = {
         focklyn: []
     },
     9: {
-        baarle: "I like chips on a Saturday. I don't like bacon. I'm ten years old.",
+        baarle: "I like fish on a Saturday. I don't like bacon. I'm ten years old.",
         gaelg: "S'laik lhiam eeast Jesarn . Cha laik lhiam bagoon . Ta mee jeih bleeaney d'eash .",
         caslys: "../caslyssyn/jesarn.webp",
         sheean: "../sheeanyn/screeu-9.mp3",
