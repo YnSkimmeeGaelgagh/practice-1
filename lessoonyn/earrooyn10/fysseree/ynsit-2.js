@@ -1,0 +1,20 @@
+focklynYnsit = [...focklynYnsit].concat([
+    "blein",
+    "vlein",
+    "bleeaney",
+    "eash",
+    "t'ort",
+    "d'eash",
+    "un",
+    "daa",
+    "nane",
+    "jees",
+    "tree",
+    "kiare",
+    "queig",
+    "shey",
+    "shiaght",
+    "hoght",
+    "nuy",
+    "jeih"
+]);
