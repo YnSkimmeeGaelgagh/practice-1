@@ -1,5 +1,5 @@
 const veih = location.pathname;
-const lhoobThie = new Audio(`${veih == "/index.html" ? "sheeanyn/lhoob-thie.mp3" : "../../../sheeanyn/lhoob-thie.mp3"}`);
+const lhoobThie = new Audio(`${veih == "/practice-1/index.html" ? "sheeanyn/lhoob-thie.mp3" : "../../../sheeanyn/lhoob-thie.mp3"}`);
 lhoobThie.loop = true;
 const lhoobScreeu = new Audio(`${veih == "/practice-1/index.html" ? "sheeanyn/lhoob-screeu.mp3" : "../../../sheeanyn/lhoob-screeu.mp3"}`);
 lhoobScreeu.loop = true;
