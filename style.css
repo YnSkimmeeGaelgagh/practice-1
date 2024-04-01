@@ -396,7 +396,23 @@ figcaption {
     -webkit-animation: chyndaa .5s ease-out;
 }
 
-#saagh-toshiaght, #saagh-ooilley-jeant {
+#kied-saagh-toshiaght, #saagh-ooilley-jeant {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    display: grid;
+    justify-content: center;
+    font-size: 1.25rem;
+    text-align: center;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: rgb(100, 100, 100, 0.5);
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    z-index: 2;
+}
+
+#saagh-toshiaght {
     visibility: hidden;
     position: fixed;
     top: 0;
