@@ -4,7 +4,7 @@ function troggJerrey (aggDeanyn) {
         trogAyrn({red: "div", ennym: "agg-jerrinagh"}),
         trogAyrn({red: "div", ennym: "moylley", cheuSthie: ["Jeant dy mie!"]}),
         trogAyrn({red: "div", cheuSthie: [
-            trogAyrn({red: "button", ennym: "cramman-reesht", cheuSthie: ["again"], click: () => location.reload()}),
+            trogAyrn({red: "button", ennym: "cramman-reesht", cheuSthie: ["again"], click: t => t => caghlaaDuillag(t, location.pathname)}),
             trogAyrn({red: "button", ennym: "cramman-jeant", cheuSthie: ["finish"], click: t => caghlaaDuillag(t,  "../../../index.html")})
         ]}),
         trogAyrn({red: "div", ennym: 'boayrd-agg', cheuSthie: [
