@@ -12,7 +12,7 @@ const raaghyn = {
         focklyn: ["ta'n", "emshyr"]
     },
     3: {
-        baarle: "The weather's not fine in Lakaa.",
+        baarle: "The weather's not fine in Laxey.",
         gaelg: "Cha nel yn emshyr braew ayns Laksaa .",
         sheean: "../sheeanyn/eaishtagh-3.mp3",
         focklyn: ["cha nel yn emshyr"]
@@ -24,7 +24,7 @@ const raaghyn = {
         focklyn: ["t'eh", "ceau sniaghtey"]
     },
     5: {
-        baarle: "Are you hot? Is the weather hot?",
+        baarle: "Are you tired? Is the weather hot?",
         gaelg: "Vel oo skee ? Vel yn emshyr çheh ?",
         sheean: "../sheeanyn/eaishtagh-5.mp3",
         focklyn: ["vel yn emshyr?"]
@@ -49,7 +49,7 @@ const raaghyn = {
     },
     9: {
         baarle: "How old are you? It's windy. Where do you live?",
-        gaelg: "Cre'n easht t'ort ? T'eh geayagh . C'raad t'ou beaghey ?",
+        gaelg: "Cre'n eash t'ort ? T'eh geayagh . C'raad t'ou beaghey ?",
         sheean: "../sheeanyn/eaishtagh-9.mp3",
         focklyn: ["geayagh"]
     },
