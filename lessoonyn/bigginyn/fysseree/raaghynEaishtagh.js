@@ -37,7 +37,7 @@ const raaghyn = {
     },
     7: {
         baarle: "I don't have pets. I have cheese. I'm sad.",
-        gaelg: "Cha nel biggin aym . Ta caashey aym . Ta mee trimshagh .",
+        gaelg: "Cha nel bigginyn aym . Ta caashey aym . Ta mee trimshagh .",
         sheean: "../sheeanyn/eaishtagh-7.mp3",
         focklyn: ["cha nel ... aym"]
     },
