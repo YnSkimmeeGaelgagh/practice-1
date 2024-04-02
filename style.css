@@ -803,7 +803,9 @@ input:checked + .skirreyder:before {
 
 .kiart {
     animation: freggyrt-kiart 2s ease-in-out;
+    animation-fill-mode: forwards;
     -webkit-animation: freggyrt-kiart 2s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
 }
 
 .gaase-screeyn {
