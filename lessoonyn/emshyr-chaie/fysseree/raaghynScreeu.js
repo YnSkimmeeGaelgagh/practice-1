@@ -42,7 +42,7 @@ const raaghyn = {
         focklyn: []
     },
     7: {
-        baarle: "It's snowing today. Did you play football on Monday.",
+        baarle: "It's snowing today. Did you play football on Monday?",
         gaelg: "T'eh ceau sniaghtey jiu . Ren oo cloie bluckan-coshey Jelune ?",
         caslys: "../caslyssyn/bluckan coshey.webp",
         sheean: "../sheeanyn/raaghyn-screeu-7.mp3",
