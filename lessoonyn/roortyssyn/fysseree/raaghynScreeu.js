@@ -22,7 +22,7 @@ const raaghyn = {
         focklyn: ["jeeaghyn", "er", "y", "çhellveeish"]
     },
     4: {
-        baarle: "I don't like eating chips in Douglas.",
+        baarle: "I don't like eating chips in Douglas!",
         gaelg: "Cha laik lhiam gee spollagyn ayns Doolish !",
         caslys: "../caslyssyn/spollagyn.webp",
         sheean: "../sheeanyn/roortyssyn-4.mp3",
@@ -51,7 +51,7 @@ const raaghyn = {
     },
     8: {
         baarle: "I like eating three apples on a Tuesday.",
-        gaelg: "S'laik lhiam gee tree ooyllyn Jemayrt .",
+        gaelg: "S'laik lhiam gee tree ooylyn Jemayrt .",
         caslys: "../caslyssyn/ooylyn.webp",
         sheean: "../sheeanyn/roortyssyn-8.mp3",
         focklyn: []
