@@ -43,7 +43,7 @@ const raaghyn = {
     },
     7: {
         baarle: "It's snowing today. Did you play football on Monday.",
-        gaelg: "T'eh ceau sniaghtey jiu. Ren oo cloie bluckan-coshey Jelune ?",
+        gaelg: "T'eh ceau sniaghtey jiu . Ren oo cloie bluckan-coshey Jelune ?",
         caslys: "../caslyssyn/bluckan coshey.webp",
         sheean: "../sheeanyn/raaghyn-screeu-7.mp3",
         focklyn: []
@@ -63,7 +63,7 @@ const raaghyn = {
         focklyn: []
     },
     10: {
-        baarle: "What did you do on Saturday ? Did you play ? Do you like playing on Saturday ?",
+        baarle: "What did you do on Saturday? Did you play? Do you like playing on Saturday?",
         gaelg: "Cre ren oo Jesarn ? Ren oo cloie ? Laik lhiat cloie Jesarn ?",
         caslys: "../../roortyssyn/caslyssyn/cloie.webp",
         sheean: "../sheeanyn/raaghyn-screeu-10.mp3",
