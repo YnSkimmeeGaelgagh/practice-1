@@ -43,12 +43,12 @@ const raaghyn = {
     },
     8: {
         baarle: "Is the cat black? Is the cat brown? I like brown pets.",
-        gaelg: "Vel yn keyt doo ? Vel yn kayt dhone ? S'laik lhiam bigginyn dhone.",
+        gaelg: "Vel yn kayt doo ? Vel yn kayt dhone ? S'laik lhiam bigginyn dhone .",
         sheean: "../sheeanyn/eaishtagh-8.mp3",
         focklyn: []
     },
     9: {
-        baarle: "How's the weather today? Is it snowing?",
+        baarle: "It's cold today. Is it white? Is it snowing?",
         gaelg: "T'eh feayr jiu . Vel eh bane ? Vel eh ceau sniaghtey ?",
         sheean: "../sheeanyn/eaishtagh-9.mp3",
         focklyn: []
