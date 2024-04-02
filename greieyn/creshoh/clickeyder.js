@@ -5,8 +5,8 @@ function clickit () {
             clinck.play();
             const sheean = new Audio(focklynGamman[reihyn[feysht]].sheean);
             sheean.play();
-            this.style.backgroundColor = "chartreuse";
         };
+        this.style.backgroundColor = "chartreuse";
         feysht++;
         roie++;
         freayllAgg();
