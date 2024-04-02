@@ -8,14 +8,14 @@ const raaghyn = {
     },
     2: {
         baarle: "Are you fourteen? How old are you?",
-        gaelg: "Vel oo kiare-jeig ? Cre'n easht t'ort ?",
+        gaelg: "Vel oo kiare-jeig ? Cre'n eash t'ort ?",
         caslys: "../caslyssyn/kiare-jeig.webp",
         sheean: "../sheeanyn/raaghyn-screeu-2.mp3",
         focklyn: ["kiare-jeig"]
     },
     3: {
         baarle: "Do you have a pet? I have seventeen.",
-        gaelg: "Vel biggin ayn ? Ta shiaght-jeig aym .",
+        gaelg: "Vel biggin ayd ? Ta shiaght-jeig aym .",
         caslys: "../caslyssyn/shiaght-jeig.webp",
         sheean: "../sheeanyn/raaghyn-screeu-3.mp3",
         focklyn: ["shiaght-jeig"]
