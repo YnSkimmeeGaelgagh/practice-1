@@ -81,7 +81,7 @@ function scugh () {
         const bayrnaghyn = [...document.getElementsByClassName("eddyr-focklyn")];
         bayrnaghyn.forEach(b => b.remove());
     }
-    window.onpointerup = () => lughHeese = "";
+    window.onclick = () => lughHeese = "";
     window.onpointerdown = () => {
         setTimeout(() => {
             if (fockleGreimmit && !erBayrney) {
