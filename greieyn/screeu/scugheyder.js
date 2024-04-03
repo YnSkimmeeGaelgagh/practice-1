@@ -81,14 +81,14 @@ function scugh () {
         const bayrnaghyn = [...document.getElementsByClassName("eddyr-focklyn")];
         bayrnaghyn.forEach(b => b.remove());
     }
-    window.addEventListener("pointerup", () => lughHeese = "");
-    window.addEventListener("pointerdown", () => {
+    window.onpointerup = () => lughHeese = "";
+    window.onpointerdown = () => {
         setTimeout(() => {
             if (fockleGreimmit && !erBayrney) {
                 scrysseyGreim();
             };
         }, 50);
-    });
+    };
     const crammanFreggyrt = document.getElementById("cramman-freggyrt");
     const cleeah = document.getElementById("cleeah");
     function caghlaaSaagh (daah, farkiaght = 500) {
