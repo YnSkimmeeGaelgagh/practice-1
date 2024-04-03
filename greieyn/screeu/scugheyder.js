@@ -14,6 +14,8 @@ function scugh () {
     let pointRyGheddyn = true;
     focklyn.forEach(w => {
         w.onclick = reihit;
+        w.ontouchstart = () => w.style.backgroundColor = "green";
+        w.ontouchend = () => w.style.backgroundColor = "red"'
         w.onpointerdown = greim;
     });
     function curFockleStiagh (f) {
