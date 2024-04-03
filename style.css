@@ -1048,6 +1048,7 @@ input:checked + .skirreyder:before {
     background-color: orange;
     color: white;
     pointer-events: none;
+    touch-action: none;
     animation: greimmit .6s ease-out infinite;
     -webkit-animation: greimmit .6s ease-out infinite;
 }
