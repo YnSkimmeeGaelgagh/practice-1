@@ -60,11 +60,10 @@ function loggyrTraa () {
         trogAyrn({red: "div", ennym: "pointyn", cheuSthie: [
             trogAyrn({red: "div", ennym: "coyrle", cheuSthie: [focklynCoyrle]}),
             "+" + brash
-        ]})
-    ], keint: ["bieauid"]});
+        ], keint: ["bieauid"]})
+    ]});
     const mullagh = document.getElementById("saagh-mullagh");
     mullagh.append(oirrNoa);
-    oirrNoa.append(pointyn);
     const fys = document.getElementById("fys");
     const saaghAgg = document.getElementById("agg");
     saaghAgg.remove();
