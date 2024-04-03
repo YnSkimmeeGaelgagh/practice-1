@@ -6,21 +6,30 @@ html {
 body {
     box-sizing: border-box;
     margin: 0;
+    height: 100dvh;
+    text-align: center;
 }
 
 *, *::before, *::after {
     box-sizing: inherit;
-    text-align: center;
 }
 
 :root {
     --doo: #555555;
     --cheeid-oirr: 2px;
-    --linney-mooie: transparent;
-    --lheead-crammanyn: 150px;
-    --yrjid-crammanyn: 50px;
     --corneillyn: 20px;
+    --linney-mooie: transparent;
+    --lheead: 450px;
+    --lheead-crammanyn: 150px;
+    --lheeah: #888888;
+    --loggyr: rgba(173, 255, 47, 0.5);
     --sollyssid: 1.1;
+    --yrjid: 650px;
+    --yrjid-crammanyn: 50px;
+}
+
+a {
+    text-decoration: none;
 }
 
 button:hover {
@@ -83,6 +92,11 @@ figcaption {
 }
 
 #saagh-dooney {
+    align-self: end;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--doo);
     padding: 2rem;
 }
@@ -97,9 +111,144 @@ figcaption {
     background-color: crimson;
 }
 
-#saagh-dooney div:hover {
-    cursor: pointer;
-    color: gray;
+#saagh-mullagh {
+    font-size: 1.4rem;
+    grid-row: 1;
+    display: grid;
+    justify-items: center;
+    background-color: white;
+    width: 100%;
+    max-width: 600px;
+}
+
+#clag {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+    grid-row: 1;
+    grid-column: 1;
+    margin-bottom: 40px;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    width: 100px;
+    height: 35px;
+    color: white;
+    border-radius: 50%;
+    z-index: 1;
+    outline-style: solid;
+    outline-width: 0px;
+    background-color: var(--doo)
+}
+
+#fys {
+    grid-row: 1;
+    grid-column: 1;
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: white;
+    z-index: 0;
+    width: 100%;
+    padding-top: 0.25rem;
+    background-color: var(--doo);
+}
+
+#feysht {
+    grid-column: 1;
+    justify-self: left;
+    padding-top: .5rem;
+    padding-left: 1rem;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+#agg {
+    grid-column: 2;
+    justify-self: right;
+    width: 40px;
+    height: 40px;
+    padding-top: .5rem;
+    margin-right: 1rem;
+    text-align: center;
+    animation: aase-agg 0.75s ease-in-out;
+    -webkit-animation: aase-agg 0.75s ease-in-out;
+    border-radius: 50%;
+    z-index: 4;
+}
+
+.bieauid {
+    outline-color: var(--linney-mooie);
+    animation: gaase 0.5s ease-out;
+    -webkit-animation: gaase 0.5s ease-out;
+}
+
+@keyframes gaase {
+    0% {outline-width: 0px; transform: rotate(-3deg);}
+    70% {outline-width: 30px; transform: rotate(3deg);}
+    100% {outline-width: 60px; outline-color: transparent; transform: rotate(0deg)}
+}
+
+#pointyn {
+    font-size: 1rem;
+    position: absolute;
+    top: 35px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    padding: .5rem 2rem;
+    z-index: 2;
+    border-radius: 50%;
+    background-color: var(--linney-mooie);
+    animation: scughey 0.5s ease-out;
+    -webkit-animation: scughey 0.5s ease-out;
+}
+
+@keyframes scughey {
+    0% {padding: .5rem 2rem; left: 0px; top: 35px; visibility: visible;}
+    60% {padding: .5rem 2rem; left: 60px; top: 65px; visibility: visible;}
+    100% {padding: .5rem 1rem; left: 180px; top: 0px; visibility: hidden;}
+}
+
+#loggyr-roie {
+    visibility: hidden;
+    position: absolute;
+    color: var(--doo);
+    font-size: 18pt;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: var(--loggyr);
+    animation: scughey-loggyr 0.5s ease-out, daunsey 0.5s;
+    -webkit-animation: scughey-loggyr 0.5s ease-out, daunsey 0.5s;
+    z-index: 3;
+}
+
+@keyframes scughey-loggyr {
+    from {left: 45%; bottom: 300px; visibility: visible;}
+    to {left: 47%; bottom: 330px; visibility: hidden;}
+}
+
+@keyframes daunsey {
+    from {transform: rotate(-6deg) scale(0.95);}
+    to {transform: rotate(6deg) scale(1.05);}
+}
+
+#saagh-mean {
+    grid-row: 2;
+    align-self: start;
+    display: grid;
+    max-width: var(--lheead);
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    width: 100%;
+    background-color: white;
 }
 
 #saagh-bun-duillag {
@@ -417,6 +566,7 @@ figcaption {
     position: fixed;
     top: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 1.25rem;
@@ -473,6 +623,16 @@ figcaption {
     color: var(--doo);
     font-size: 1.25em;
     border: var(--cheeid-oirr) solid var(--doo);
+}
+
+.reih-creshoh {
+    height: 60px;
+    min-width: 230px;
+    background-color: white;
+    color: var(--doo);
+    font-size: 1.5em;
+    border: 3px solid var(--doo);
+    border-radius: 20px;
 }
 
 .cramman-faagail {
@@ -551,6 +711,21 @@ input:checked + .skirreyder:before {
     transform: translateX(26px);
 }
 
+#saagh {
+    display: grid;
+    height: 100%;
+}
+
+#saagh-stoo-gamman {
+    grid-row: 1;
+    grid-column: 1;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    justify-items: center;
+    width: 100%;
+    height: var(--yrjid);
+}
+
 #cleeah {
     display: flex;
     position: relative;
@@ -575,6 +750,7 @@ input:checked + .skirreyder:before {
     display: grid;
     justify-items: center;
     position: relative;
+    margin-bottom: 2rem;
 }
 
 #caslys {
@@ -582,7 +758,6 @@ input:checked + .skirreyder:before {
     grid-row: 1;
     margin-left: auto;
     margin-right: auto;
-    z-index: 1;
 }
 
 #caslys-eaishtagh {
@@ -666,10 +841,6 @@ input:checked + .skirreyder:before {
     margin: 0.25rem;
 }
 
-#saagh-freggyrt div {
-    background-color: lightblue;
-}
-
 .fockle {
     display: inline-block;
     padding: 0.5rem 1rem;
@@ -731,6 +902,18 @@ input:checked + .skirreyder:before {
     -webkit-animation-delay: 0s, 0.4s;;
 }
 
+@keyframes groin {
+    0% {outline-width: 0px;}
+    70% {outline-width: 24px;}
+    100% {outline-width: 32px; outline-color: transparent;}
+}
+
+@keyframes agg-ec-jerrey {
+    0% {transform: scale(0);}
+    70% {transform: scale(1.4);}
+    100% {transform: scale(1);}
+}
+
 #cramman-reesht, #cramman-jeant {
     font-size: 20pt;
     width: var(--lheead-crammanyn);
@@ -784,8 +967,25 @@ input:checked + .skirreyder:before {
 }
 
 .reihit {
+    background-color: lightblue;
     animation: goll-stiagh 0.25s ease-out;
     -webkit-animation: goll-stiagh 0.25s ease-out;
+}
+
+.eddyr-focklyn {
+    display: inline-block;
+    background-color: orange;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    user-select: none;
+    text-align: center;
+    animation: greimmit .6s infinite;
+    -webkit-animation: greimmit .6s infinite;
+}
+
+.eddyr-focklyn:hover {
+    cursor: pointer;
 }
 
 .cramman-reihit {
@@ -844,6 +1044,25 @@ input:checked + .skirreyder:before {
     -webkit-animation: sheean-cloie .6s ease-in-out infinite;
 }
 
+.greim {
+    background-color: orange;
+    color: white;
+    pointer-events: none;
+    animation: greimmit .6s ease-out infinite;
+    -webkit-animation: greimmit .6s ease-out infinite;
+}
+
+@keyframes aase-agg {
+    0% {transform: scale(1); background-color: transparent;}
+    70% {transform: scale(1.5); background-color: var(--linney-mooie);}
+    100% {transform: scale(1); background-color: transparent;}
+}
+
+@keyframes greimmit {
+    from {outline: 0px solid rgba(0, 191, 255, 1);}
+    to {outline: 12px solid rgba(0, 191, 255, 0);}
+}
+
 @keyframes logo-chyndaa {
     0% {transform: scale(0) rotate(0deg);}
     70% {transform: scale(1.2) rotate(725deg);}
@@ -876,32 +1095,15 @@ input:checked + .skirreyder:before {
     to {opacity: 0;}
 }
 
-@keyframes agg-ec-jerrey {
-    0% {transform: scale(0);}
-    70% {transform: scale(1.4);}
-    100% {transform: scale(1);}
-}
-
 @keyframes chyndaa {
     from {transform: rotate(0deg)}
     to {transform: rotate(1080deg)}
-}
-
-@keyframes groin {
-    0% {outline-width: 0px;}
-    70% {outline-width: 24px;}
-    100% {outline-width: 32px; outline-color: transparent;}
 }
 
 @keyframes goll-stiagh {
     0% {transform: scale(1)}
     70% {transform: scale(1.3)}
     100% {transform: scale(1)}
-}
-
-@keyframes daunsey {
-    from {transform: rotate(-6deg) scale(0.95);}
-    to {transform: rotate(6deg) scale(1.05);}
 }
 
 @keyframes freggyrt-kiart {
