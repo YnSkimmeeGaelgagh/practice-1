@@ -1,5 +1,5 @@
 function caghlaaMean () {
-    const daghCramman = document.getElementsByClassName("reih");
+    const daghCramman = document.getElementsByClassName("reih-creshoh");
     [...daghCramman].forEach(c => c.style.pointerEvents = "auto");
     const caslys = document.getElementById("caslys");
     caslys.remove();
