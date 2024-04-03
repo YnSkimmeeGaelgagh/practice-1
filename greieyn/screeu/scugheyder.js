@@ -13,8 +13,8 @@ function scugh () {
     const raa = new Audio(raaghyn[earrooFeysht].sheean);
     let pointRyGheddyn = true;
     focklyn.forEach(w => {
-        w.ontouchstart = reihit;
-        w.ontouchend = greim;
+        w.onpointerup = reihit;
+        w.onpointerdown = greim;
     });
     function curFockleStiagh (f) {
         if (sfxGoll) sheeanClick.play();
@@ -46,7 +46,7 @@ function scugh () {
             kiedHuittym = false;
         };
         curFockleStiagh (taghyrt.target);
-        taghyrt.target.ontouchstart = "";
+        taghyrt.target.onpointerup = "";
         saaghFreggyrt.append(taghyrt.target);
     };
     function greim (taghyrt) {
@@ -66,7 +66,7 @@ function scugh () {
                         erBayrney = true;
                         fockleGreimmit.classList.remove("greim");
                         curFockleStiagh(fockleGreimmit);
-                        fockleGreimmit.ontouchend = "";
+                        fockleGreimmit.onpointerup = "";
                         saaghFreggyrt.replaceChild(fockleGreimmit, s);
                         scrysseyGreim();
                     };
@@ -81,8 +81,8 @@ function scugh () {
         const bayrnaghyn = [...document.getElementsByClassName("eddyr-focklyn")];
         bayrnaghyn.forEach(b => b.remove());
     }
-    window.addEventListener("ontouchstart", () => lughHeese = "");
-    window.addEventListener("ontouchend", () => {
+    window.addEventListener("pointerup", () => lughHeese = "");
+    window.addEventListener("pointerdown", () => {
         setTimeout(() => {
             if (fockleGreimmit && !erBayrney) {
                 scrysseyGreim();
@@ -116,7 +116,7 @@ function scugh () {
         const freggyrt = raaghyn[earrooFeysht].gaelg;
         const freggyrtElley = raaghyn[earrooFeysht].gaelgB;
         crammanFreggyrt.classList.add("cramman-reihit");
-        if (curStiagh == freggyrt || curStiagh == freggyrtElley) {
+        if (curStiagh == freggyrt || curStiagh == freggyrtElley || curStiagh.length == 0) {
             const caslys = document.getElementById("caslys");
             caslys.classList.add("kiart");
             for (let i = 0; i < 6; i++) {
