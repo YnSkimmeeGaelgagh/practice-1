@@ -46,7 +46,7 @@ function scugh () {
             kiedHuittym = false;
         };
         curFockleStiagh (taghyrt.target);
-        taghyrt.target.onpointerup = "";
+        taghyrt.target.onclick = "";
         saaghFreggyrt.append(taghyrt.target);
     };
     function greim (taghyrt) {
@@ -67,7 +67,7 @@ function scugh () {
                         erBayrney = true;
                         fockleGreimmit.classList.remove("greim");
                         curFockleStiagh(fockleGreimmit);
-                        fockleGreimmit.onpointerup = "";
+                        fockleGreimmit.onclick = "";
                         saaghFreggyrt.replaceChild(fockleGreimmit, s);
                         scrysseyGreim();
                     };
