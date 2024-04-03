@@ -1,173 +1,1165 @@
-function scugh () {
-    let kiedHuittym = true;
-    let lughHeese = "";
-    let fockleGreimmit;
-    let erBayrney = false;
-    const saaghFreggyrt = document.getElementById("saagh-freggyrt");
-    const saaghFocklyn = document.getElementById("saagh-focklyn");
-    const focklyn = [...document.getElementsByClassName("fockle")];
-    const sheeanClick = new Audio("../../../sheeanyn/click.mp3");
-    const sheeanArraghey = new Audio("../../../sheeanyn/arraghey.mp3");
-    const kiart = new Audio("../../../sheeanyn/clinck.mp3");
-    const neuChiart = new Audio("../../../sheeanyn/neu-chiart.mp3");
-    const raa = new Audio(raaghyn[earrooFeysht].sheean);
-    let pointRyGheddyn = true;
-    focklyn.forEach(w => {
-        // w.onmousedown = greim;
-        w.ontouchstart = greim;
-        // w.onmouseup = reihit;
-        w.ontouchend = reihit;
-    });
-    function curFockleStiagh (f) {
-        if (sfxGoll) sheeanClick.play();
-        const cloan = f.cloneNode(true);
-        const cloanXY = [f.offsetWidth, f.offsetHeight];
-        [cloan.style.width, cloan.style.height] = [cloanXY[0] + "px", cloanXY[1] + "px"];
-        cloan.id = f.id + "-cloan";
-        cloan.classList.add("cloan");
-        saaghFocklyn.replaceChild(cloan, f);
-        f.onclick = () => {
-            if (sfxGoll) sheeanArraghey.play();
-            f.remove();
-            f.onclick = reihit;
-            f.classList.remove("reihit");
-            if ([...saaghFreggyrt.childNodes].length == 0) {
-                soieSaaghFreggyrt();
-                kiedHuittym = true;
-            }
-            saaghFocklyn.replaceChild(f, cloan);
-        };
-        f.classList.add("reihit");
+html {
+    font-family: Abeezee, sans-serif;
+    font-size: 14pt;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    height: 100dvh;
+    text-align: center;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --doo: #555555;
+    --cheeid-oirr: 2px;
+    --corneillyn: 20px;
+    --linney-mooie: transparent;
+    --lheead: 450px;
+    --lheead-crammanyn: 150px;
+    --lheeah: #888888;
+    --loggyr: rgba(173, 255, 47, 0.5);
+    --sollyssid: 1.1;
+    --yrjid: 650px;
+    --yrjid-crammanyn: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+h3 {
+    margin: .75rem;
+}
+
+figure {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    gap: 1rem;
+    max-width: 100px;
+}
+
+figcaption {
+    font-size: 1em;
+}
+
+#logo-toshiaght {
+    transform: scale(0);
+    width: 30%;
+    animation: logo-chyndaa 1s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: .2s;
+    -webkit-animation: logo-chyndaa 1s ease-out;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: .2s;
+}
+
+#logo-bun {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+#manx-language {
+    margin-top: 0;
+}
+
+#coyrle-toshiaght-gamman {
+    margin-top: .5rem;
+    background: white;
+    max-width: 400px;
+    border: var(--cheeid-oirr) solid var(--doo);
+    padding: 1rem 1.5rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    border-radius: var(--corneillyn);
+    animation: screeyn-gaase .5s ease-out;
+    -webkit-animation: screeyn-gaase .5s ease-out;
+}
+
+#rollage-saraghyn {
+    display: inline;
+}
+
+#saagh-dooney {
+    align-self: end;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--doo);
+    padding: 2rem;
+}
+
+#cramman-dooney {
+    font-size: 1.25rem;
+    width: var(--lheead-crammanyn);
+    border: none;
+    color: white;
+    border-radius: var(--corneillyn);
+    padding: .5rem;
+    background-color: crimson;
+}
+
+#saagh-mullagh {
+    font-size: 1.4rem;
+    grid-row: 1;
+    display: grid;
+    justify-items: center;
+    background-color: white;
+    width: 100%;
+    max-width: 600px;
+}
+
+#clag {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+    grid-row: 1;
+    grid-column: 1;
+    margin-bottom: 40px;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    width: 100px;
+    height: 35px;
+    color: white;
+    border-radius: 50%;
+    z-index: 1;
+    outline-style: solid;
+    outline-width: 0px;
+    background-color: var(--doo)
+}
+
+#fys {
+    grid-row: 1;
+    grid-column: 1;
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: white;
+    z-index: 0;
+    width: 100%;
+    padding-top: 0.25rem;
+    background-color: var(--doo);
+}
+
+#feysht {
+    grid-column: 1;
+    justify-self: left;
+    padding-top: .5rem;
+    padding-left: 1rem;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+#agg {
+    grid-column: 2;
+    justify-self: right;
+    width: 40px;
+    height: 40px;
+    padding-top: .5rem;
+    margin-right: 1rem;
+    text-align: center;
+    animation: aase-agg 0.75s ease-in-out;
+    -webkit-animation: aase-agg 0.75s ease-in-out;
+    border-radius: 50%;
+    z-index: 4;
+}
+
+.bieauid {
+    outline-color: var(--linney-mooie);
+    animation: gaase 0.5s ease-out;
+    -webkit-animation: gaase 0.5s ease-out;
+}
+
+@keyframes gaase {
+    0% {outline-width: 0px; transform: rotate(-3deg);}
+    70% {outline-width: 30px; transform: rotate(3deg);}
+    100% {outline-width: 60px; outline-color: transparent; transform: rotate(0deg)}
+}
+
+#pointyn {
+    font-size: 1rem;
+    position: absolute;
+    top: 35px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    padding: .5rem 2rem;
+    z-index: 2;
+    border-radius: 50%;
+    background-color: var(--linney-mooie);
+    animation: scughey 0.5s ease-out;
+    -webkit-animation: scughey 0.5s ease-out;
+}
+
+@keyframes scughey {
+    0% {padding: .5rem 2rem; left: 0px; top: 35px; visibility: visible;}
+    60% {padding: .5rem 2rem; left: 60px; top: 65px; visibility: visible;}
+    100% {padding: .5rem 1rem; left: 180px; top: 0px; visibility: hidden;}
+}
+
+#loggyr-roie {
+    visibility: hidden;
+    position: absolute;
+    color: var(--doo);
+    font-size: 18pt;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: var(--loggyr);
+    animation: scughey-loggyr 0.5s ease-out, daunsey 0.5s;
+    -webkit-animation: scughey-loggyr 0.5s ease-out, daunsey 0.5s;
+    z-index: 3;
+}
+
+@keyframes scughey-loggyr {
+    from {left: 45%; bottom: 300px; visibility: visible;}
+    to {left: 47%; bottom: 330px; visibility: hidden;}
+}
+
+@keyframes daunsey {
+    from {transform: rotate(-6deg) scale(0.95);}
+    to {transform: rotate(6deg) scale(1.05);}
+}
+
+#saagh-mean {
+    grid-row: 2;
+    align-self: start;
+    display: grid;
+    max-width: var(--lheead);
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    width: 100%;
+    background-color: white;
+}
+
+#saagh-bun-duillag {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+
+#saagh-ennym {
+    background-color: var(--doo);
+    color: white;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.cleeah-cooish {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+#cleeah-2, #cleeah-3 {
+    filter: grayscale(100%);
+    pointer-events: none;
+}
+
+.caslys-chooish {
+    position: relative;
+}
+
+.caslys-chooish img {
+    width: 100%;
+}
+
+.saagh-rollage {
+    grid-column: 1;
+    grid-row: 1;
+    position: absolute;
+    height: 16rem;
+    pointer-events: none;
+}
+
+.rollage-beggey {
+    opacity: 0;
+}
+
+.saagh-rollage-yesh {
+    animation: aae-hoshtal-1 1s linear;
+    -webkit-animation: aae-hoshtal-1 1s linear;
+}
+
+.saagh-rollage-hoshtal {
+    animation: aae-yesh-1 1s linear;
+    -webkit-animation: aae-yesh-1 1s linear;
+}
+
+.rollage-beggey-yesh {
+    animation: aae-hoshtal-2 1s linear;
+    -webkit-animation: aae-hoshtal-2 1s linear;
+}
+
+.rollage-beggey-hoshtal {
+    animation: aae-yesh-2 1s linear;
+    -webkit-animation: aae-yesh-2 1s linear;
+}
+
+.rollage {
+    position: absolute;
+    right: 1.5rem;
+    top: .5rem;
+    transform: rotate(22.5deg);
+    animation: chyndaa-rollage 2s ease-in-out;
+    -webkit-animation: chyndaa-rollage 2s ease-in-out;
+}
+
+.caslys-chooish:hover {
+    cursor: pointer;
+}
+
+#kishtey-buill {
+    grid-column: span 2;
+}
+
+.saagh-linney {
+    padding: 1rem;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.linney-scarrey {
+    grid-row: 1;
+    grid-column: 1;
+    width: 100%;
+}
+
+.glass {
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 1;
+}
+
+#saagh-lessoon {
+    visibility: hidden;
+    position: fixed;
+    display: grid;
+    justify-items: center;
+    align-items: baseline;
+    font-size: 1.25rem;
+    text-align: center;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: rgb(100, 100, 100, 0.5);
+    z-index: 2;
+}
+
+#coyrle-lessoon {
+    margin-top: 2rem;
+    background: white;
+    width: 90%;
+    max-width: 500px;
+    height: 90dvh;
+    border: var(--cheeid-oirr) solid var(--doo);
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: var(--corneillyn);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#caslys-lessoon {
+    margin-top: 2rem;
+    width: 60%;
+}
+
+#saagh-rolley-focklyn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#saagh-rolley-focklyn hr {
+    grid-column: span 2;
+    border-top: 2px solid var(--doo);
+    width: 100%;
+}
+
+.fockle-noa {
+    color: rgba(255, 69, 0);
+}
+
+.fockle-toshiaght {
+    color: rgba(255, 160, 122);
+}
+
+.fockle-bunnys {
+    color: rgba(0, 191, 255);
+}
+
+.fockle-jeant {
+    color: #B3D334;
+}
+
+#coyrle-reih {
+    margin-top: 1rem;
+}
+
+#crammanyn-lessoon {
+    display: grid;
+    gap: .5rem;
+    justify-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.saagh-cramman-lessoon {
+    position: relative;
+}
+
+.saagh-cramman-lessoon:hover {
+    cursor: pointer;
+}
+
+.cramman-lessoon {
+    color: var(--doo);
+    border: var(--cheeid-oirr) solid var(--doo);
+    border-radius: 5px;
+    width: var(--yrjid-crammanyn);
+}
+
+.cramman-lessoon:hover {
+    transform: scale(1.1);
+    filter: brightness(var(--sollyssid));
+}
+
+.ennym-gamman {
+    margin-top: .5rem;
+    font-size: .75em;
+}
+
+.cowrey-jeant {
+    visibility: hidden;
+    position: absolute;
+    top: -1rem;
+    pointer-events: none;
+}
+
+#cramman-lessoon-doon {
+    grid-row: 2;
+    font-size: 1rem;
+    width: var(--lheead-crammanyn);
+    height: var(--yrjid-crammanyn);
+    margin-top: 1rem;
+    grid-column: span 3;
+    background-color: crimson;
+    color: white;
+    border: var(--cheeid-oirr) solid white;
+    border-radius: var(--corneillyn);
+}
+
+#cramman-lessoon-doon:hover {
+    filter: brightness(var(--sollyssid));
+}
+
+#cramman-aahoiaghey {
+    font-size: 1rem;
+    width: 200px;
+    height: var(--yrjid-crammanyn);
+    margin-top: 1rem;
+    background-color: crimson;
+    color: white;
+    border: var(--cheeid-oirr) solid white;
+    border-radius: var(--corneillyn);
+}
+
+#raue {
+    visibility: hidden;
+    position: fixed;
+    display: grid;
+    justify-items: center;
+    align-items: baseline;
+    font-size: 1.25rem;
+    text-align: center;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: rgb(100, 100, 100, 0.5);
+    top: 0;
+    z-index: 2;
+}
+
+#coyrle-raue {
+    margin-top: 2rem;
+    background-color: crimson;
+    color: white;
+    width: 90%;
+    max-width: 500px;
+    border: var(--cheeid-oirr) solid var(--doo);
+    padding: 0 2rem 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: var(--corneillyn);
+}
+
+#shickyr-aahoiaghey {
+    font-size: 1rem;
+    width: 200px;
+    height: 50px;
+    margin-top: 1rem;
+    color: white;
+    background-color: var(--doo);
+    border: var(--cheeid-oirr) solid white;
+}
+
+#neuhickyr-aahoiaghey {
+    font-size: 1rem;
+    width: 200px;
+    height: 50px;
+    margin-top: 1rem;
+    background-color: white;
+    border: var(--cheeid-oirr) solid white;
+}
+
+.aahoit {
+    animation: chyndaa .5s ease-out;
+    -webkit-animation: chyndaa .5s ease-out;
+}
+
+#kied-saagh-toshiaght, #saagh-ooilley-jeant {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    display: grid;
+    justify-content: center;
+    font-size: 1.25rem;
+    text-align: center;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: rgb(100, 100, 100, 0.5);
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    z-index: 2;
+}
+
+#saagh-toshiaght {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    text-align: center;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: rgb(100, 100, 100, 0.5);
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    z-index: 2;
+}
+
+#coyrle-ooilley-jeant {
+    background-image: url("caslyssyn/feailley.webp");
+    background-size: 500px;
+    margin-top: 2rem;
+    max-width: 400px;
+    border: var(--cheeid-oirr) solid var(--doo);
+    padding: 7rem 2rem 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: var(--corneillyn);
+}
+
+.gaelg-toshiaght {
+    color: #2196F3;
+}
+
+#coyrle-toshiaght {
+    background: white;
+    max-width: 400px;
+    border: var(--cheeid-oirr) solid var(--doo);
+    padding: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: var(--corneillyn);
+}
+
+#cramman-toshiaght, #cramman-ooilley-jeant {
+    background-color: var(--doo);
+    color: white;
+    border-radius: var(--corneillyn);
+    font-size: 1.25rem;
+}
+
+.reih {
+    display: block;
+    width: var(--lheead-crammanyn);
+    height: var(--yrjid-crammanyn);
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    color: var(--doo);
+    font-size: 1.25em;
+    border: var(--cheeid-oirr) solid var(--doo);
+}
+
+.reih-creshoh {
+    height: 60px;
+    min-width: 230px;
+    background-color: white;
+    color: var(--doo);
+    font-size: 1.5em;
+    border: 3px solid var(--doo);
+    border-radius: 20px;
+}
+
+.cramman-faagail {
+    background-color: crimson;
+    font-size: 1.25rem;
+    color: white;
+    margin-top: 1rem;
+    border: none;
+    border-radius: var(--corneillyn);
+}
+
+#saagh-corragyn {
+    margin-top: 1rem;
+}
+
+.saagh-corrag {
+    display: inline-block;
+    padding: 1rem;
+    text-align: center;
+}
+
+.lipaid {
+    margin-bottom: 1rem;
+}
+
+.corrag {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.corrag input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.skirreyder {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 34px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.skirreyder:before {
+    position: absolute;
+    border-radius: 50%;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .skirreyder {
+    background-color: #2196F3;
+}
+
+input:focus + .skirreyder {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .skirreyder:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+#saagh {
+    display: grid;
+    height: 100%;
+}
+
+#saagh-stoo-gamman {
+    grid-row: 1;
+    grid-column: 1;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    justify-items: center;
+    width: 100%;
+    height: var(--yrjid);
+}
+
+#cleeah {
+    display: flex;
+    position: relative;
+    overflow-x: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    border: 6px solid transparent;
+}
+
+#greinnaghey {
+    font-size: 1.1rem;
+    padding: 2rem 0 1rem;
+    line-height: 1.65rem;
+}
+
+#saagh-caslys {
+    display: grid;
+    justify-items: center;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+#caslys {
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#caslys-eaishtagh {
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    z-index: 1;
+}
+
+#caslys-eaishtagh:hover {
+    filter: brightness(120%);
+    cursor: pointer;
+}
+
+#saraghyn-eaishtagh {
+    color: grey;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    user-select: none;
+}
+
+#saagh-faaue {
+    display: grid;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+#cramman-faaue {
+    grid-row: 1;
+    grid-column: 1;
+    border: 2px solid var(--doo);
+    padding: .5rem 1rem;
+    border-radius: var(--corneillyn);
+}
+
+#cramman-faaue:hover {
+    cursor: pointer;
+    background-color: grey;
+    color: white;
+}
+
+.cramman-faaue-follit {
+    pointer-events: none;
+    animation: foll-cramman-faaue .5s ease-out;
+    animation-fill-mode: forwards;
+    -webkit-animation: foll-cramman-faaue .5s ease-out;
+    -webkit-animation-fill-mode: forwards;
+}
+
+#faaue {
+    opacity: 0;
+    color: crimson;
+    grid-row: 1;
+    grid-column: 1;
+    pointer-events: none;
+}
+
+.faaue-neuollit {
+    animation: jeeagh-faaue .5s ease-out;
+    animation-fill-mode: forwards;
+    -webkit-animation: jeeagh-faaue .5s ease-out;
+    -webkit-animation-fill-mode: forwards;
+}
+
+#saagh-freggyrt, #saagh-focklyn {
+    padding: 0.5rem 0.5rem;
+    border: var(--cheeid-oirr) solid grey;
+    min-height: 7rem;
+}
+
+#saagh-freggyrt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    user-select: none;
+}
+
+#saagh-freggyrt div, #saagh-focklyn div {
+    margin: 0.25rem;
+}
+
+.fockle {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border: var(--cheeid-oirr) solid grey;
+    user-select: none;
+    border-radius: var(--corneillyn);
+}
+
+.fockle:hover {
+    cursor: pointer;
+}
+
+#cramman-freggyrt {
+    padding: 1rem;
+    font-size: 1.1rem;
+    background-color: lightblue;
+    user-select: none;
+    border-radius: var(--corneillyn);
+}
+
+#saagh-jeant {
+    position: fixed;
+    font-size: 1.25em;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: white;
+    z-index: 2;
+}
+
+#teks-agg-jerrinagh {
+    padding-bottom: 1rem;
+}
+
+#agg-jerrinagh {
+    background-color: var(--doo);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 30pt;
+    width: 150px;
+    height: 100px;
+    border-radius: 50%;
+    outline: 0px solid var(--linney-mooie);
+    animation: agg-ec-jerrey 0.5s ease-out, groin 1.5s infinite;
+    animation-delay: 0s, 0.4s;
+    -webkit-animation: agg-ec-jerrey 0.5s ease-out, groin 1.5s infinite;
+    -webkit-animation-delay: 0s, 0.4s;;
+}
+
+@keyframes groin {
+    0% {outline-width: 0px;}
+    70% {outline-width: 24px;}
+    100% {outline-width: 32px; outline-color: transparent;}
+}
+
+@keyframes agg-ec-jerrey {
+    0% {transform: scale(0);}
+    70% {transform: scale(1.4);}
+    100% {transform: scale(1);}
+}
+
+#cramman-reesht, #cramman-jeant {
+    font-size: 20pt;
+    width: var(--lheead-crammanyn);
+    height: var(--yrjid-crammanyn);
+    max-height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#cramman-reesht {
+    border: var(--cheeid-oirr) solid white;
+    background-color: var(--doo);
+    color: white;
+}
+
+#cramman-jeant {
+    border: var(--cheeid-oirr) solid var(--doo);
+    background-color: white;
+}
+
+#boayrd-agg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    max-width: 300px;
+    min-height: 200px;
+    padding: 1rem;
+    background-color: var(--doo);
+    color: white;
+}
+
+.aggyn {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.agg-ennym {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.nyn-agg {
+    background-color: var(--linney-mooie);
+    animation: daunsey .5s infinite alternate steps(3);
+    -webkit-animation: daunsey .5s infinite alternate steps(3);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.reihit {
+    background-color: lightblue;
+    animation: goll-stiagh 0.25s ease-out;
+    -webkit-animation: goll-stiagh 0.25s ease-out;
+}
+
+.eddyr-focklyn {
+    display: inline-block;
+    background-color: orange;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    user-select: none;
+    text-align: center;
+    animation: greimmit .6s infinite;
+    -webkit-animation: greimmit .6s infinite;
+}
+
+.eddyr-focklyn:hover {
+    cursor: pointer;
+}
+
+.cramman-reihit {
+    animation: goll-stiagh 0.25s ease-out;
+    -webkit-animation: goll-stiagh 0.25s ease-out;
+    pointer-events: none;
+}
+
+.cloan {
+    background-color: gainsboro;
+    color: gainsboro;
+    border: none;
+    pointer-events: none;
+}
+
+.kiart {
+    animation: freggyrt-kiart 2s ease-in-out;
+    animation-fill-mode: forwards;
+    -webkit-animation: freggyrt-kiart 2s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.gaase-screeyn {
+    animation: screeyn-gaase .5s ease-out;
+    -webkit-animation: screeyn-gaase .5s ease-out;
+}
+
+.nah-ayrn {
+    animation: gaase-ny-sloo 2s ease-in-out;
+    animation-fill-mode: forwards;
+    -webkit-animation: gaase-ny-sloo 2s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.glass-brisht {
+    animation: glass-ersooyl .5s ease-out;
+    animation-fill-mode: forwards;
+    -webkit-animation: glass-ersooyl .5s ease-out;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.ayrn-jeant {
+    animation: skiolley-shollane 1s ease-out;
+    animation-fill-mode: forwards;
+    -webkit-animation: skiolley-shollane 2s ease-out;
+    -webkit-animation-fill-mode: forwards;
+}
+
+#raueSFX {
+    color: crimson;
+    margin-top: 1rem;
+}
+
+.sheean {
+    animation: sheean-cloie .6s ease-in-out infinite;
+    -webkit-animation: sheean-cloie .6s ease-in-out infinite;
+}
+
+.greim {
+    background-color: orange;
+    color: white;
+    pointer-events: none;
+    animation: greimmit .6s ease-out infinite;
+    -webkit-animation: greimmit .6s ease-out infinite;
+}
+
+@keyframes aase-agg {
+    0% {transform: scale(1); background-color: transparent;}
+    70% {transform: scale(1.5); background-color: var(--linney-mooie);}
+    100% {transform: scale(1); background-color: transparent;}
+}
+
+@keyframes greimmit {
+    from {outline: 0px solid rgba(0, 191, 255, 1);}
+    to {outline: 12px solid rgba(0, 191, 255, 0);}
+}
+
+@keyframes logo-chyndaa {
+    0% {transform: scale(0) rotate(0deg);}
+    70% {transform: scale(1.2) rotate(725deg);}
+    100% {transform: scale(1) rotate(720deg);}
+}
+
+@keyframes foll-cramman-faaue {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@keyframes jeeagh-faaue {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes skiolley-shollane {
+    from {filter: grayscale(100%);}
+    to {filter: grayscale(0%);}
+}
+
+@keyframes gaase-ny-sloo {
+    0% {width: 100%}
+    20% {width: 105%;}
+    100% {width: 0%;}
+}
+
+@keyframes glass-ersooyl {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@keyframes chyndaa {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(1080deg)}
+}
+
+@keyframes goll-stiagh {
+    0% {transform: scale(1)}
+    70% {transform: scale(1.3)}
+    100% {transform: scale(1)}
+}
+
+@keyframes freggyrt-kiart {
+    0% {transform: rotate(0deg) scale(1); opacity: 1;}
+    30% {transform: rotate(720deg) scale(1.3); opacity: 1;}
+    100% {transform: rotate(720deg) scale(0); opacity: 0;}
+}
+
+@keyframes chyndaa-rollage {
+    0% {transform: rotate(22.5deg) scale(1);}
+    30% {transform: rotate(742.5deg) scale(2);}
+    100% {transform: rotate(742.5deg) scale(1);}
+}
+
+@keyframes aae-yesh-1 {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(-180deg)}
+}
+
+@keyframes aae-yesh-2 {
+    from {opacity: 1; transform: rotate(-360deg)}
+    to {opacity: 0; transform: rotate(360deg)}
+}
+
+@keyframes aae-hoshtal-1 {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(180deg)}
+}
+
+@keyframes aae-hoshtal-2 {
+    from {opacity: 1; transform: rotate(360deg);}
+    to {opacity: 0; transform: rotate(-360deg);}
+}
+
+@keyframes screeyn-gaase {
+    0% {transform: scale(0)}
+    70% {transform: scale(1.3)}
+    100% {transform: scale(1)}
+}
+
+@keyframes sheean-cloie {
+    0% {transform: scale(1); filter: brightness(100%);}
+    70% {transform: scale(1.1); filter: brightness(120%);}
+    100% {transform: scale(1); filter: brightness(100%);}
+}
+
+@media screen and (min-width: 700px) {
+    #shickyr-aahoiaghey, #neuhickyr-aahoiaghey {
+        margin-top: 3rem;
     }
-    function reihit (taghyrt) {
-        if (kiedHuittym) {
-            saaghFreggyrt.textContent = "";
-            saaghFreggyrt.style.display = "block";
-            saaghFreggyrt.style.color = "black";
-            saaghFreggyrt.style.textAlign = "left";
-            kiedHuittym = false;
-        };
-        curFockleStiagh (taghyrt.target);
-        // taghyrt.target.onmousedown = "";
-        // taghyrt.target.onmouseup = "";
-        taghyrt.target.ontouchstart = "";
-        taghyrt.target.ontouchend = "";
-        saaghFreggyrt.append(taghyrt.target);
-    };
-    function greim (taghyrt) {
-        if (taghyrt.target.parentNode.id == "saagh-freggyrt") return;
-        lughHeese = taghyrt.target;
-        setTimeout(() => {
-            const focklynAyn = saaghFreggyrt.children;
-            const earrooFocklynAyn = focklynAyn.length;
-            if (lughHeese == taghyrt.target && earrooFocklynAyn > 0) {
-                [...focklynAyn].forEach(f => f.style.pointerEvents = "none");
-                taghyrt.target.classList.add("greim");
-                fockleGreimmit = taghyrt.target;
-                for (let i = 0; i < earrooFocklynAyn * 2; i += 2) {
-                    const s = document.createElement("div");
-                    s.textContent = "...";
-                    s.classList.add("eddyr-focklyn");
-                    s.onclick = () => {
-                        erBayrney = true;
-                        fockleGreimmit.classList.remove("greim");
-                        curFockleStiagh(fockleGreimmit);
-                        // fockleGreimmit.onmousedown = "";
-                        // fockleGreimmit.onmouseup = "";
-                        fockleGreimmit.ontouchstart = "";
-                        fockleGreimmit.ontouchend = "";
-                        saaghFreggyrt.replaceChild(fockleGreimmit, s);
-                        scrysseyGreim();
-                    };
-                    focklynAyn[i].parentNode.insertBefore(s, focklynAyn[i]);
-                }
-            };
-        }, 1000);
-    };
-    function scrysseyGreim () {
-        [...saaghFreggyrt.children].forEach(f => f.style.pointerEvents = "all");
-        fockleGreimmit.classList.remove("greim");
-        fockleGreimmit = null;
-        const bayrnaghyn = [...document.getElementsByClassName("eddyr-focklyn")];
-        bayrnaghyn.forEach(b => b.remove());
+
+    #caslys-eaishtagh {
+        width: 15%;
     }
-    // window.onmousedown = prowGreim;
-    window.ontouchstart = prowGreim;
-    function prowGreim () {
-        setTimeout(() => {
-            if (fockleGreimmit && !erBayrney) {
-                scrysseyGreim();
-            };
-        }, 50);
-    };
-    const scrysseyHeese = () => lughHeese = "";
-    // window.onmouseup = scrysseyHeese;
-    window.ontouchend = scrysseyHeese;
-    const crammanFreggyrt = document.getElementById("cramman-freggyrt");
-    const cleeah = document.getElementById("cleeah");
-    function caghlaaSaagh (daah, farkiaght = 500) {
-        cleeah.style.borderColor = daah;
-        crammanFreggyrt.style.backgroundColor = daah;
-        if (daah == "crimson") crammanFreggyrt.style.color = "white";
-        else {
-            const focklynFreggyrt = [...document.getElementsByClassName("reihit")];
-            focklynFreggyrt.forEach(f => f.style.backgroundColor = daah);
-        }
-        setTimeout(() => {
-            if (earrooFeysht - 1 == Object.keys(raaghyn).length) {
-                jerreyGamman();
-                return;
-            };
-            crammanFreggyrt.classList.remove("cramman-reihit");
-            crammanFreggyrt.style.backgroundColor = "lightblue";
-            crammanFreggyrt.style.color = "black";
-            cleeah.style.borderColor = "transparent";
-            if (daah == "chartreuse") troggDuillag();
-        }, farkiaght);
+
+    #saagh-freggyrt, #saagh-focklyn {
+        padding: 1rem;
     }
-    crammanFreggyrt.onclick = t => {
-        const curStiagh = [...saaghFreggyrt.children].map(c => c.textContent).join(" ");
-        const freggyrt = raaghyn[earrooFeysht].gaelg;
-        const freggyrtElley = raaghyn[earrooFeysht].gaelgB;
-        crammanFreggyrt.classList.add("cramman-reihit");
-        if (curStiagh == freggyrt || curStiagh == freggyrtElley || curStiagh.length == 0) {
-            const caslys = document.getElementById("caslys");
-            caslys.classList.add("kiart");
-            for (let i = 0; i < 6; i++) {
-                const daahR = Math.floor(Math.random() * 3);
-                const daahRollage = daahR == 0 ? "geayney" : daahR == 1 ? "gorrym" : "jiarg";
-                if (i < 3) {
-                    const saaghRollageYesh = trogAyrn({red: "div", keint: ["saagh-rollage", "saagh-rollage-yesh"], cheuSthie: [
-                        trogAyrn({red: "img", keint: ["rollage-beggey", "rollage-beggey-yesh"], cheuSthie: `../../../caslyssyn/rollage-${daahRollage}.webp`})
-                    ], baare: `${i * 2.5}rem`, yesh: `${i + 7 + daahR}rem`});
-                    const saaghCaslys = document.getElementById("saagh-caslys");
-                    saaghCaslys.append(saaghRollageYesh);
-                ;}
-                else {
-                    const saaghRollageHoshtal = trogAyrn({red: "div", keint: ["saagh-rollage", "saagh-rollage-hoshtal"], cheuSthie: [
-                        trogAyrn({red: "img", keint: ["rollage-beggey", "rollage-beggey-hoshtal"], cheuSthie: `../../../caslyssyn/rollage-${daahRollage}.webp`})
-                    ], baare: `${(i - 3) * 2.5}rem`, hoshtal: `${i + 4 + daahR}rem`});
-                    const saaghCaslys = document.getElementById("saagh-caslys");
-                    saaghCaslys.append(saaghRollageHoshtal);
-                }
-            };
-            let farkiaght = sfxGoll ? raa.duration * 1000 : 500;
-            if (sfxGoll) {
-                kiart.play();
-                raa.play();
-            }
-            if (pointRyGheddyn) {
-                agg++;
-                raaghyn[earrooFeysht].focklyn.forEach(f => coEarrooagheyAggNoa(f, 1, 1));
-            };
-            earrooFeysht++;
-            kiedHuittym = true;
-            caghlaaSaagh("chartreuse", farkiaght);
-        }
-        else {
-            pointRyGheddyn = false;
-            if (sfxGoll) neuChiart.play();
-            caghlaaSaagh("crimson");
-        }
-    }
-};
+}
