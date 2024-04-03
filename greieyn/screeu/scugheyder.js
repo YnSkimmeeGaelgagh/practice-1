@@ -13,8 +13,8 @@ function scugh () {
     const raa = new Audio(raaghyn[earrooFeysht].sheean);
     let pointRyGheddyn = true;
     focklyn.forEach(w => {
-        w.onpointerup = () => w.style.backgroundColor = "green";
-        w.onpointerdown = () => w.style.backgroundColor = "blue";
+        w.onpointerup = reihit;
+        w.onpointerdown = greim;
     });
     function curFockleStiagh (f) {
         if (sfxGoll) sheeanClick.play();
