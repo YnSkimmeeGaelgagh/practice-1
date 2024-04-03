@@ -3,6 +3,7 @@ function focklyn () {
     saaghFocklyn.textContent = "";
     let focklyn = raaghyn[earrooFeysht].gaelg.split(" ");
     const caslys = document.getElementById("caslys");
+    caslys.src = "";
     caslys.classList.remove("kiart");
     const rollageyn = [...document.getElementsByClassName("saagh-rollage")];
     rollageyn.forEach(r => r.remove());
