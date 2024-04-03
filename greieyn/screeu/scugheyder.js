@@ -48,7 +48,10 @@ function scugh () {
             kiedHuittym = false;
         };
         curFockleStiagh (taghyrt.target);
-        taghyrt.target.onclick = "";
+        taghyrt.target.onmousedown = "";
+        taghyrt.target.onmouseup = "";
+        taghyrt.target.ontouchstart = "";
+        taghyrt.target.ontouchend = "";
         saaghFreggyrt.append(taghyrt.target);
     };
     function greim (taghyrt) {
@@ -69,7 +72,10 @@ function scugh () {
                         erBayrney = true;
                         fockleGreimmit.classList.remove("greim");
                         curFockleStiagh(fockleGreimmit);
-                        fockleGreimmit.onclick = "";
+                        fockleGreimmit.onmousedown = "";
+                        fockleGreimmit.onmouseup = "";
+                        fockleGreimmit.ontouchstart = "";
+                        fockleGreimmit.ontouchend = "";
                         saaghFreggyrt.replaceChild(fockleGreimmit, s);
                         scrysseyGreim();
                     };
@@ -94,9 +100,9 @@ function scugh () {
             };
         }, 50);
     };
+    const scrysseyHeese = () => lughHeese = "";
     window.onmouseup = scrysseyHeese;
     window.ontouchend = scrysseyHeese;
-    const scrysseyHeese = () => lughHeese = "";
     const crammanFreggyrt = document.getElementById("cramman-freggyrt");
     const cleeah = document.getElementById("cleeah");
     function caghlaaSaagh (daah, farkiaght = 500) {
