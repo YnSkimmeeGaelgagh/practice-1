@@ -13,9 +13,9 @@ function scugh () {
     const raa = new Audio(raaghyn[earrooFeysht].sheean);
     let pointRyGheddyn = true;
     focklyn.forEach(w => {
-        w.onmousedown = greim;
+        // w.onmousedown = greim;
         w.ontouchstart = greim;
-        w.onmouseup = reihit;
+        // w.onmouseup = reihit;
         w.ontouchend = reihit;
     });
     function curFockleStiagh (f) {
@@ -48,8 +48,8 @@ function scugh () {
             kiedHuittym = false;
         };
         curFockleStiagh (taghyrt.target);
-        taghyrt.target.onmousedown = "";
-        taghyrt.target.onmouseup = "";
+        // taghyrt.target.onmousedown = "";
+        // taghyrt.target.onmouseup = "";
         taghyrt.target.ontouchstart = "";
         taghyrt.target.ontouchend = "";
         saaghFreggyrt.append(taghyrt.target);
@@ -72,8 +72,8 @@ function scugh () {
                         erBayrney = true;
                         fockleGreimmit.classList.remove("greim");
                         curFockleStiagh(fockleGreimmit);
-                        fockleGreimmit.onmousedown = "";
-                        fockleGreimmit.onmouseup = "";
+                        // fockleGreimmit.onmousedown = "";
+                        // fockleGreimmit.onmouseup = "";
                         fockleGreimmit.ontouchstart = "";
                         fockleGreimmit.ontouchend = "";
                         saaghFreggyrt.replaceChild(fockleGreimmit, s);
@@ -91,7 +91,7 @@ function scugh () {
         const bayrnaghyn = [...document.getElementsByClassName("eddyr-focklyn")];
         bayrnaghyn.forEach(b => b.remove());
     }
-    window.onmousedown = prowGreim;
+    // window.onmousedown = prowGreim;
     window.ontouchstart = prowGreim;
     function prowGreim () {
         setTimeout(() => {
@@ -101,7 +101,7 @@ function scugh () {
         }, 50);
     };
     const scrysseyHeese = () => lughHeese = "";
-    window.onmouseup = scrysseyHeese;
+    // window.onmouseup = scrysseyHeese;
     window.ontouchend = scrysseyHeese;
     const crammanFreggyrt = document.getElementById("cramman-freggyrt");
     const cleeah = document.getElementById("cleeah");
