@@ -13,10 +13,10 @@ function scugh () {
     const raa = new Audio(raaghyn[earrooFeysht].sheean);
     let pointRyGheddyn = true;
     focklyn.forEach(w => {
-        w.onclick = reihit;
-        w.ontouchstart = () => w.style.backgroundColor = "green";
-        w.ontouchend = () => w.style.backgroundColor = "red";
-        w.onpointerdown = greim;
+        w.onmousedown = greim;
+        w.ontouchstart = greim;
+        w.onmouseup = reihit;
+        w.ontouchend = reihit;
     });
     function curFockleStiagh (f) {
         if (sfxGoll) sheeanClick.play();
@@ -85,14 +85,18 @@ function scugh () {
         const bayrnaghyn = [...document.getElementsByClassName("eddyr-focklyn")];
         bayrnaghyn.forEach(b => b.remove());
     }
-    window.onclick = () => lughHeese = "";
-    window.onpointerdown = () => {
+    window.onmousedown = prowGreim;
+    window.ontouchstart = prowGreim;
+    function prowGreim () {
         setTimeout(() => {
             if (fockleGreimmit && !erBayrney) {
                 scrysseyGreim();
             };
         }, 50);
     };
+    window.onmouseup = scrysseyHeese;
+    window.ontouchend = scrysseyHeese;
+    const scrysseyHeese = () => lughHeese = "";
     const crammanFreggyrt = document.getElementById("cramman-freggyrt");
     const cleeah = document.getElementById("cleeah");
     function caghlaaSaagh (daah, farkiaght = 500) {
