@@ -56,6 +56,7 @@ function scugh () {
             const focklynAyn = saaghFreggyrt.children;
             const earrooFocklynAyn = focklynAyn.length;
             if (lughHeese == taghyrt.target && earrooFocklynAyn > 0) {
+                [...focklynAyn].forEach(f => f.style.pointerEvents = "none");
                 taghyrt.target.classList.add("greim");
                 fockleGreimmit = taghyrt.target;
                 for (let i = 0; i < earrooFocklynAyn * 2; i += 2) {
@@ -76,6 +77,7 @@ function scugh () {
         }, 1000);
     };
     function scrysseyGreim () {
+        [...saaghFreggyrt.children].forEach(f => f.style.pointerEvents = "all");
         fockleGreimmit.classList.remove("greim");
         fockleGreimmit = null;
         const bayrnaghyn = [...document.getElementsByClassName("eddyr-focklyn")];
