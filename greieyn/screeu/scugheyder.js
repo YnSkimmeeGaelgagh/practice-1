@@ -13,8 +13,8 @@ function scugh () {
     const raa = new Audio(raaghyn[earrooFeysht].sheean);
     let pointRyGheddyn = true;
     focklyn.forEach(w => {
-        w.onmouseup = reihit;
-        w.onmousedown = greim;
+        w.ontouchstart = reihit;
+        w.ontouchend = greim;
     });
     function curFockleStiagh (f) {
         if (sfxGoll) sheeanClick.play();
@@ -46,7 +46,7 @@ function scugh () {
             kiedHuittym = false;
         };
         curFockleStiagh (taghyrt.target);
-        taghyrt.target.onmouseup = "";
+        taghyrt.target.ontouchstart = "";
         saaghFreggyrt.append(taghyrt.target);
     };
     function greim (taghyrt) {
@@ -66,7 +66,7 @@ function scugh () {
                         erBayrney = true;
                         fockleGreimmit.classList.remove("greim");
                         curFockleStiagh(fockleGreimmit);
-                        fockleGreimmit.onmouseup = "";
+                        fockleGreimmit.ontouchend = "";
                         saaghFreggyrt.replaceChild(fockleGreimmit, s);
                         scrysseyGreim();
                     };
@@ -81,8 +81,8 @@ function scugh () {
         const bayrnaghyn = [...document.getElementsByClassName("eddyr-focklyn")];
         bayrnaghyn.forEach(b => b.remove());
     }
-    window.addEventListener("mouseup", () => lughHeese = "");
-    window.addEventListener("mousedown", () => {
+    window.addEventListener("ontouchstart", () => lughHeese = "");
+    window.addEventListener("ontouchend", () => {
         setTimeout(() => {
             if (fockleGreimmit && !erBayrney) {
                 scrysseyGreim();
