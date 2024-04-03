@@ -13,7 +13,7 @@ function scugh () {
     const raa = new Audio(raaghyn[earrooFeysht].sheean);
     let pointRyGheddyn = true;
     focklyn.forEach(w => {
-        w.onpointerup = reihit;
+        w.onclick = reihit;
         w.onpointerdown = greim;
     });
     function curFockleStiagh (f) {
