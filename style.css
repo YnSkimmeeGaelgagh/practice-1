@@ -999,6 +999,7 @@ input:checked + .skirreyder:before {
     color: gainsboro;
     border: none;
     pointer-events: none;
+    touch-action: none;
 }
 
 .kiart {
