@@ -55,7 +55,7 @@ function scugh () {
             const focklynAyn = saaghFreggyrt.children;
             const earrooFocklynAyn = focklynAyn.length;
             taghyrt.target.onpointerup = "";
-            if (lughHeese && earrooFocklynAyn > 0) {
+            if (lughHeese && !fockleGreimmit && earrooFocklynAyn > 0) {
                 [...focklynAyn].forEach(f => f.style.pointerEvents = "none");
                 taghyrt.target.classList.add("greim");
                 fockleGreimmit = taghyrt.target;
