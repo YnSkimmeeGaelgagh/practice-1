@@ -64,7 +64,8 @@ function scugh () {
                     const s = document.createElement("div");
                     s.textContent = "...";
                     s.classList.add("eddyr-focklyn");
-                    s.onclick = () => {
+                    s.onpointerdown = () => {
+                        taghyrt.target.setPointerCapture(taghyrt.pointerId);
                         erBayrney = true;
                         fockleGreimmit.classList.remove("greim");
                         curFockleStiagh(fockleGreimmit);
