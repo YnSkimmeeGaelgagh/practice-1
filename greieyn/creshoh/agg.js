@@ -46,7 +46,7 @@ function loggyrTraa () {
     const shennLoggyr = document.getElementById("loggyr-roie");
     if (shennLoggyr) shennLoggyr.remove();
     if (loggyrRoie > 0) {
-        const kishteyReih = document.getElementById("reih-1");
+        const kishteyReih = document.getElementById("saagh-reighyn");
         saaghMean.insertBefore(saaghLoggyrRoie, kishteyReih);
     };
     agg += brash;
