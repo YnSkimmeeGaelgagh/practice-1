@@ -70,6 +70,9 @@ function scugh () {
                     s.onpointerdown = t => {
                         t.target.setPointerCapture(taghyrt.pointerId);
                         erBayrney = true;
+                        const eb = document.createElement("p");
+                        eb.textContent = erBayrney;
+                        cons.append(eb);
                         fockleGreimmit.classList.remove("greim");
                         curFockleStiagh(fockleGreimmit);
                         const b = document.createElement("p");
@@ -92,10 +95,10 @@ function scugh () {
     }
     function prowGreim () {
         setTimeout(() => {
-            const w = document.createElement("p");
-            w.textContent = "uinnag";
-            cons.append(w);
             if (fockleGreimmit && !erBayrney) {
+                const w = document.createElement("p");
+                w.textContent = "uinnag";
+                cons.append(w);
                 scrysseyGreim();
             };
         }, 50);
