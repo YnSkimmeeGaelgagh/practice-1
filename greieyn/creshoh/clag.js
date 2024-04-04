@@ -1,12 +1,6 @@
 // traa mie dy roshtyn y jerrey = 1:30.
 
 function traa () {
-    const saagh = document.getElementById("saagh");
-    const cons = document.createElement("div");
-    const p = document.createElement("p");
-    p.textContent = "here";
-    cons.append("p");
-    saagh.append("cons");
     let toshiaght = Date.now();
     function caghlaaClag (clouagTraa) {
         requestAnimationFrame(caghlaaClag);
