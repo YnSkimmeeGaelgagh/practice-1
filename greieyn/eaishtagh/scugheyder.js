@@ -9,7 +9,6 @@ function scugh () {
     const sheeanArraghey = new Audio("../../../sheeanyn/arraghey.mp3");
     const kiart = new Audio("../../../sheeanyn/clinck.mp3");
     const neuChiart = new Audio("../../../sheeanyn/neu-chiart.mp3");
-    
     let pointRyGheddyn = true;
     focklyn.forEach(w => w.onpointerdown = greim);
     function curFockleStiagh (f) {
@@ -65,6 +64,7 @@ function scugh () {
                     s.textContent = "...";
                     s.classList.add("eddyr-focklyn");
                     s.onpointerdown = t => {
+                        t.target.setPointerCapture(t.pointerId);
                         erBayrney = true;
                         fockleGreimmit.classList.remove("greim");
                         curFockleStiagh(fockleGreimmit);
