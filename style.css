@@ -8,8 +8,6 @@ body {
     margin: 0;
     height: 100dvh;
     text-align: center;
-    user-select: none;
-    -webkit-user-select: none;
 }
 
 *, *::before, *::after {
@@ -244,7 +242,6 @@ figcaption {
     grid-row: 2;
     align-self: start;
     display: grid;
-    grid-template-rows: 2fr 3fr;
     max-width: var(--lheead);
     justify-items: center;
     align-items: center;
@@ -726,6 +723,8 @@ input:checked + .skirreyder:before {
 #saagh {
     display: grid;
     height: 100%;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 #saagh-stoo-gamman {
