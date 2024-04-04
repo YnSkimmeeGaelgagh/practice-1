@@ -68,7 +68,7 @@ function scugh () {
                     s.textContent = "...";
                     s.classList.add("eddyr-focklyn");
                     s.onpointerdown = t => {
-                        t.target.setPointerCapture(taghyrt.pointerId);
+                        // t.target.setPointerCapture(taghyrt.pointerId);
                         erBayrney = true;
                         const eb = document.createElement("p");
                         eb.textContent = erBayrney;
