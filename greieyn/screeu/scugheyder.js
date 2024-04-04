@@ -67,10 +67,10 @@ function scugh () {
                     const s = document.createElement("div");
                     s.textContent = "...";
                     s.classList.add("eddyr-focklyn");
-                    s.onpointerdown = () => {
+                    s.onpointerdown = t => {
                         s.style.backgroundColor = "green";
                         cons.textContent = "bayrney";
-                        taghyrt.target.setPointerCapture(taghyrt.pointerId);
+                        t.target.setPointerCapture(taghyrt.pointerId);
                         erBayrney = true;
                         fockleGreimmit.classList.remove("greim");
                         curFockleStiagh(fockleGreimmit);
