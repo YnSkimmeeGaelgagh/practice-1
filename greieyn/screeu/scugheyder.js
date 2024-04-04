@@ -68,13 +68,13 @@ function scugh () {
                     s.textContent = "...";
                     s.classList.add("eddyr-focklyn");
                     s.onpointerdown = t => {
-                        const b = document.createElement("p");
-                        b.textContent = "bayrney";
-                        cons.append(b);
                         t.target.setPointerCapture(taghyrt.pointerId);
                         erBayrney = true;
                         fockleGreimmit.classList.remove("greim");
                         curFockleStiagh(fockleGreimmit);
+                        const b = document.createElement("p");
+                        b.textContent = "bayrney";
+                        cons.append(b);
                         saaghFreggyrt.replaceChild(fockleGreimmit, s);
                         scrysseyGreim();
                     };
