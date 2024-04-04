@@ -9,6 +9,7 @@ body {
     height: 100dvh;
     text-align: center;
     user-select: none;
+    -webkit-user-select: none;
 }
 
 *, *::before, *::after {
