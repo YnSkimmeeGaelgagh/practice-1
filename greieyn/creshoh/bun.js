@@ -37,9 +37,11 @@ const earrooFeyshtyn = Object.keys(focklynGamman).length * 4;
                 trogAyrn({red: "div", ennym: "saagh-caslys", cheuSthie: [
                     trogAyrn({red: "img", ennym: "caslys", cheuSthie: focklynGamman[reihyn[0]].caslys})
                 ]}),
-                trogAyrn({red: "button", ennym: "reih-1", cheuSthie: [crammanyn[0]], keint: ["reih-creshoh"], click: clickit}),
-                trogAyrn({red: "button", ennym: "reih-2", cheuSthie: [crammanyn[1]], keint: ["reih-creshoh"], click: clickit}),
-                trogAyrn({red: "button", ennym: "reih-3", cheuSthie: [crammanyn[2]], keint: ["reih-creshoh"], click: clickit})
+                    trogAyrn({red: "div", ennym: "saagh-reighyn", cheuSthie: [
+                    trogAyrn({red: "button", ennym: "reih-1", cheuSthie: [crammanyn[0]], keint: ["reih-creshoh"], click: clickit}),
+                    trogAyrn({red: "button", ennym: "reih-2", cheuSthie: [crammanyn[1]], keint: ["reih-creshoh"], click: clickit}),
+                    trogAyrn({red: "button", ennym: "reih-3", cheuSthie: [crammanyn[2]], keint: ["reih-creshoh"], click: clickit})
+                ]})
             ]})
         ]}),
         trogAyrn({red: "div", ennym: "saagh-dooney", cheuSthie: [
