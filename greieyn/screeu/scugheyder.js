@@ -1,7 +1,4 @@
 function scugh () {
-    const saagh = document.getElementById("saagh");
-    const cons = document.createElement("div");
-    saagh.append(cons);
     let kiedHuittym = true;
     let fockleGreimmit;
     let erBayrney = false;
@@ -68,16 +65,9 @@ function scugh () {
                     s.textContent = "...";
                     s.classList.add("eddyr-focklyn");
                     s.onpointerdown = t => {
-                        // t.target.setPointerCapture(taghyrt.pointerId);
                         erBayrney = true;
-                        const eb = document.createElement("p");
-                        eb.textContent = erBayrney;
-                        cons.append(eb);
                         fockleGreimmit.classList.remove("greim");
                         curFockleStiagh(fockleGreimmit);
-                        const b = document.createElement("p");
-                        b.textContent = "bayrney";
-                        cons.append(b);
                         saaghFreggyrt.replaceChild(fockleGreimmit, s);
                         scrysseyGreim();
                     };
@@ -95,12 +85,7 @@ function scugh () {
     }
     function prowGreim () {
         setTimeout(() => {
-            if (fockleGreimmit && !erBayrney) {
-                const w = document.createElement("p");
-                w.textContent = "uinnag";
-                cons.append(w);
-                scrysseyGreim();
-            };
+            if (fockleGreimmit && !erBayrney) scrysseyGreim();
         }, 50);
     };
     window.onpointerdown = prowGreim;
