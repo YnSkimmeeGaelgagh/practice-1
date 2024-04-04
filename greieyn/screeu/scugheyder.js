@@ -68,8 +68,9 @@ function scugh () {
                     s.textContent = "...";
                     s.classList.add("eddyr-focklyn");
                     s.onpointerdown = t => {
-                        s.style.backgroundColor = "green";
-                        cons.textContent = "bayrney";
+                        const b = document.createElement("p");
+                        b.textContent = "bayrney";
+                        cons.append(b);
                         t.target.setPointerCapture(taghyrt.pointerId);
                         erBayrney = true;
                         fockleGreimmit.classList.remove("greim");
@@ -91,7 +92,9 @@ function scugh () {
     }
     function prowGreim () {
         setTimeout(() => {
-            if (cons.textContent != "bayrney") cons.textContent = "uinnag";
+            const w = document.createElement("p");
+            w.textContent = "uinnag";
+            cons.append(w);
             if (fockleGreimmit && !erBayrney) {
                 scrysseyGreim();
             };
