@@ -8,6 +8,7 @@ body {
     margin: 0;
     height: 100dvh;
     text-align: center;
+    user-select: none;
 }
 
 *, *::before, *::after {
@@ -242,13 +243,23 @@ figcaption {
     grid-row: 2;
     align-self: start;
     display: grid;
+    grid-template-rows: 2fr 3fr;
     max-width: var(--lheead);
     justify-items: center;
     align-items: center;
     text-align: center;
     gap: 1rem;
     width: 100%;
+    height: 100%;
     background-color: white;
+}
+
+#saagh-reighyn {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    align-self: center;
 }
 
 #saagh-bun-duillag {
@@ -723,7 +734,7 @@ input:checked + .skirreyder:before {
     grid-template-rows: 1fr 4fr;
     justify-items: center;
     width: 100%;
-    height: var(--yrjid);
+    height: 100%;
 }
 
 #cleeah {
@@ -749,8 +760,8 @@ input:checked + .skirreyder:before {
 #saagh-caslys {
     display: grid;
     justify-items: center;
+    align-self: center;
     position: relative;
-    margin-bottom: 2rem;
 }
 
 #caslys {
@@ -776,7 +787,6 @@ input:checked + .skirreyder:before {
     color: grey;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    user-select: none;
 }
 
 #saagh-faaue {
@@ -834,7 +844,6 @@ input:checked + .skirreyder:before {
     justify-content: center;
     align-items: center;
     color: grey;
-    user-select: none;
 }
 
 #saagh-freggyrt div, #saagh-focklyn div {
@@ -846,7 +855,6 @@ input:checked + .skirreyder:before {
     padding: 0.5rem 1rem;
     background-color: white;
     border: var(--cheeid-oirr) solid grey;
-    user-select: none;
     border-radius: var(--corneillyn);
 }
 
@@ -858,7 +866,6 @@ input:checked + .skirreyder:before {
     padding: 1rem;
     font-size: 1.1rem;
     background-color: lightblue;
-    user-select: none;
     border-radius: var(--corneillyn);
 }
 
@@ -978,7 +985,6 @@ input:checked + .skirreyder:before {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    user-select: none;
     text-align: center;
     animation: greimmit .6s infinite;
     -webkit-animation: greimmit .6s infinite;
