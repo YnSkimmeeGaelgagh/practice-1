@@ -1,6 +1,5 @@
 function scugh () {
     let kiedHuittym = true;
-    let lughHeese = "";
     let fockleGreimmit;
     let erBayrney = false;
     const saaghFreggyrt = document.getElementById("saagh-freggyrt");
@@ -12,12 +11,7 @@ function scugh () {
     const neuChiart = new Audio("../../../sheeanyn/neu-chiart.mp3");
     const raa = new Audio(raaghyn[earrooFeysht].sheean);
     let pointRyGheddyn = true;
-    focklyn.forEach(w => {
-        // w.onmousedown = greim;
-        w.ontouchstart = greim;
-        // w.onmouseup = reihit;
-        w.ontouchend = reihit;
-    });
+    focklyn.forEach(w => w.onpointerdown = greim);
     function curFockleStiagh (f) {
         if (sfxGoll) sheeanClick.play();
         const cloan = f.cloneNode(true);
@@ -26,10 +20,10 @@ function scugh () {
         cloan.id = f.id + "-cloan";
         cloan.classList.add("cloan");
         saaghFocklyn.replaceChild(cloan, f);
-        f.onclick = () => {
+        f.onpointerdown = () => {
             if (sfxGoll) sheeanArraghey.play();
             f.remove();
-            f.onclick = reihit;
+            f.onpointerdown = greim;
             f.classList.remove("reihit");
             if ([...saaghFreggyrt.childNodes].length == 0) {
                 soieSaaghFreggyrt();
@@ -48,19 +42,21 @@ function scugh () {
             kiedHuittym = false;
         };
         curFockleStiagh (taghyrt.target);
-        // taghyrt.target.onmousedown = "";
-        // taghyrt.target.onmouseup = "";
-        taghyrt.target.ontouchstart = "";
-        taghyrt.target.ontouchend = "";
         saaghFreggyrt.append(taghyrt.target);
     };
     function greim (taghyrt) {
         if (taghyrt.target.parentNode.id == "saagh-freggyrt") return;
-        lughHeese = taghyrt.target;
+        let lughHeese = true;
+        taghyrt.target.setPointerCapture(taghyrt.pointerId);
+        taghyrt.target.onpointerup = () => {
+            lughHeese = false;
+            reihit(taghyrt);
+        };
         setTimeout(() => {
             const focklynAyn = saaghFreggyrt.children;
             const earrooFocklynAyn = focklynAyn.length;
-            if (lughHeese == taghyrt.target && earrooFocklynAyn > 0) {
+            taghyrt.target.onpointerup = "";
+            if (lughHeese && earrooFocklynAyn > 0) {
                 [...focklynAyn].forEach(f => f.style.pointerEvents = "none");
                 taghyrt.target.classList.add("greim");
                 fockleGreimmit = taghyrt.target;
@@ -72,10 +68,6 @@ function scugh () {
                         erBayrney = true;
                         fockleGreimmit.classList.remove("greim");
                         curFockleStiagh(fockleGreimmit);
-                        // fockleGreimmit.onmousedown = "";
-                        // fockleGreimmit.onmouseup = "";
-                        fockleGreimmit.ontouchstart = "";
-                        fockleGreimmit.ontouchend = "";
                         saaghFreggyrt.replaceChild(fockleGreimmit, s);
                         scrysseyGreim();
                     };
@@ -91,8 +83,6 @@ function scugh () {
         const bayrnaghyn = [...document.getElementsByClassName("eddyr-focklyn")];
         bayrnaghyn.forEach(b => b.remove());
     }
-    // window.onmousedown = prowGreim;
-    window.ontouchstart = prowGreim;
     function prowGreim () {
         setTimeout(() => {
             if (fockleGreimmit && !erBayrney) {
@@ -100,9 +90,7 @@ function scugh () {
             };
         }, 50);
     };
-    const scrysseyHeese = () => lughHeese = "";
-    // window.onmouseup = scrysseyHeese;
-    window.ontouchend = scrysseyHeese;
+    window.onpointerdown = prowGreim;
     const crammanFreggyrt = document.getElementById("cramman-freggyrt");
     const cleeah = document.getElementById("cleeah");
     function caghlaaSaagh (daah, farkiaght = 500) {
