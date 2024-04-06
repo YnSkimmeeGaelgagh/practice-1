@@ -2,21 +2,20 @@ function clickit () {
     this.style.pointerEvents = "none";
     if (this.textContent == reihyn[feysht]) {
         if (sfxGoll) {
-            clinck.play();
-            const sheean = new Audio(focklynGamman[reihyn[feysht]].sheean);
-            sheean.play();
+            kiart.play();
+            raaghyn[reihyn[feysht]].sheean.play();
         };
         this.style.backgroundColor = "chartreuse";
         feysht++;
         roie++;
         freayllAgg();
         coEarrooagheyAggNoa(this.textContent, 0, .25);
-        if (feysht == Object.keys(focklynGamman).length) {
+        if (feysht == Object.keys(raaghyn).length) {
             feysht = 0;
             runt++;
             if (runt == 4) {
                 if (kiaullGoll) {
-                    lhoobCreshoh.pause();
+                    lhoob.pause();
                     let kiaullJerrinagh = agg >= 108 ? jerreyMie : jerreyCadjin;
                     kiaullJerrinagh.play();
                 };
@@ -46,10 +45,7 @@ function clickit () {
         };
         setTimeout(caghlaaMean, 500);
     } else {
-        if (sfxGoll) {
-            const neuChiart = new Audio("../../../sheeanyn/neu-chiart.mp3");
-            neuChiart.play();
-        };
+        if (sfxGoll) neuChiart.play();
         if (agg > 0) { 
             agg--;
             roie = 0;
