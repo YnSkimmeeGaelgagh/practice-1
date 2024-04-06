@@ -9,7 +9,7 @@ function gowToshiaght (sk, sfx) {
     localStorage.setItem("foRaad", true);
     sessionStorage.setItem("kiaullGoll", sk.checked);
     kiaullGoll = sessionStorage.getItem("kiaullGoll") == "true" ? true : false;
-    if (kiaullGoll) lhoobThie.play();
+    if (kiaullGoll) lhoob.play();
     sessionStorage.setItem("sfxGoll", sfx.checked);
     sfxGoll = sessionStorage.getItem("sfxGoll") == "true" ? true : false;
     arraghToshiaght();
@@ -26,7 +26,7 @@ if (localStorage.getItem("trooidGamman")) {
     arraghToshiaght();
     caghlaaArdSkirreyderKiaull(sessionStorage.getItem("kiaullGoll") == "true" ? true : false);
     caghlaaArdSkirreyderSFX(skirreyderSFX.checked = sessionStorage.getItem("sfxGoll") == "true" ? true : false);
-    if (kiaullGoll) lhoobThie.play();
+    if (kiaullGoll) lhoob.play();
 }
 else {
     saaghToshiaght.style.visibility = "visible";
