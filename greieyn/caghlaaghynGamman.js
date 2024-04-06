@@ -1,21 +1,26 @@
-const veih = location.pathname;
-const lhoobThie = new Audio(`${veih == "/practice-1/index.html" ? "sheeanyn/lhoob-thie.mp3" : "../../../sheeanyn/lhoob-thie.mp3"}`);
-lhoobThie.loop = true;
-const lhoobScreeu = new Audio(`${veih == "/practice-1/index.html" ? "sheeanyn/lhoob-screeu.mp3" : "../../../sheeanyn/lhoob-screeu.mp3"}`);
-lhoobScreeu.loop = true;
-const lhoobEaishtagh = new Audio(`${veih == "/practice-1/index.html" ? "sheeanyn/lhoob-eaishtagh.mp3" : "../../../sheeanyn/lhoob-eaishtagh.mp3"}`);
-lhoobEaishtagh.loop = true;
-const lhoobCreshoh = new Audio(`${veih == "/practice-1/index.html" ? "sheeanyn/lhoob-creshoh.mp3" : "../../../sheeanyn/lhoob-creshoh.mp3"}`);
-lhoobCreshoh.loop = true;
-const clinck = new Audio(`${veih == "/practice-1/index.html" ? "sheeanyn/clinck.mp3" : "../../../sheeanyn/clinck.mp3"}`);
-const foshley = new Audio(`${veih == "/practice-1/index.html" ? "sheeanyn/foshley.mp3" : "../../../sheeanyn/foshley.mp3"}`);
-const dooney = new Audio(`${veih == "/practice-1/index.html" ? "sheeanyn/dooney.mp3" : "../../../sheeanyn/dooney.mp3"}`);
-const ymHeidey = new Audio(`${veih == "/practice-1/index.html" ? "sheeanyn/ym-heidey.mp3" : "../../../sheeanyn/ym-heidey.mp3"}`);
-const glassBrishey = new Audio(`${veih == "/practice-1/index.html" ? "sheeanyn/glass-brishey.mp3" : "../../../sheeanyn/glass-brishey.mp3"}`);
-const jerreyMie = new Audio(`${veih == "/practice-1/index.html" ? "sheeanyn/jerrey-mie.mp3" : "../../../sheeanyn/jerrey-mie.mp3"}`);
-const jerreyCadjin = new Audio(`${veih == "/practice-1/index.html" ? "sheeanyn/jerrey-cadjin.mp3" : "../../../sheeanyn/jerrey-cadjin.mp3"}`);
 let kiaullGoll = sessionStorage.getItem("kiaullGoll") == "true" ? true : false;
 let sfxGoll = sessionStorage.getItem("sfxGoll") == "true" ? true : false;
+const veih = location.pathname;
+let foshley;
+let dooney;
+let ymHeidey;
+let glassBrishey;
+let clinck;
+let kiart;
+let neuChiart;
+let jerreyMie;
+let jerreyCadjin;
+if (veih == "/practice-1/index.html" && sfxGoll) {
+    foshley = new Audio("sheeanyn/foshley.mp3");
+    dooney = new Audio("sheeanyn/dooney.mp3");
+    ymHeidey = new Audio("sheeanyn/ym-heidey.mp3");
+    glassBrishey = new Audio("sheeanyn/glass-brishey.mp3");
+} else if (veih != "/practice-1/index.html" && sfxGoll) {
+    kiart = new Audio("../../../sheeanyn/clinck.mp3");
+    neuChiart = new Audio("../../../sheeanyn/neu-chiart.mp3");
+    jerreyMie = new Audio("../../../sheeanyn/jerrey-mie.mp3");
+    jerreyCadjin = new Audio("../../../sheeanyn/jerrey-cadjin.mp3");
+}
 let earrooFeysht = 1;
 let agg = 0;
 
