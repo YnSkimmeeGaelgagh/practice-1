@@ -52,6 +52,18 @@ figcaption {
     font-size: 1em;
 }
 
+#screen-laadey {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: var(--doo);
+    color: whitesmoke;
+    z-index: 3;
+}
+
 #logo-toshiaght {
     transform: scale(0);
     width: 30%;
@@ -769,6 +781,15 @@ input:checked + .skirreyder:before {
     grid-row: 1;
     margin-left: auto;
     margin-right: auto;
+}
+
+#caslys-creshoh {
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: auto;
+    margin-right: auto;
+    animation: agg-ec-jerrey 0.5s ease-out;
+    -webkit-animation: agg-ec-jerrey 0.5s ease-out;
 }
 
 #caslys-eaishtagh {
