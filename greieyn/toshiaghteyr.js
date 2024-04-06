@@ -1,21 +1,7 @@
 function gowToshiaght (t, keintGamman) {
-    if (kiaullGoll) {
-        switch (keintGamman) {
-            case "creshoh":
-                lhoobCreshoh.play();
-                traa();
-                break;
-            case "screeu":
-                lhoobScreeu.play();
-                break;
-            case "eaishtagh":
-                lhoobEaishtagh.play();
-                setTimeout(eaishtReesht, 500);
-                break;
-            default:
-                lhoobThie.play();
-        };
-    };
+    if (kiaullGoll) lhoob.play();
+    if (keintGamman == "creshoh") traa();
+    if (keintGamman == "eaishtagh") setTimeout(eaishtReesht, 500);
     saaghToshiaght = document.getElementById("saagh-toshiaght");
     saaghToshiaght.remove();
 };
