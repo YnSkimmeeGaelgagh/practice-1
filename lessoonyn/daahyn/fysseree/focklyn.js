@@ -1,4 +1,4 @@
-const focklynGamman = {
+const raaghyn = {
     "jiarg": {
         caslys: "../caslyssyn/jiarg.webp",
         sheean: "../sheeanyn/jiarg.mp3"
