@@ -2,7 +2,6 @@ const earrooFeyshtyn = Object.keys(raaghyn);
 const mooadys = earrooFeyshtyn.length;
 
 function troggDuillag () {
-    window.scrollTo(0, 0);
     if (earrooFeysht == 1) {
         prowTrooidGamman();
         trogAyrn({paarant: true, red: "div", ennym: "saagh-toshiaght", cheuSthie: [
