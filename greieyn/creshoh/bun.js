@@ -1,6 +1,6 @@
 let feysht = 0;
 let runt = 0;
-const earrooFeyshtyn = Object.keys(focklynGamman).length * 4;
+const earrooFeyshtyn = Object.keys(raaghyn).length * 4;
 
 (function crooDuillag () {
     prowTrooidGamman();
@@ -29,15 +29,15 @@ const earrooFeyshtyn = Object.keys(focklynGamman).length * 4;
                     trogAyrn({red: "span", ennym: "clag-grig", cheuSthie: ["00"]})
                 ]}),
                 trogAyrn({red: "div", ennym: "fys", cheuSthie: [
-                    trogAyrn({red: "div", ennym: "feysht", cheuSthie: ["1/" + (Object.keys(focklynGamman).length * 4)]}),
+                    trogAyrn({red: "div", ennym: "feysht", cheuSthie: ["1/" + (Object.keys(raaghyn).length * 4)]}),
                     trogAyrn({red: "div", ennym: "agg", cheuSthie: ["0"]})
                 ]})
             ]}),
             trogAyrn({red: "div", ennym: "saagh-mean", cheuSthie: [
                 trogAyrn({red: "div", ennym: "saagh-caslys", cheuSthie: [
-                    trogAyrn({red: "img", ennym: "caslys", cheuSthie: focklynGamman[reihyn[0]].caslys})
+                    trogAyrn({red: "img", ennym: "caslys-creshoh"})
                 ]}),
-                    trogAyrn({red: "div", ennym: "saagh-reighyn", cheuSthie: [
+                trogAyrn({red: "div", ennym: "saagh-reighyn", cheuSthie: [
                     trogAyrn({red: "button", ennym: "reih-1", cheuSthie: [crammanyn[0]], keint: ["reih-creshoh"], click: clickit}),
                     trogAyrn({red: "button", ennym: "reih-2", cheuSthie: [crammanyn[1]], keint: ["reih-creshoh"], click: clickit}),
                     trogAyrn({red: "button", ennym: "reih-3", cheuSthie: [crammanyn[2]], keint: ["reih-creshoh"], click: clickit})
@@ -48,4 +48,6 @@ const earrooFeyshtyn = Object.keys(focklynGamman).length * 4;
             trogAyrn({red: "button", ennym: "cramman-dooney", cheuSthie: ["exit game"], click: t => caghlaaDuillag(t, "../../../index.html")})
         ]})
     ]});
+    const caslysCreshoh = document.getElementById("caslys-creshoh");
+    caslysCreshoh.replaceWith(raaghyn[reihyn[0]].caslys);
 })();
