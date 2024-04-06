@@ -2,7 +2,7 @@ let crammanyn = [];
 
 function soieCrammanyn () {
     crammanyn = [];
-    let focklyn = Object.keys(focklynGamman);
+    let focklyn = Object.keys(raaghyn);
     const r = max => Math.floor(Math.random() * max);
     const kiart = r(3);
     focklyn = focklyn.filter(f => f != reihyn[feysht]);
