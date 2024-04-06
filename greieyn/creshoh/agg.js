@@ -70,8 +70,8 @@ function loggyrTraa () {
     const aggNoa = trogAyrn({red: "div", ennym: "agg", cheuSthie: [agg]});
     fys.append(aggNoa);
     const saaghFeysht = document.getElementById("feysht");
-    const coonteyFeysht = 1 + feysht + (runt * Object.keys(focklynGamman).length);
-    saaghFeysht.textContent = coonteyFeysht + "/" + (Object.keys(focklynGamman).length * 4);
+    const coonteyFeysht = 1 + feysht + (runt * Object.keys(raaghyn).length);
+    saaghFeysht.textContent = coonteyFeysht + "/" + (Object.keys(raaghyn).length * 4);
 }
 
 const gowTraaToshiaght = () => traaToshiaght = Date.now();
