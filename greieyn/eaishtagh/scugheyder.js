@@ -7,8 +7,6 @@ function scugh () {
     const focklyn = [...document.getElementsByClassName("fockle")];
     const sheeanClick = new Audio("../../../sheeanyn/click.mp3");
     const sheeanArraghey = new Audio("../../../sheeanyn/arraghey.mp3");
-    const kiart = new Audio("../../../sheeanyn/clinck.mp3");
-    const neuChiart = new Audio("../../../sheeanyn/neu-chiart.mp3");
     let pointRyGheddyn = true;
     focklyn.forEach(w => w.onpointerdown = greim);
     function curFockleStiagh (f) {
