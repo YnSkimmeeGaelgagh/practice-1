@@ -19,7 +19,6 @@ function jerreyGamman () {
     let ayrn = 1;
     for (let i = 0; i < 5; i++) {
         const earroo = Math.round(mooadys * ayrn);
-        // aggyn[i].children[1].textContent = earroo;
         aggyn[i].classList.add(nynAgg(earroo));
         ayrn -= .2;
     }
