@@ -1,6 +1,6 @@
 function jerreyGamman () {
     if (kiaullGoll) {
-        lhoobEaishtagh.pause();
+        lhoob.pause();
         let kiaullJerrinagh = agg > Math.round(mooadys / 2) ? jerreyMie : jerreyCadjin;
         kiaullJerrinagh.play();
     };
