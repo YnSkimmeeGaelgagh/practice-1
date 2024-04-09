@@ -17,4 +17,4 @@ function soieKiaull () {
     }
     lhoob.loop = true;
 }
-if (kiaullGoll) soieKiaull();
+soieKiaull();
