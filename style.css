@@ -817,7 +817,7 @@ input:checked + .skirreyder:before {
     margin-left: auto;
     margin-right: auto;
     padding: 1rem;
-    border: 6px solid transparent;
+    outline: 16px solid transparent;
 }
 
 #greinnaghey {
@@ -1085,11 +1085,49 @@ input:checked + .skirreyder:before {
     pointer-events: none;
 }
 
+.freggyrt-neuchiart {
+    animation: craa .6s ease-out;
+    -webkit-animation: craa .6s ease-out;
+}
+
+@keyframes craa {
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(22.5deg);}
+    40% {transform: rotate(-22.5deg);}
+    60% {transform: rotate(22.5deg);}
+    80% {transform: rotate(-22.5deg);}
+    100% {transform: rotate(0deg);}
+}
+
 .kiart {
     animation: freggyrt-kiart 2s ease-in-out;
     animation-fill-mode: forwards;
     -webkit-animation: freggyrt-kiart 2s ease-in-out;
     -webkit-animation-fill-mode: forwards;
+}
+
+.fockle-kiart {
+    background-color: #B3D334;
+    animation: gaase-kiart 0.25s ease-out;
+    -webkit-animation: gaase-kiart 0.25s ease-out;
+}
+
+@keyframes gaase-kiart {
+    0% {transform: scale(1);}
+    60% {transform: scale(1.2);}
+    100% {transform: scale(1);}
+}
+
+.fockle-neuchiart {
+    color: white;
+    background-color: crimson;
+    animation: chyndaa-neuchiart .6s ease-out;
+    -webkit-animation: chyndaa-neuchiart .6s ease-out;
+}
+
+@keyframes chyndaa-neuchiart {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(720deg);}
 }
 
 .gaase-screeyn {
