@@ -1,6 +1,6 @@
 const raaghyn = {
     1: {
-        baarle: "Are you sad.",
+        baarle: "Are you sad?",
         gaelg: "Vel oo trimshagh ?",
         sheean: "../sheeanyn/ennaghtyn-eaishtagh-1.mp3",
         focklyn: ["vel oo?", "trimshagh"]
