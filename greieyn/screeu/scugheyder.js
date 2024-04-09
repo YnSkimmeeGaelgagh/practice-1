@@ -173,8 +173,8 @@ function scugh () {
                     saaghCaslys.append(saaghRollageHoshtal);
                 }
             };
-            let farkiaght = sfxGoll ? raaghyn[earrooFeysht].sheean.duration * 1000 : 500;
             if (sfxGoll) raaghyn[earrooFeysht].sheean.play();
+            let farkiaght = sfxGoll ? raaghyn[earrooFeysht].sheean.duration * 1000 : 500;
             if (pointRyGheddyn) {
                 agg++;
                 raaghyn[earrooFeysht].focklyn.forEach(f => coEarrooagheyAggNoa(f, 1, 1));
