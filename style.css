@@ -68,27 +68,49 @@ figcaption {
 }
 
 .rollage-laadey {
+    display: grid;
     width: 25px;
     height: 25px;
     position: absolute;
     margin: 25px;
+}
+
+.rollage-cooill, .rollage-beealloo {
+    grid-row: 1;
+    grid-column: 1;
+    align-self: center;
+    justify-self: center;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%,  
     50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.rollage-cooill {
+    width: 100%;
+    height: 100%;
+    background-color: var(--doo);
+}
+
+.rollage-beealloo {
+    width: 70%;
+    height: 70%;
+    z-index: 1;
 }
 
 #rollage-laadey-1 {
     top: 0;
     left: 0;
-    background-color: #40BBEC;
     offset-path: path("M -60 -20 q 75 -150 160 0");
     animation: rollage-laadey 2s ease-in-out alternate infinite;
     -webkit-animation: rollage-laadey 2s ease-in-out alternate infinite;
 }
 
+#rollage-laadey-1 .rollage-beealloo {
+    background-color: #40BBEC;
+}
+
 #rollage-laadey-2 {
     top: 0;
     left: -30px;
-    background-color: #B3D334;
     offset-path: path("M -60 -20 q 75 -150 160 0");
     animation: rollage-laadey 1.5s ease-in-out alternate infinite;
     animation-delay: 1s;
@@ -96,20 +118,20 @@ figcaption {
     -webkit-animation-delay: 1s;
 }
 
+#rollage-laadey-2 .rollage-beealloo {
+    background-color: #B3D334;
+}
+
 #rollage-laadey-3 {
     top: 0;
     left: 30px;
-    background-color: #F89F7B;
     offset-path: path("M -150 -20 q 100 -260 250 0");
     animation: rollage-laadey 3s ease-in-out alternate-reverse infinite;
     -webkit-animation: rollage-laadey 3s ease-in-out alternate-reverse infinite;
 }
-#rollage-laadey-3 {
-    top: 0;
-    left: 30px;
-    offset-path: path("M -150 -20 q 100 -260 250 0");
-    animation: rollage-laadey 3s ease-in-out alternate-reverse infinite;
-    -webkit-animation: rollage-laadey 3s ease-in-out alternate-reverse infinite;
+
+#rollage-laadey-3 .rollage-beealloo {
+    background-color: #F89F7B;
 }
 
 @keyframes rollage-laadey {
