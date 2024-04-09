@@ -5,4 +5,5 @@ function prowTrooidGamman () {
     localStorage.removeItem("kiaullGoll");
     sessionStorage.setItem("sfxGoll", localStorage.getItem("sfxGoll"));
     localStorage.removeItem("sfxGoll");
+    return sessionStorage.getItem("trooidGamman");
 }
