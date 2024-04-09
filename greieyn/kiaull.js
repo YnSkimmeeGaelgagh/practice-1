@@ -2,16 +2,14 @@ let lhoob;
 
 function soieKiaull () {
     const veih = location.pathname;
-    const lI = veih.lastIndexOf("/");
-    const cour = veih.substring(lI);
-    switch (cour) {
-        case "/creshoh.html":
+    switch (true) {
+        case (veih.endsWith("creshoh.html")):
             lhoob = new Audio("../../../sheeanyn/lhoob-creshoh.mp3");
             break;
-        case "/screeu.html":
+        case (veih.endsWith("screeu.html")):
             lhoob = new Audio("../../../sheeanyn/lhoob-screeu.mp3");
             break;
-        case "/eaishtagh.html":
+        case (veih.endsWith("eaishtagh.html")):
             lhoob = new Audio("../../../sheeanyn/lhoob-eaishtagh.mp3");
             break;
         default:
