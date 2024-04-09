@@ -5,6 +5,7 @@ function trogAyrn (mynphointyn) {
     if (mynphointyn.ennym) ayrn.id = mynphointyn.ennym;
     if (mynphointyn.keint) mynphointyn.keint.forEach(k => ayrn.classList.add(k));
     if (mynphointyn.click) ayrn.onclick = mynphointyn.click;
+    if (mynphointyn.caghlaa) ayrn.onchange = mynphointyn.caghlaa;
     if (mynphointyn.baare) ayrn.style.top = mynphointyn.baare;
     if (mynphointyn.hoshtal) ayrn.style.left = mynphointyn.hoshtal;
     if (mynphointyn.yesh) ayrn.style.right = mynphointyn.yesh;
