@@ -3,13 +3,26 @@ const mooadys = earrooFeyshtyn.length;
 
 function troggDuillag () {
     if (earrooFeysht == 1) {
-        prowTrooidGamman();
+        const tG = prowTrooidGamman();
+        if (tG == "null") {
+            sessionStorage.setItem("kiaullGoll", "true");
+            kiaullGoll = true;
+        };
         trogAyrn({paarant: true, red: "div", ennym: "saagh-toshiaght", cheuSthie: [
             trogAyrn({red: "div", ennym: "coyrle-toshiaght", cheuSthie: [
                 "Listen to the recording then choose word blocks to write what you hear!",
                 sfxGoll ? [] : trogAyrn({red: "div", ennym: "raueSFX", cheuSthie: ["(Note: You need to have sound effects turned on to play this game. They'll be turned on automatically when you start the game.)"]}),
                 trogAyrn({red: "button", ennym: "cramman-toshiaght", cheuSthie: ["ok"], keint: ["reih"], click: t => gowToshiaght(t, "eaishtagh")}),
-                trogAyrn({red: "button", ennym: "cramman-faagail", cheuSthie: ["exit game"], keint: ["reih", "cramman-faagail"], click: t => caghlaaDuillag(t, "../../../index.html")})
+                trogAyrn({red: "button", ennym: "cramman-faagail", cheuSthie: ["exit game"], keint: ["reih", "cramman-faagail"], click: t => caghlaaDuillag(t, "../../../index.html")}),
+                trogAyrn({red: "div", ennym: "saagh-corragyn", cheuSthie: [
+                    trogAyrn({red: "div", ennym: "saagh-corrag-kiaull", keint: ["saagh-corrag"], cheuSthie: [
+                        trogAyrn({red: "div", ennym: "lipaid-kiaull", keint: ["lipaid"], cheuSthie: ["music"]}),
+                        trogAyrn({red: "label", ennym: "corrag-kiaull", keint: ["corrag"], cheuSthie: [
+                            trogAyrn({red: "input", ennym: "skirreyder-kiaull", sorch: "checkbox", cowrit: true, caghlaa: t => caghlaaKiaull(t)}),
+                            trogAyrn({red: "span", ennym: "far-skirreyder-kiaull", keint: ["skirreyder"]})
+                        ]})
+                    ]})
+                ], taishbynys: `${tG == "null" ? "block" : "none"}`})
             ]})
         ], leayrid: "visible"});
         let ayrn = 1;
@@ -49,6 +62,7 @@ function troggDuillag () {
         ]});
     }
     else eaishtReesht();
+    sessionStorage.setItem("sfxGoll", "true");
     sfxGoll = true;
     soieSaaghFreggyrt();
     focklyn();
