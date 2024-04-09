@@ -62,8 +62,6 @@ function troggDuillag () {
         ]});
     }
     else eaishtReesht();
-    sessionStorage.setItem("sfxGoll", "true");
-    sfxGoll = true;
     soieSaaghFreggyrt();
     focklyn();
     scugh();
