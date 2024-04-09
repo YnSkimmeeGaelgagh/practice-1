@@ -89,14 +89,11 @@ function scugh () {
     window.onpointerdown = prowGreim;
     const crammanFreggyrt = document.getElementById("cramman-freggyrt");
     const cleeah = document.getElementById("cleeah");
+    const saagh = document.getElementById("saagh");
     function caghlaaSaagh (daah, farkiaght = 500) {
-        cleeah.style.borderColor = daah;
+        cleeah.style.outlineColor = daah;
         crammanFreggyrt.style.backgroundColor = daah;
         if (daah == "crimson") crammanFreggyrt.style.color = "white";
-        else {
-            const focklynFreggyrt = [...document.getElementsByClassName("reihit")];
-            focklynFreggyrt.forEach(f => f.style.backgroundColor = daah);
-        }
         setTimeout(() => {
             if (earrooFeysht - 1 == Object.keys(raaghyn).length) {
                 jerreyGamman();
@@ -105,16 +102,57 @@ function scugh () {
             crammanFreggyrt.classList.remove("cramman-reihit");
             crammanFreggyrt.style.backgroundColor = "lightblue";
             crammanFreggyrt.style.color = "black";
-            cleeah.style.borderColor = "transparent";
-            if (daah == "chartreuse") troggDuillag();
+            cleeah.style.outlineColor = "transparent";
+            if (daah == "#B3D334") troggDuillag();
         }, farkiaght);
     }
     crammanFreggyrt.onclick = t => {
-        const curStiagh = [...saaghFreggyrt.children].map(c => c.textContent).join(" ");
+        const arrCurStiagh = [...saaghFreggyrt.children].map(c => c.textContent);
+        const curStiagh = arrCurStiagh.join(" ");
         const freggyrt = raaghyn[earrooFeysht].gaelg;
-        const freggyrtElley = raaghyn[earrooFeysht].gaelgB;
         crammanFreggyrt.classList.add("cramman-reihit");
-        if (curStiagh == freggyrt || curStiagh == freggyrtElley || curStiagh.length == 0) {
+        const arrFreggyrtKiart = freggyrt.split(" ");
+        function prowFreggyrt () {
+            if (arrCurStiagh.length == 0) {
+                if (sfxGoll) neuChiart.play();
+                freggyrtNeuChiart();
+                return;
+            };
+            saaghFreggyrt.style.pointerEvents = "none";
+            let i = 0;
+            const nahReggyrt = () => {
+                if (arrCurStiagh[i] == arrFreggyrtKiart[i]) {
+                    if (sfxGoll) kiart.play();
+                    saaghFreggyrt.children[i].classList.add("fockle-kiart");
+                    if (i < arrCurStiagh.length - 1) setTimeout(nahReggyrt, 500);
+                    else {
+                        if (freggyrt == curStiagh) freggyrtKiart();
+                        else {
+                            freggyrtNeuChiart();
+                            setTimeout(() => {
+                                [...saaghFreggyrt.children].forEach(c => c.classList.remove("fockle-kiart"));
+                                saaghFreggyrt.style.pointerEvents = "all";
+                            }, 500);
+                        };
+                        return;
+                    };
+                    i++;
+                }
+                else {
+                    if (sfxGoll) neuChiart.play();
+                        saaghFreggyrt.children[i].classList.add("fockle-neuchiart");
+                        freggyrtNeuChiart();
+                        setTimeout(() =>{
+                            [...saaghFreggyrt.children].forEach(c => c.classList.remove("fockle-kiart", "fockle-neuchiart"));
+                            saaghFreggyrt.style.pointerEvents = "all";
+                    }, 500);
+                    return;
+                }
+            }
+            nahReggyrt();
+        }
+        prowFreggyrt();
+        function freggyrtKiart () {
             const caslys = document.getElementById("caslys");
             caslys.classList.add("kiart");
             for (let i = 0; i < 6; i++) {
@@ -136,22 +174,20 @@ function scugh () {
                 }
             };
             let farkiaght = sfxGoll ? raaghyn[earrooFeysht].sheean.duration * 1000 : 500;
-            if (sfxGoll) {
-                kiart.play();
-                raaghyn[earrooFeysht].sheean.play();
-            }
+            if (sfxGoll) raaghyn[earrooFeysht].sheean.play();
             if (pointRyGheddyn) {
                 agg++;
                 raaghyn[earrooFeysht].focklyn.forEach(f => coEarrooagheyAggNoa(f, 1, 1));
             };
             earrooFeysht++;
             kiedHuittym = true;
-            caghlaaSaagh("chartreuse", farkiaght);
+            caghlaaSaagh("#B3D334", farkiaght);
         }
-        else {
+        function freggyrtNeuChiart () {
+            saagh.classList.add("freggyrt-neuchiart");
+            Promise.all(saagh.getAnimations().map(a => a.finished)).then(() => saagh.classList.remove("freggyrt-neuchiart"));
             pointRyGheddyn = false;
-            if (sfxGoll) neuChiart.play();
             caghlaaSaagh("crimson");
-        }
+        };
     }
 };
