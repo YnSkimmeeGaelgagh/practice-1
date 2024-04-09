@@ -21,7 +21,18 @@ function focklyn () {
     const rFocklynBeggey = rFocklyn.map(f => f.toLowerCase());
     while (focklynElley.length < 4) {
         const r = reihR(coipFocklynYnsit);
-        if (focklynElley.includes(coipFocklynYnsit[r]) || rFocklynBeggey.includes(coipFocklynYnsit[r].toLowerCase())) continue;
+        if (
+            focklynElley.includes(coipFocklynYnsit[r])
+            || rFocklynBeggey.includes(coipFocklynYnsit[r])
+            || coipFocklynYnsit[r] == "y" && rFocklynBeggey.includes("yn")
+            || coipFocklynYnsit[r] == "yn" && rFocklynBeggey.includes("yn")
+            || coipFocklynYnsit[r] == "y" && rFocklynBeggey.includes("y")
+            || coipFocklynYnsit[r] == "yn" && rFocklynBeggey.includes("y")
+            || coipFocklynYnsit[r] == "y" && rFocklynBeggey.includes("ta'n")
+            || coipFocklynYnsit[r] == "yn" && rFocklynBeggey.includes("ta'n")
+            || coipFocklynYnsit[r] == "y" && rFocklynBeggey.includes("ta")
+            || coipFocklynYnsit[r] == "yn" && rFocklynBeggey.includes("ta")
+        ) continue;
         focklynElley.push(coipFocklynYnsit[r]);
         coipFocklynYnsit.splice(r, 1);
     };
