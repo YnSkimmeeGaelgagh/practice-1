@@ -43,16 +43,22 @@ function scugh () {
     };
     function greim (taghyrt) {
         if (taghyrt.target.parentNode.id == "saagh-freggyrt") return;
+        pointeryn.push(taghyrt.pointerId);
+        if (pointeryn.length > 1) return;
         let lughHeese = true;
         taghyrt.target.setPointerCapture(taghyrt.pointerId);
         taghyrt.target.onpointerup = () => {
             lughHeese = false;
+            pointeryn.splice(pointeryn.indexOf(taghyrt.pointerId), 1);
             reihit(taghyrt);
         };
         setTimeout(() => {
             const focklynAyn = saaghFreggyrt.children;
             const earrooFocklynAyn = focklynAyn.length;
-            taghyrt.target.onpointerup = "";
+            taghyrt.target.onpointerup = () => {
+                lughHeese = false;
+                pointeryn.splice(pointeryn.indexOf(taghyrt.pointerId), 1);
+            };
             if (lughHeese && !fockleGreimmit && earrooFocklynAyn > 0) {
                 [...focklynAyn].forEach(f => f.style.pointerEvents = "none");
                 taghyrt.target.classList.add("greim");
