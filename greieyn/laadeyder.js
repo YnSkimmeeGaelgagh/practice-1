@@ -7,10 +7,8 @@
             c.src = raaghyn[raa].caslys;
             raaghyn[raa].caslys = c;
         };
-        if (sfxGoll || veih.endsWith("eaishtagh.html")) {
-            const s = new Audio(raaghyn[raa].sheean);
-            raaghyn[raa].sheean = s;
-        };
+        const s = new Audio(raaghyn[raa].sheean);
+        raaghyn[raa].sheean = s;
     };
     screenLaadey = document.getElementById("screen-laadey");
     document.body.onload = () => screenLaadey.remove();
