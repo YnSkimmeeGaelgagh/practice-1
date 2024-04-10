@@ -46,6 +46,8 @@ function scugh () {
     function greim (taghyrt) {
         if (taghyrt.target.parentNode.id == "saagh-freggyrt") return;
         pointeryn.push(taghyrt.pointerId);
+        const cons = document.getElementById("console");
+        cons.textContent = pointeryn;
         if (pointeryn.length > 1) return;
         let lughHeese = true;
         taghyrt.target.setPointerCapture(taghyrt.pointerId);
