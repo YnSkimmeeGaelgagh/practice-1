@@ -65,6 +65,7 @@ function scugh () {
                 pointeryn.splice(pointeryn.indexOf(taghyrt.pointerId), 1);
                 cons.textContent = cons.textContent +  " seose: " + taghyrt.pointerId;
             };
+            cons.textContent += earrooFocklynAyn;
             if (earrooFocklynAyn == 0) return;
             else if (lughHeese && !fockleGreimmit) {
                 [...focklynAyn].forEach(f => f.style.pointerEvents = "none");
