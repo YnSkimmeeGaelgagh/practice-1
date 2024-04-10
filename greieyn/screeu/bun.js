@@ -2,11 +2,11 @@ const earrooFeyshtyn = Object.keys(raaghyn);
 const mooadys = earrooFeyshtyn.length;
 
 function troggDuillag () {
-    caghlaaKiaull = t => {
+    const caghlaaKiaull = t => {
         sessionStorage.setItem("kiaullGoll", t.target.checked);
         kiaullGoll = sessionStorage.getItem("kiaullGoll") == "true" ? true : false;
     };
-    caghlaaSFX = t => {
+    const caghlaaSFX = t => {
         sessionStorage.setItem("sfxGoll", t.target.checked);
         sfxGoll = sessionStorage.getItem("sfxGoll") == "true" ? true : false;
     };
