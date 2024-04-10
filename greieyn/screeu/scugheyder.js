@@ -56,6 +56,7 @@ function scugh () {
             pointeryn.splice(pointeryn.indexOf(taghyrt.pointerId), 1);
             reihit(taghyrt);
         };
+        taghyrt.target.onpointercancel = () => cons.textContent += " cancelled";
         setTimeout(() => {
             cons.textContent = cons.textContent + taghyrt.pointerId + " traa jeant";
             const focklynAyn = saaghFreggyrt.children;
