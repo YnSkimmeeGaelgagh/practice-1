@@ -57,6 +57,7 @@ function scugh () {
             reihit(taghyrt);
         };
         setTimeout(() => {
+            cons.textContent = cons.textContent + taghyrt.pointerId + " traa jeant";
             const focklynAyn = saaghFreggyrt.children;
             const earrooFocklynAyn = focklynAyn.length;
             taghyrt.target.onpointerup = () => {
