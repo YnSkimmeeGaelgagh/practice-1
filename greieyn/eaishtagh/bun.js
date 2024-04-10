@@ -2,6 +2,10 @@ const earrooFeyshtyn = Object.keys(raaghyn);
 const mooadys = earrooFeyshtyn.length;
 
 function troggDuillag () {
+    const caghlaaKiaull = t => {
+        sessionStorage.setItem("kiaullGoll", t.target.checked);
+        kiaullGoll = sessionStorage.getItem("kiaullGoll") == "true" ? true : false;
+    };
     if (earrooFeysht == 1) {
         const tG = prowTrooidGamman();
         if (tG == "null") {
