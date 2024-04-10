@@ -62,8 +62,10 @@ function scugh () {
             taghyrt.target.onpointerup = () => {
                 lughHeese = false;
                 pointeryn.splice(pointeryn.indexOf(taghyrt.pointerId), 1);
+                cons.textContent = cons.textContent +  " seose: " + taghyrt.pointerId;
             };
-            if (lughHeese && !fockleGreimmit && earrooFocklynAyn > 0) {
+            if (earrooFocklynAyn == 0) return;
+            else if (lughHeese && !fockleGreimmit) {
                 [...focklynAyn].forEach(f => f.style.pointerEvents = "none");
                 taghyrt.target.classList.add("greim");
                 fockleGreimmit = taghyrt.target;
