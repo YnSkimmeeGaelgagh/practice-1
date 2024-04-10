@@ -1,3 +1,5 @@
+let pointeryn = [];
+
 function scugh () {
     let kiedHuittym = true;
     let fockleGreimmit;
