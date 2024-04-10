@@ -3,7 +3,21 @@ let runt = 0;
 const earrooFeyshtyn = Object.keys(raaghyn).length * 4;
 
 (function crooDuillag () {
-    prowTrooidGamman();
+    const caghlaaKiaull = t => {
+        sessionStorage.setItem("kiaullGoll", t.target.checked);
+        kiaullGoll = sessionStorage.getItem("kiaullGoll") == "true" ? true : false;
+    };
+    const caghlaaSFX = t => {
+        sessionStorage.setItem("sfxGoll", t.target.checked);
+        sfxGoll = sessionStorage.getItem("sfxGoll") == "true" ? true : false;
+    };
+    const tG = prowTrooidGamman();
+    if (tG == "null") {
+        sessionStorage.setItem("kiaullGoll", "true");
+        kiaullGoll = true;
+        sessionStorage.setItem("sfxGoll", "true");
+        sfxGoll = true;
+    };
     soieReihyn();
     soieCrammanyn();
     troggJerrey([
@@ -17,7 +31,23 @@ const earrooFeyshtyn = Object.keys(raaghyn).length * 4;
         trogAyrn({red: "div", ennym: "coyrle-toshiaght", cheuSthie: [
             "Click the word that matches the picture!",
             trogAyrn({red: "button", ennym: "cramman-toshiaght", cheuSthie: ["ok"], keint: ["reih"], click: t => gowToshiaght(t, "creshoh")}),
-            trogAyrn({red: "button", ennym: "cramman-faagail", cheuSthie: ["exit game"], keint: ["reih", "cramman-faagail"], click: t => caghlaaDuillag(t, "../../../index.html")})
+            trogAyrn({red: "button", ennym: "cramman-faagail", cheuSthie: ["exit game"], keint: ["reih", "cramman-faagail"], click: t => caghlaaDuillag(t, "../../../index.html")}),
+            trogAyrn({red: "div", ennym: "saagh-corragyn", cheuSthie: [
+                trogAyrn({red: "div", ennym: "saagh-corrag-kiaull", keint: ["saagh-corrag"], cheuSthie: [
+                    trogAyrn({red: "div", ennym: "lipaid-kiaull", keint: ["lipaid"], cheuSthie: ["music"]}),
+                    trogAyrn({red: "label", ennym: "corrag-kiaull", keint: ["corrag"], cheuSthie: [
+                        trogAyrn({red: "input", ennym: "skirreyder-kiaull", sorch: "checkbox", cowrit: true, caghlaa: t => caghlaaKiaull(t)}),
+                        trogAyrn({red: "span", ennym: "far-skirreyder-kiaull", keint: ["skirreyder"]})
+                    ]})
+                ]}),
+                trogAyrn({red: "div", ennym: "saagh-corrag-sfx", keint: ["saagh-corrag"], cheuSthie: [
+                    trogAyrn({red: "div", ennym: "lipaid-sfx", keint: ["lipaid"], cheuSthie: ["sfx"]}),
+                    trogAyrn({red: "label", ennym: "corrag-sfx", keint: ["corrag"], cheuSthie: [
+                        trogAyrn({red: "input", ennym: "skirreyder-sfx", sorch: "checkbox", cowrit: true, caghlaa: t => caghlaaSFX(t)}),
+                        trogAyrn({red: "span", ennym: "far-skirreyder-sfx", keint: ["skirreyder"]})
+                    ]})
+                ]})
+            ], taishbynys: `${tG == "null" ? "block" : "none"}`})
         ]})
     ], leayrid: "visible"});
     trogAyrn({paarant: true, red: "div", ennym: "saagh", cheuSthie: [
