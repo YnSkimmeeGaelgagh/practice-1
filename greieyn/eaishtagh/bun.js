@@ -7,14 +7,21 @@ function troggDuillag () {
         kiaullGoll = sessionStorage.getItem("kiaullGoll") == "true" ? true : false;
     };
     if (earrooFeysht == 1) {
+        document.body.style.overflow = "hidden";
         const tG = prowTrooidGamman();
         if (tG == "null") {
             sessionStorage.setItem("kiaullGoll", "true");
             kiaullGoll = true;
+            sessionStorage.setItem("sfxGoll", "true");
+            sfxGoll = true;
         };
         trogAyrn({paarant: true, red: "div", ennym: "saagh-toshiaght", cheuSthie: [
             trogAyrn({red: "div", ennym: "coyrle-toshiaght", cheuSthie: [
-                "Listen to the recording then choose word blocks to write what you hear!",
+                trogAyrn({red: "p", cheuSthie: ["Listen to the Manx sentence then choose word blocks to write what you hear!"]}),
+                trogAyrn({red: "p", cheuSthie: ["If you miss a word, hold down on a word block until it turns orange"]}),
+                trogAyrn({red: "div", cheuSthie: ["example"], keint: ["greim-sampleyr"]}),
+                trogAyrn({red: "p", cheuSthie: ["then click in the space you'd like to place it."]}),
+                trogAyrn({red: "p", cheuSthie: ["Aigh vie!"]}),
                 sfxGoll ? [] : trogAyrn({red: "div", ennym: "raueSFX", cheuSthie: ["(Note: You need to have sound effects turned on to play this game. They'll be turned on automatically when you start the game.)"]}),
                 trogAyrn({red: "button", ennym: "cramman-toshiaght", cheuSthie: ["ok"], keint: ["reih"], click: t => gowToshiaght(t, "eaishtagh")}),
                 trogAyrn({red: "button", ennym: "cramman-faagail", cheuSthie: ["exit game"], keint: ["reih", "cramman-faagail"], click: t => caghlaaDuillag(t, "../../../index.html")}),
