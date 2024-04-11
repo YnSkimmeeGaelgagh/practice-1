@@ -65,8 +65,7 @@ function troggDuillag () {
             ]}),
             trogAyrn({red: "div", ennym: "saagh-dooney", cheuSthie: [
                 trogAyrn({red: "button", ennym: "cramman-dooney", cheuSthie: ["exit game"], click: t => caghlaaDuillag(t, "../../../index.html")})
-            ]}),
-            trogAyrn({red: "div", ennym: "console"})
+            ]})
         ]})
     };
     soieSaaghFreggyrt();
