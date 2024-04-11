@@ -54,7 +54,7 @@ const focklynRyYnsagh = {
         ["caashey", "cheese", [0, 0, 0]],
         ["spollagyn", "chips", [0, 0, 0]],
         ["eeast", "fish", [0, 0, 0]],
-        ["noiridyn", "oranges", [0, 0, 0]],
+        ["oohyn", "eggs", [0, 0, 0]],
         ["pronnagyn", "sausages", [0, 0, 0]],
         ["lossreeyn", "vegetables", [0, 0, 0]]
     ],
