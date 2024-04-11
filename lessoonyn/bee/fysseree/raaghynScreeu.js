@@ -49,11 +49,11 @@ const raaghyn = {
         focklyn: ["pronnagyn"]
     },
     8: {
-        baarle: "Are you nine years old? Do you like oranges? I like oranges.",
-        gaelg: "Vel oo nuy bleeany d'eash ? Laik lhiat noiridyn ? S'laik lhiam noiridyn .",
-        caslys: "../caslyssyn/noiridyn.webp",
+        baarle: "Are you nine years old? Do you like eggs? Are you tired?",
+        gaelg: "Vel oo nuy bleeany d'eash ? Laik lhiat oohyn ? Vel oo skee ?",
+        caslys: "../caslyssyn/oohyn.webp",
         sheean: "../sheeanyn/raaghyn-screeu-8.mp3",
-        focklyn: ["noiridyn"]
+        focklyn: ["oohyn"]
     },
     9: {
         baarle: "I like apples. I don't like bread. I live in Ramsey.",
