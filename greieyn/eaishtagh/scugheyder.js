@@ -49,22 +49,29 @@ function scugh () {
         if (pointeryn.length > 1) return;
         let lughHeese = true;
         taghyrt.target.setPointerCapture(taghyrt.pointerId);
+        const ynnydPointer = pointeryn.indexOf(taghyrt.pointerId);
         taghyrt.target.onpointerup = () => {
             lughHeese = false;
-            pointeryn.splice(pointeryn.indexOf(taghyrt.pointerId), 1);
+            pointeryn.splice(ynnydPointer, 1);
             reihit(taghyrt);
         };
+        taghyrt.target.onpointercancel = () => {
+            lughHeese = false;
+            pointeryn.splice(ynnydPointer, 1);
+        };
+        taghyrt.target.ondragstart = () => false;
         setTimeout(() => {
             const focklynAyn = saaghFreggyrt.children;
             const earrooFocklynAyn = focklynAyn.length;
             taghyrt.target.onpointerup = () => {
                 lughHeese = false;
-                pointeryn.splice(pointeryn.indexOf(taghyrt.pointerId), 1);
+                pointeryn.splice(ynnydPointer, 1);
             };
-            if (lughHeese && !fockleGreimmit && earrooFocklynAyn > 0) {
+            if (earrooFocklynAyn == 0) return;
+            else if (lughHeese && !fockleGreimmit) {
                 [...focklynAyn].forEach(f => f.style.pointerEvents = "none");
-                taghyrt.target.classList.add("greim");
                 fockleGreimmit = taghyrt.target;
+                fockleGreimmit.classList.add("greim");
                 for (let i = 0; i < earrooFocklynAyn * 2; i += 2) {
                     const s = document.createElement("div");
                     s.textContent = "...";
@@ -86,6 +93,7 @@ function scugh () {
         [...saaghFreggyrt.children].forEach(f => f.style.pointerEvents = "all");
         fockleGreimmit.classList.remove("greim");
         fockleGreimmit = null;
+        erBayrney = false;
         const bayrnaghyn = [...document.getElementsByClassName("eddyr-focklyn")];
         bayrnaghyn.forEach(b => b.remove());
     }
@@ -98,7 +106,7 @@ function scugh () {
     const crammanFreggyrt = document.getElementById("cramman-freggyrt");
     const cleeah = document.getElementById("cleeah");
     const saagh = document.getElementById("saagh");
-    function caghlaaSaagh (daah, farkiaght = 2000) {
+    function caghlaaSaagh (daah, farkiaght = 500) {
         cleeah.style.outlineColor = daah;
         crammanFreggyrt.style.backgroundColor = daah;
         if (daah == "crimson") crammanFreggyrt.style.color = "white";
@@ -111,6 +119,10 @@ function scugh () {
             crammanFreggyrt.style.backgroundColor = "lightblue";
             crammanFreggyrt.style.color = "black";
             cleeah.style.outlineColor = "transparent";
+            [...saaghFreggyrt.children].forEach(c => {
+                c.style.pointerEvents = "all";
+                c.classList.remove("fockle-kiart", "fockle-neuchiart");
+            });
             if (daah == "#B3D334") troggDuillag();
         }, farkiaght);
     }
@@ -126,34 +138,23 @@ function scugh () {
                 freggyrtNeuChiart();
                 return;
             };
-            saaghFreggyrt.style.pointerEvents = "none";
+            [...saaghFreggyrt.children].forEach(f => f.style.pointerEvents = "none");
             let i = 0;
             const nahReggyrt = () => {
                 if (arrCurStiagh[i] == arrFreggyrtKiart[i]) {
-                    kiart.play();
+                    if (sfxGoll) fockleKiart.play();
                     saaghFreggyrt.children[i].classList.add("fockle-kiart");
-                    if (i < arrCurStiagh.length - 1) setTimeout(nahReggyrt, 500);
+                    if (i < arrCurStiagh.length - 1) setTimeout(nahReggyrt, fockleKiart.duration * 2000);
                     else {
                         if (freggyrt == curStiagh) freggyrtKiart();
-                        else {
-                            freggyrtNeuChiart();
-                            setTimeout(() => {
-                                [...saaghFreggyrt.children].forEach(c => c.classList.remove("fockle-kiart"));
-                                saaghFreggyrt.style.pointerEvents = "all";
-                            }, 500);
-                        };
+                        else freggyrtNeuChiart();
                         return;
                     };
                     i++;
                 }
                 else {
-                    neuChiart.play();
-                        saaghFreggyrt.children[i].classList.add("fockle-neuchiart");
-                        freggyrtNeuChiart();
-                        setTimeout(() =>{
-                            [...saaghFreggyrt.children].forEach(c => c.classList.remove("fockle-kiart", "fockle-neuchiart"));
-                            saaghFreggyrt.style.pointerEvents = "all";
-                    }, 500);
+                    saaghFreggyrt.children[i].classList.add("fockle-neuchiart");
+                    freggyrtNeuChiart();
                     return;
                 }
             }
@@ -161,6 +162,7 @@ function scugh () {
         }
         prowFreggyrt();
         function freggyrtKiart () {
+            if (sfxGoll) kiart.play();
             const caslys = document.getElementById("caslys-eaishtagh");
             caslys.classList.add("kiart");
             for (let i = 0; i < 6; i++) {
@@ -190,6 +192,7 @@ function scugh () {
             caghlaaSaagh("#B3D334", 2000);
         }
         function freggyrtNeuChiart () {
+            if (sfxGoll) neuChiart.play();
             saagh.classList.add("freggyrt-neuchiart");
             Promise.all(saagh.getAnimations().map(a => a.finished)).then(() => saagh.classList.remove("freggyrt-neuchiart"));
             pointRyGheddyn = false;
