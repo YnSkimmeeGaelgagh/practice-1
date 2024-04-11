@@ -23,9 +23,9 @@ const raaghyn = {
         caslys: "../caslyssyn/eeast.webp",
         sheean: "../sheeanyn/eeast.mp3"
     },
-    "noiridyn": {
-        caslys: "../caslyssyn/noiridyn.webp",
-        sheean: "../sheeanyn/noiridyn.mp3"
+    "oohyn": {
+        caslys: "../caslyssyn/oohyn.webp",
+        sheean: "../sheeanyn/oohyn.mp3"
     },
     "pronnagyn": {
         caslys: "../caslyssyn/pronnagyn.webp",
