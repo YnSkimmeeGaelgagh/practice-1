@@ -334,10 +334,11 @@ figcaption {
     align-self: start;
     display: grid;
     max-width: var(--lheead);
+    padding: 0 1rem 2rem 1rem;
     justify-items: center;
     align-items: center;
     text-align: center;
-    gap: 1rem;
+    gap: 2rem;
     width: 100%;
     height: 100%;
     background-color: white;
@@ -656,7 +657,7 @@ figcaption {
     width: 100dvw;
     height: 100dvh;
     background-color: rgb(100, 100, 100, 0.5);
-    overflow-x: auto;
+    overflow-y: scroll;
     padding-bottom: 1rem;
     z-index: 2;
 }
@@ -667,15 +668,14 @@ figcaption {
     top: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     font-size: 1.25rem;
     text-align: center;
     width: 100dvw;
     height: 100dvh;
     background-color: rgb(100, 100, 100, 0.5);
-    overflow-x: auto;
     padding-bottom: 1rem;
+    overflow-y: scroll;
     z-index: 2;
 }
 
@@ -696,13 +696,17 @@ figcaption {
 }
 
 #coyrle-toshiaght {
+    align-self: start;
+    margin-top: .5rem;
     background: white;
     max-width: 400px;
     border: var(--cheeid-oirr) solid var(--doo);
-    padding: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    padding: 1rem 1.5rem 2rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
     border-radius: var(--corneillyn);
+    animation: screeyn-gaase .5s ease-out;
+    -webkit-animation: screeyn-gaase .5s ease-out;
 }
 
 #cramman-toshiaght, #cramman-ooilley-jeant {
@@ -1190,6 +1194,19 @@ input:checked + .skirreyder:before {
 }
 
 .greim {
+    background-color: orange;
+    color: white;
+    pointer-events: none;
+    animation: greimmit .6s ease-out infinite;
+    -webkit-animation: greimmit .6s ease-out infinite;
+}
+
+.greim-sampleyr {
+    width: 7rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem 1rem;
+    border-radius: var(--corneillyn);
     background-color: orange;
     color: white;
     pointer-events: none;
