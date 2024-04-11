@@ -24,8 +24,8 @@ const raaghyn = {
         focklyn: ["cha ren mee"]
     },
     5: {
-        baarle: "Did you eat five oranges on Tuesday. I don't like oranges.",
-        gaelg: "Ren oo gee queig noiridyn Jemayrt ? Cha laik lhiam noiridyn .",
+        baarle: "Did you eat five eggs on Tuesday. I don't like eggs.",
+        gaelg: "Ren oo gee queig oohyn Jemayrt ? Cha laik lhiam oohyn .",
         sheean: "../sheeanyn/ennaghtyn-eaishtagh-5.mp3",
         focklyn: []
     },
