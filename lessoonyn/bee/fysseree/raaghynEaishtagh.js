@@ -24,10 +24,10 @@ const raaghyn = {
         focklyn: ["cha laik lhiam", "eeast"]
     },
     5: {
-        baarle: "I live in Douglas. I like oranges.",
-        gaelg: "Ta mee beaghey ayns Doolish . S'laik lhiam noiridyn .",
+        baarle: "I live in Douglas. I like eggs.",
+        gaelg: "Ta mee beaghey ayns Doolish . S'laik lhiam oohyn .",
         sheean: "../sheeanyn/bee-eaishtagh-5.mp3",
-        focklyn: ["noiridyn"]
+        focklyn: ["oohyn"]
     },
     6: {
         baarle: "Do you like chips? Do you live in Laxey?",
