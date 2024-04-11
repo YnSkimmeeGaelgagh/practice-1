@@ -11,6 +11,7 @@ function troggDuillag () {
         sfxGoll = sessionStorage.getItem("sfxGoll") == "true" ? true : false;
     };
     if (earrooFeysht == 1) {
+        document.body.style.overflow = "hidden";
         const tG = prowTrooidGamman();
         if (tG == "null") {
             sessionStorage.setItem("kiaullGoll", "true");
@@ -20,7 +21,11 @@ function troggDuillag () {
         };
         trogAyrn({paarant: true, red: "div", ennym: "saagh-toshiaght", cheuSthie: [
             trogAyrn({red: "div", ennym: "coyrle-toshiaght", cheuSthie: [
-                "Click the word blocks to complete the sentences!",
+                trogAyrn({red: "p", cheuSthie: ["Click the word blocks to translate sentences from English to Manx!"]}),
+                trogAyrn({red: "p", cheuSthie: ["If you miss a word, hold down on a word block until it turns orange"]}),
+                trogAyrn({red: "div", cheuSthie: ["example"], keint: ["greim-sampleyr"]}),
+                trogAyrn({red: "p", cheuSthie: ["then click in the space you'd like to place it."]}),
+                trogAyrn({red: "p", cheuSthie: ["Aigh vie!"]}),
                 trogAyrn({red: "button", ennym: "cramman-toshiaght", cheuSthie: ["ok"], keint: ["reih"], click: t => gowToshiaght(t, "screeu")}),
                 trogAyrn({red: "button", ennym: "cramman-faagail", cheuSthie: ["exit game"], keint: ["reih", "cramman-faagail"], click: t => caghlaaDuillag(t, "../../../index.html")}),
                 trogAyrn({red: "div", ennym: "saagh-corragyn", cheuSthie: [
