@@ -9,7 +9,7 @@ focklynYnsit = [...focklynYnsit].concat([
     "caashey",
     "spollagyn",
     "eeast",
-    "noiridyn",
+    "oohyn",
     "pronnagyn",
     "lossreeyn"
 ]);
