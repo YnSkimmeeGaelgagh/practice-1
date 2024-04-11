@@ -3,6 +3,7 @@ let runt = 0;
 const earrooFeyshtyn = Object.keys(raaghyn).length * 4;
 
 (function crooDuillag () {
+    document.body.style.overflow = "hidden";
     const caghlaaKiaull = t => {
         sessionStorage.setItem("kiaullGoll", t.target.checked);
         kiaullGoll = sessionStorage.getItem("kiaullGoll") == "true" ? true : false;
@@ -29,7 +30,8 @@ const earrooFeyshtyn = Object.keys(raaghyn).length * 4;
     ]);
     trogAyrn({paarant: true, red: "div", ennym: "saagh-toshiaght", cheuSthie: [
         trogAyrn({red: "div", ennym: "coyrle-toshiaght", cheuSthie: [
-            "Click the word that matches the picture!",
+            trogAyrn({red: "p", cheuSthie: ["Click the word that matches the picture!"]}),
+            trogAyrn({red: "p", cheuSthie: ["Try to get each word as quickly as possible: you get bonus points for speed!"]}),
             trogAyrn({red: "button", ennym: "cramman-toshiaght", cheuSthie: ["ok"], keint: ["reih"], click: t => gowToshiaght(t, "creshoh")}),
             trogAyrn({red: "button", ennym: "cramman-faagail", cheuSthie: ["exit game"], keint: ["reih", "cramman-faagail"], click: t => caghlaaDuillag(t, "../../../index.html")}),
             trogAyrn({red: "div", ennym: "saagh-corragyn", cheuSthie: [
