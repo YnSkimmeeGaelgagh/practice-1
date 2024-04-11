@@ -12,7 +12,7 @@ function scugh () {
     let pointRyGheddyn = true;
     focklyn.forEach(w => w.onpointerdown = greim);
     function curFockleStiagh (f) {
-        if (sfxGoll) sheeanClick.play();
+        sheeanClick.play();
         const cloan = f.cloneNode(true);
         const cloanXY = [f.offsetWidth, f.offsetHeight];
         [cloan.style.width, cloan.style.height] = [cloanXY[0] + "px", cloanXY[1] + "px"];
@@ -20,7 +20,7 @@ function scugh () {
         cloan.classList.add("cloan");
         saaghFocklyn.replaceChild(cloan, f);
         f.onpointerdown = () => {
-            if (sfxGoll) sheeanArraghey.play();
+            sheeanArraghey.play();
             f.remove();
             f.onpointerdown = greim;
             f.classList.remove("reihit");
@@ -142,7 +142,7 @@ function scugh () {
             let i = 0;
             const nahReggyrt = () => {
                 if (arrCurStiagh[i] == arrFreggyrtKiart[i]) {
-                    if (sfxGoll) fockleKiart.play();
+                    fockleKiart.play();
                     saaghFreggyrt.children[i].classList.add("fockle-kiart");
                     if (i < arrCurStiagh.length - 1) setTimeout(nahReggyrt, fockleKiart.duration * 2000);
                     else {
@@ -162,7 +162,7 @@ function scugh () {
         }
         prowFreggyrt();
         function freggyrtKiart () {
-            if (sfxGoll) kiart.play();
+            kiart.play();
             const caslys = document.getElementById("caslys-eaishtagh");
             caslys.classList.add("kiart");
             for (let i = 0; i < 6; i++) {
@@ -192,7 +192,7 @@ function scugh () {
             caghlaaSaagh("#B3D334", 2000);
         }
         function freggyrtNeuChiart () {
-            if (sfxGoll) neuChiart.play();
+            neuChiart.play();
             saagh.classList.add("freggyrt-neuchiart");
             Promise.all(saagh.getAnimations().map(a => a.finished)).then(() => saagh.classList.remove("freggyrt-neuchiart"));
             pointRyGheddyn = false;
