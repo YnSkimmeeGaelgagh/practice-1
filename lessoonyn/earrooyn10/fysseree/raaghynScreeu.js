@@ -43,21 +43,21 @@ const raaghyn = {
     },
     7: {
         baarle: "I'm excited! I'm eight years old.",
-        gaelg: "Ta mee greesit . Ta mee hoght bleeaney d'eash .",
+        gaelg: "Ta mee greesit ! Ta mee hoght bleeaney d'eash .",
         caslys: "../caslyssyn/hoght.webp",
         sheean: "../sheeanyn/earrooyn-10-screeu-7.mp3",
         focklyn: ["hoght"]
     },
     8: {
         baarle: "Are you sad? You're two years old. I'm five.",
-        gaelg: "Vel oo trimsagh ? T'ou daa vlein d'eash. Ta mee queig .",
+        gaelg: "Vel oo trimsagh ? T'ou daa vlein d'eash . Ta mee queig .",
         caslys: "../caslyssyn/queig.webp",
         sheean: "../sheeanyn/earrooyn-10-screeu-8.mp3",
         focklyn: ["daa vlein", "queig"]
     },
     9: {
         baarle: "I'm three. I'm not cold, I'm tired.",
-        gaelg: "Ta mee tree. Cha nel mee feayr , ta mee skee .",
+        gaelg: "Ta mee tree . Cha nel mee feayr , ta mee skee .",
         caslys: "../caslyssyn/tree.webp",
         sheean: "../sheeanyn/earrooyn-10-screeu-9.mp3",
         focklyn: ["tree"]
