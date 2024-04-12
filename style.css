@@ -817,6 +817,7 @@ input:checked + .skirreyder:before {
 
 #saagh {
     display: grid;
+    grid-template-rows: 13fr 1fr;
     height: 100%;
     user-select: none;
     -webkit-user-select: none;
@@ -840,10 +841,12 @@ input:checked + .skirreyder:before {
     justify-content: center;
     gap: 1rem;
     max-width: 600px;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 1rem;
-    outline: 16px solid transparent;
+    outline: 9px solid transparent;
+    outline-offset: -9px;
 }
 
 #greinnaghey {
