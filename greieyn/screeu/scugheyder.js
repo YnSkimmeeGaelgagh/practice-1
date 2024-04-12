@@ -35,9 +35,9 @@ function scugh () {
     function reihit (taghyrt) {
         if (kiedHuittym) {
             saaghFreggyrt.textContent = "";
-            saaghFreggyrt.style.display = "block";
             saaghFreggyrt.style.color = "black";
-            saaghFreggyrt.style.textAlign = "left";
+            saaghFreggyrt.style.justifyContent = "start";
+            saaghFreggyrt.style.alignItems = "start";
             kiedHuittym = false;
         };
         curFockleStiagh (taghyrt.target);
