@@ -3,5 +3,6 @@ function soieSaaghFreggyrt () {
     saaghFreggyrt.style.display = "flex";
     saaghFreggyrt.textContent = "Read the English sentence above and click the blocks below to write it in Manx!";
     saaghFreggyrt.style.color = "grey";
-    saaghFreggyrt.style.textAlign = "center";
+    saaghFreggyrt.style.justifyContent = "center";
+    saaghFreggyrt.style.alignItems = "center";
 }
