@@ -1,7 +1,8 @@
 function focklyn () {
     const saaghFocklyn = document.getElementById("saagh-focklyn");
     saaghFocklyn.textContent = "";
-    let focklyn = raaghyn[earrooFeysht].gaelg.split(" ");
+    let strFocklyn = raaghyn[earrooFeysht].gaelg;
+    let focklyn = strFocklyn.split(" ");
     const caslys = document.getElementById("caslys-eaishtagh");
     caslys.classList.remove("kiart");
     const crammanFaaue = document.getElementById("cramman-faaue");
@@ -18,12 +19,13 @@ function focklyn () {
         rFocklyn.push(focklyn[r]);
         focklyn.splice(r, 1);
     };
-    const rFocklynBeggey = rFocklyn.map(f => f.toLowerCase());
+    // const rFocklynBeggey = rFocklyn.map(f => f.toLowerCase());
+    rFocklynBeggey = strFocklyn.toLowerCase();
     while (focklynElley.length < 4) {
         const r = reihR(coipFocklynYnsit);
         if (
             focklynElley.includes(coipFocklynYnsit[r])
-            || rFocklynBeggey.includes(coipFocklynYnsit[r])
+            || rFocklynBeggey.includes(coipFocklynYnsit[r].toLowerCase())
             || coipFocklynYnsit[r] == "y" && rFocklynBeggey.includes("yn")
             || coipFocklynYnsit[r] == "yn" && rFocklynBeggey.includes("yn")
             || coipFocklynYnsit[r] == "y" && rFocklynBeggey.includes("y")
