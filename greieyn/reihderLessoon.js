@@ -24,11 +24,15 @@ function soieLessoon (t, cooish, jalloo, ennym) {
     const hr = document.createElement("hr");
     saaghRolleyFocklyn.append(hr);
     let gammanynJeant = [true, true, true];
+    let syCheead  = [[], [], []];
     focklynRyYnsagh[cooish].forEach((f, i) => {
         const dG = document.createElement("div");
             dG.textContent = f[0];
             dG.classList.add("fockle-gaelgagh");
             const keayrtyn = localStorage.getItem(f[0]).split(",");
+            syCheead[0].push(keayrtyn[0]);
+            syCheead[1].push(keayrtyn[1]);
+            syCheead[2].push(keayrtyn[2]);
             const aggFocklyn = Math.floor(keayrtyn.reduce((a, b) => a + +b, 0));
             if (+keayrtyn[0] < 1) gammanynJeant[0] = false;
             if (keayrtyn[1] == '0') gammanynJeant[1] = false;
@@ -52,9 +56,10 @@ function soieLessoon (t, cooish, jalloo, ennym) {
         const hr = document.createElement("hr");
         saaghRolleyFocklyn.append(dG, dB, hr);
     });
+    const earrooDyOcklyn = focklynRyYnsagh[cooish].length;
+    syCheead = syCheead.map(s => Math.round(s.reduce((a, b) => a + +b, 0) / earrooDyOcklyn * 100));
     const crammanynLessoon = document.getElementById("crammanyn-lessoon");
     const saaghynCrammanLessoon = document.getElementsByClassName("saagh-cramman-lessoon");
-    const cowreyJeantCreshoh = [...document.getElementsByClassName("cowrey-jeant")];
     if (cooish == "fEmshyrChaie")  {
         crammanynLessoon.style.gridTemplateColumns = "repeat(2, 1fr)";
         saaghynCrammanLessoon[0].style.display = "none";
@@ -63,18 +68,36 @@ function soieLessoon (t, cooish, jalloo, ennym) {
         saaghynCrammanLessoon[0].style.display = "inline-block";
         const crammanLessoonCreShoh = document.getElementById("cramman-lessoon-creshoh");
         crammanLessoonCreShoh.onclick = t => caghlaaDuillag(t, `lessoonyn/${cooish == "fEmshyrChaie" ? "emshyr-chaie" : cooish[1].toLowerCase() + cooish.substring(2)}/gammanyn/creshoh.html`);
-        cowreyJeantCreshoh.forEach((c, i) => {
-            if (gammanynJeant[i]) c.style.visibility = "visible"
-        });
     }
     const crammanLessoonScreeu = document.getElementById("cramman-lessoon-screeu");
     crammanLessoonScreeu.onclick = t => caghlaaDuillag(t, `lessoonyn/${cooish == "fEmshyrChaie" ? "emshyr-chaie" : cooish[1].toLowerCase() + cooish.substring(2)}/gammanyn/screeu.html`);
     const crammanLessoonEaishtagh = document.getElementById("cramman-lessoon-eaishtagh");
     crammanLessoonEaishtagh.onclick = t => caghlaaDuillag(t, `lessoonyn/${cooish == "fEmshyrChaie" ? "emshyr-chaie" : cooish[1].toLowerCase() + cooish.substring(2)}/gammanyn/eaishtagh.html`);
     const crammanLessoonDoon = document.getElementById("cramman-lessoon-doon");
+    const saaghynCowreyImmeeaght = [...document.getElementsByClassName("saagh-cowrey-immeeaght")];
+    saaghynCowreyImmeeaght.forEach((s, i) => {
+        if (syCheead[i] > 0) s.style.visibility = "visible";
+        const bar = s.children[1];
+        bar.style.height = `${syCheead[i]}%`;
+        switch (true) {
+            case (syCheead[i] > 66):
+                bar.style.backgroundColor = "rgba(0, 191, 255)";
+                break;
+            case (syCheead[i] > 33):
+                bar.style.backgroundColor = "orange";
+                break;
+            default:
+                bar.style.backgroundColor = "rgba(255, 69, 0)";
+        }
+    });
+    const cowraghynJeant = [...document.getElementsByClassName("cowrey-jeant")];
+    cowraghynJeant.forEach((c, i) => {
+        if (gammanynJeant[i]) c.style.visibility = "visible"
+    });
     function faagailLessoon () {
         if (sfxGoll) dooney.play();
-        if (cooish != "fEmshyrChaie") cowreyJeantCreshoh.forEach(c => c.style.visibility = "hidden");
+        cowraghynJeant.forEach(c => c.style.visibility = "hidden");
+        saaghynCowreyImmeeaght.forEach(s => s.style.visibility = "hidden");
         saaghLessoon.style.visibility = "hidden";
         coyrleLessoon.classList.remove("gaase-screeyn");
         coyrleLessoon.scroll(0, 0);
