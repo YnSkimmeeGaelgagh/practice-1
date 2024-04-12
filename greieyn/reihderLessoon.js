@@ -74,8 +74,8 @@ function soieLessoon (t, cooish, jalloo, ennym) {
     const crammanLessoonEaishtagh = document.getElementById("cramman-lessoon-eaishtagh");
     crammanLessoonEaishtagh.onclick = t => caghlaaDuillag(t, `lessoonyn/${cooish == "fEmshyrChaie" ? "emshyr-chaie" : cooish[1].toLowerCase() + cooish.substring(2)}/gammanyn/eaishtagh.html`);
     const crammanLessoonDoon = document.getElementById("cramman-lessoon-doon");
-    const saaghynCowreyImmeeaght = [...document.getElementsByClassName("saagh-cowrey-immeeaght")];
-    saaghynCowreyImmeeaght.forEach((s, i) => {
+    const gridImmeeaght = [...document.getElementsByClassName("grid-immeeaght")];
+    gridImmeeaght.forEach((s, i) => {
         if (syCheead[i] > 0 && !gammanynJeant[i]) s.style.visibility = "visible";
         const bar = s.children[1];
         bar.style.height = `${syCheead[i]}%`;
@@ -97,7 +97,7 @@ function soieLessoon (t, cooish, jalloo, ennym) {
     function faagailLessoon () {
         if (sfxGoll) dooney.play();
         cowraghynJeant.forEach(c => c.style.visibility = "hidden");
-        saaghynCowreyImmeeaght.forEach(s => s.style.visibility = "hidden");
+        gridImmeeaght.forEach(s => s.style.visibility = "hidden");
         saaghLessoon.style.visibility = "hidden";
         coyrleLessoon.classList.remove("gaase-screeyn");
         coyrleLessoon.scroll(0, 0);
