@@ -76,7 +76,7 @@ function soieLessoon (t, cooish, jalloo, ennym) {
     const crammanLessoonDoon = document.getElementById("cramman-lessoon-doon");
     const saaghynCowreyImmeeaght = [...document.getElementsByClassName("saagh-cowrey-immeeaght")];
     saaghynCowreyImmeeaght.forEach((s, i) => {
-        if (syCheead[i] > 0 && syCheead < 100) s.style.visibility = "visible";
+        if (syCheead[i] > 0 && !gammanynJeant[i]) s.style.visibility = "visible";
         const bar = s.children[1];
         bar.style.height = `${syCheead[i]}%`;
         switch (true) {
