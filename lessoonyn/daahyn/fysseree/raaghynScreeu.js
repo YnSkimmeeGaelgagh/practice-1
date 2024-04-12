@@ -64,7 +64,7 @@ const raaghyn = {
     },
     10: {
         baarle: "How old are you? Are you twenty? Do you live in Peel? Do you like white bread?",
-        gaelg: "C'ren eash t'ort ? Vel oo feed ? Vel oo beaghey ayns Purt-ny-hInshey ? Laik lhiat arran bane ?",
+        gaelg: "Cre'n eash t'ort ? Vel oo feed ? Vel oo beaghey ayns Purt-ny-hInshey ? Laik lhiat arran bane ?",
         caslys: "../caslyssyn/arran bane.webp",
         sheean: "../sheeanyn/raaghyn-screeu-10.mp3",
         focklyn: ["bane"]
