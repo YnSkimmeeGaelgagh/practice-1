@@ -63,8 +63,8 @@ const raaghyn = {
         focklyn: ["ooylyn", "arran"]
     },
     10: {
-        baarle: "Do you like Laxey. Do you like Castletown? I like Port Erin.",
-        gaelg: "Laik lhiat Laksaa ? Laik lhiat Balley Chashtal ? S'laik lhiam Purt Çhiarn .",
+        baarle: "Do you like Laxey? Do you like Castletown? You like Port Erin!",
+        gaelg: "Laik lhiat Laksaa ? Laik lhiat Balley Chashtal ? S'laik lhiat Purt Çhiarn !", //doccar
         caslys: "../../../caslyssyn/cowrey-feysht.webp",
         sheean: "../sheeanyn/raaghyn-screeu-10.mp3",
         focklyn: []
