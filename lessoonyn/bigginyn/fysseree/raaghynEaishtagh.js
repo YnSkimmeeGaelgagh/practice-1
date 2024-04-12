@@ -31,7 +31,7 @@ const raaghyn = {
     },
     6: {
         baarle: "How are you? You're eating vegetables. Do you have a hamster?",
-        gaelg: "Kys t'ou ? T'ou gee lossreeyn . Vel pussag ayd ?", //doccar
+        gaelg: "Kys t'ou ? T'ou gee lossreeyn . Vel pussag ayd ?",
         sheean: "../sheeanyn/eaishtagh-6.mp3",
         focklyn: ["pussag"]
     },
@@ -49,7 +49,7 @@ const raaghyn = {
     },
     9: {
         baarle: "How are you? How's the snake? How's the gerbil?",
-        gaelg: "Kys t'ou ? Kys ta'n ardnieu ? Kys ta'n jerbyl ?", //doccar
+        gaelg: "Kys t'ou ? Kys ta'n ardnieu ? Kys ta'n jerbyl ?",
         sheean: "../sheeanyn/eaishtagh-9.mp3",
         focklyn: ["ardnieu", "jerbyl"]
     },
