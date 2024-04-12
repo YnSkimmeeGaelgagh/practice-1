@@ -18,7 +18,7 @@ const raaghyn = {
         focklyn: ["cre?", "s'laik lhiat", "lossreeyn"]
     },
     4: {
-        baarle: "I don't like fist. I'm five.",
+        baarle: "I don't like fish. I'm five.",
         gaelg: "Cha laik lhiam eeast . Ta mee queig .",
         sheean: "../sheeanyn/bee-eaishtagh-4.mp3",
         focklyn: ["cha laik lhiam", "eeast"]
