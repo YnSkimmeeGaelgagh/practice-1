@@ -1,6 +1,9 @@
 function caghlaaMean () {
     const daghCramman = document.getElementsByClassName("reih-creshoh");
-    [...daghCramman].forEach(c => c.style.pointerEvents = "auto");
+    [...daghCramman].forEach(c => {
+        c.classList.remove("reihit");
+        c.style.pointerEvents = "auto";
+    });
     const caslys = document.getElementById("caslys-creshoh");
     caslys.replaceWith(raaghyn[reihyn[feysht]].caslys);
     const caghlaaCramman = (cramman, earroo) => {
