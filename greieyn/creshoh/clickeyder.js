@@ -1,6 +1,9 @@
 function clickit () {
     this.style.pointerEvents = "none";
+    this.classList.add("reihit");
     if (this.textContent == reihyn[feysht]) {
+        const daghCramman = document.getElementsByClassName("reih-creshoh");
+        [...daghCramman].forEach(c => c.style.pointerEvents = "none");
         if (sfxGoll) {
             kiart.play();
             raaghyn[reihyn[feysht]].sheean.play();
