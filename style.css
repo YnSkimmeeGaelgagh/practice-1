@@ -670,6 +670,7 @@ figcaption {
     color: white;
     background-color: var(--doo);
     border: var(--cheeid-oirr) solid white;
+    border-radius: var(--corneillyn);
 }
 
 #neuhickyr-aahoiaghey {
@@ -679,6 +680,7 @@ figcaption {
     margin-top: 1rem;
     background-color: white;
     border: var(--cheeid-oirr) solid white;
+    border-radius: var(--corneillyn);
 }
 
 .aahoit {
@@ -1079,6 +1081,7 @@ input:checked + .skirreyder:before {
     margin-right: auto;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    border-radius: var(--corneillyn);
 }
 
 #cramman-reesht {
@@ -1102,6 +1105,7 @@ input:checked + .skirreyder:before {
     padding: 1rem;
     background-color: var(--doo);
     color: white;
+    border-radius: var(--corneillyn);
 }
 
 .aggyn {
@@ -1123,6 +1127,12 @@ input:checked + .skirreyder:before {
 }
 
 .reihit {
+    background-color: lightblue;
+    animation: goll-stiagh 0.25s ease-out;
+    -webkit-animation: goll-stiagh 0.25s ease-out;
+}
+
+.reihit-creshoh {
     background-color: lightblue;
     animation: goll-stiagh 0.25s ease-out;
     -webkit-animation: goll-stiagh 0.25s ease-out;
