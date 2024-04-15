@@ -80,6 +80,12 @@ const earrooFeyshtyn = Object.keys(raaghyn).length * 4;
             trogAyrn({red: "button", ennym: "cramman-dooney", cheuSthie: ["exit game"], click: t => caghlaaDuillag(t, "../../../index.html")})
         ]})
     ]});
+    const saaghToshiaght = document.getElementById("saagh-toshiaght");
+    const coyrleToshiaght = document.getElementById("coyrle-toshiaght");
+    const yrjysCoyrle = coyrleToshiaght.offsetHeight;
+    let y = window.matchMedia(`(max-height: ${yrjysCoyrle}px)`);
+    if (y.matches) saaghToshiaght.style.justifyContent = "start";
+    else saaghToshiaght.style.justifyContent = "center";
     const caslysCreshoh = document.getElementById("caslys-creshoh");
     caslysCreshoh.replaceWith(raaghyn[reihyn[0]].caslys);
 })();
