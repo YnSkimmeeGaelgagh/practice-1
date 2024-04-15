@@ -108,16 +108,18 @@ function scugh () {
     const saagh = document.getElementById("saagh");
     function caghlaaSaagh (daah, farkiaght = 500) {
         cleeah.style.outlineColor = daah;
-        crammanFreggyrt.classList.remove("smooinaghtyn");
+        const emoji = document.getElementById("emoji");
+        emoji.classList.remove("smooinaghtyn");
+        crammanFreggyrt.classList.remove("cramman-smooinaghtyn");
         crammanFreggyrt.style.backgroundColor = daah;
-        if (daah == "crimson") crammanFreggyrt.classList.add("sheeigit");
-        else crammanFreggyrt.classList.add("meekey");
+        if (daah == "crimson") emoji.classList.add("sheeigit");
+        else emoji.classList.add("meekey");
         setTimeout(() => {
             if (earrooFeysht - 1 == Object.keys(raaghyn).length) {
                 jerreyGamman();
                 return;
             };
-            crammanFreggyrt.classList.remove("cramman-reihit", "meekey", "sheeigit");
+            crammanFreggyrt.classList.remove("cramman-reihit");
             crammanFreggyrt.style.backgroundColor = "lightblue";
             crammanFreggyrt.style.color = "black";
             crammanFreggyrt.textContent = "check";
@@ -139,7 +141,9 @@ function scugh () {
         function prowFreggyrt () {
             [...saaghFocklyn.children].forEach(f => f.style.pointerEvents = "none");
             t.target.textContent = "";
-            t.target.classList.add("smooinaghtyn");
+            t.target.classList.add("cramman-smooinaghtyn");
+            const emoji = trogAyrn({red: "div", ennym: "emoji", keint: ["smooinaghtyn"]});
+            t.target.append(emoji);
             if (arrCurStiagh.length == 0) {
                 if (sfxGoll) neuChiart.play();
                 freggyrtNeuChiart();
