@@ -42,15 +42,15 @@ const raaghyn = {
         focklyn: ["moddey"]
     },
     7: {
-        baarle: "What did you do on Tuesday? Do you have a rabbit? I have a cat.",
-        gaelg: "Cre ren oo Jemayrt ? Vel conning ayd ? Ta kayt aym .",
+        baarle: "What did you do on Tuesday? Do you have a rabbit? You have a cat!",
+        gaelg: "Cre ren oo Jemayrt ? Vel conning ayd ? Ta kayt ayd !",
         caslys: "../caslyssyn/conning.webp",
         sheean: "../sheeanyn/raaghyn-screeu-7.mp3",
         focklyn: ["conning", "kayt"]
     },
     8: {
-        baarle: "I have a mouse. Do you have a gerbil? Do you have a hamster?",
-        gaelg: "Ta lugh aym . Vel jerbyl ayd ? Vel pussag ayd ?",
+        baarle: "You have a mouse. Do you have a gerbil? Do you have a hamster?",
+        gaelg: "Ta lugh ayd . Vel jerbyl ayd ? Vel pussag ayd ?",
         caslys: "../caslyssyn/lugh.webp",
         sheean: "../sheeanyn/raaghyn-screeu-8.mp3",
         focklyn: ["lugh", "jerbyl", "pussag"]
@@ -63,8 +63,8 @@ const raaghyn = {
         focklyn: ["ardnieu"]
     },
     10: {
-        baarle: "Do you like pets? Do you have a pet? I have six pets in Ramsey.",
-        gaelg: "Laik lhiat bigginyn ? Vel biggin ayd ? Ta shey bigginyn aym ayns Rhumsaa .",
+        baarle: "Do you like pets? Do you have a pet? You have six pets in Ramsey!",
+        gaelg: "Laik lhiat bigginyn ? Vel biggin ayd ? Ta shey bigginyn ayd ayns Rhumsaa !",
         caslys: "../../../caslyssyn/cowrey-feysht.webp",
         sheean: "../sheeanyn/raaghyn-screeu-10.mp3",
         focklyn: []
