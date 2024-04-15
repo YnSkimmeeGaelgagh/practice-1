@@ -71,8 +71,6 @@ function fowRollageyn () {
 }
 fowRollageyn();
 
-mooie("roish nahAyrn");
-
 function nahAyrn () {
     mooie("toshiaght function");
     const linnaghynScarrey = document.getElementsByClassName("linney-scarrey");
@@ -111,9 +109,7 @@ function nahAyrn () {
         });
         return cArr;
     };
-    mooie(staydCooishyn[0]);
-    mooie(staydCooishyn[1]);
-    mooie(staydCooishyn[2]);
+    mooie(JSON.stringify(staydCooishyn));
     mooie(cleeahyn[0].children.length);
     // prow dagh cooish d'akin vel ad er n'gheddyn gorrym ny ny share
     for (let i = 0; i < staydCooishyn.length; i++) {
