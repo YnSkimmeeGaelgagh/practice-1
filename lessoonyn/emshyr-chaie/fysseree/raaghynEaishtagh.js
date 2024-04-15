@@ -24,14 +24,14 @@ const raaghyn = {
         focklyn: ["cha ren mee"]
     },
     5: {
-        baarle: "Did you eat five eggs on Tuesday. I don't like eggs.",
-        gaelg: "Ren oo gee queig oohyn Jemayrt ? Cha laik lhiam oohyn .",
+        baarle: "Did you eat five eggs on Tuesday? You don't like eggs!",
+        gaelg: "Ren oo gee queig oohyn Jemayrt ? Cha laik lhiat oohyn !",
         sheean: "../sheeanyn/ennaghtyn-eaishtagh-5.mp3",
         focklyn: []
     },
     6: {
-        baarle: "What did you eat? I ate fish in Peel on Saturday.",
-        gaelg: "Cre ren oo gee ? Ren mee gee eeast ayns Purt-ny-hInshey Jedoonee .",
+        baarle: "What did you eat? Did you eat fish in Peel on Saturday?",
+        gaelg: "Cre ren oo gee ? Ren oo gee eeast ayns Purt-ny-hInshey Jedoonee ?",
         sheean: "../sheeanyn/ennaghtyn-eaishtagh-6.mp3",
         focklyn: []
     },
