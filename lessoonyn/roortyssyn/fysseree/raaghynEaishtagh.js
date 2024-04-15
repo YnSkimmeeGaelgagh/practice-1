@@ -18,8 +18,8 @@ const raaghyn = {
         focklyn: ["snaue"]
     },
     4: {
-        baarle: "I walk in Ramsey on a Saturday. Where do you walk?",
-        gaelg: "Ta mee shooyl ayns Rhumsaa Jesarn . C'raad t'ou shooyl ?",
+        baarle: "You walk in Ramsey on a Saturday. Where do you walk Tuesday?",
+        gaelg: "T'ou shooyl ayns Rhumsaa Jesarn . C'raad t'ou shooyl Jemayrt ?",
         sheean: "../sheeanyn/eaishtagh-4.mp3",
         focklyn: ["shooyl"]
     },
