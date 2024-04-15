@@ -79,6 +79,9 @@ function fowRollageyn () {
 fowRollageyn();
 
 function nahAyrn () {
+    const mooie = document.createElement("p");
+    mooie.textContent = "toshiaght function";
+    cons.append(mooie);
     const linnaghynScarrey = document.getElementsByClassName("linney-scarrey");
     const glassyn = document.getElementsByClassName("glass");
     const cleeahyn = document.getElementsByClassName("cleeah-cooish");
