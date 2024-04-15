@@ -11,6 +11,7 @@ cleeahyn.forEach(c => {
 function soieLessoon (t, cooish, jalloo, ennym) {
     localStorage.setItem("ynnydY", t.target.parentNode.parentNode.parentNode.id);
     if (sfxGoll) foshley.play();
+    mooie(foshley);
     document.body.style.overflow = "hidden";
     const saaghLessoon = document.getElementById("saagh-lessoon");
     saaghLessoon.style.visibility = "visible";
