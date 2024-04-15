@@ -1,13 +1,3 @@
-const cons = document.createElement("div");
-cons.style.width = "100%";
-cons.style.height = "300px";
-cons.style.border = "4px solid black";
-cons.style.backgroundColor = "#666666";
-cons.style.color = "lightgreen";
-cons.textContent = "------ console ------";
-cons.textContent = "------ console ------";
-document.body.append(cons);
-
 const saaghToshiaght = document.getElementById("kied-saagh-toshiaght");
 const arraghToshiaght = () => {
     saaghToshiaght.remove();
@@ -50,10 +40,6 @@ else {
     };
 }
 
-const m = document.createElement("p");
-m.textContent = "roish function";
-cons.append(m);
-
 function soieRollageyn (cooish, caslys) {
     const aggChooish = focklynRyYnsagh[cooish]
         .map(f => localStorage.getItem(f[0])
@@ -79,6 +65,8 @@ function soieRollageyn (cooish, caslys) {
     }
 }
 
+mooie("roish function");
+
 function fowRollageyn () {
     const caslyssyn = [...document.getElementsByClassName("rollage")];
     Object.keys(focklynRyYnsagh).forEach((k, i) => soieRollageyn(k, caslyssyn[i].childNodes[1]));
@@ -86,9 +74,7 @@ function fowRollageyn () {
 fowRollageyn();
 
 function nahAyrn () {
-    const mooie = document.createElement("p");
-    mooie.textContent = "toshiaght function";
-    cons.append(mooie);
+    mooie("toshiaght function");
     const linnaghynScarrey = document.getElementsByClassName("linney-scarrey");
     const glassyn = document.getElementsByClassName("glass");
     const cleeahyn = document.getElementsByClassName("cleeah-cooish");
@@ -125,15 +111,10 @@ function nahAyrn () {
         });
         return cArr;
     };
-    const p1 = document.createElement("p");
-    p1.textContent = staydCooishyn[0];
-    const p2 = document.createElement("p");
-    p2.textContent = staydCooishyn[1];
-    const p3 = document.createElement("p");
-    p3.textContent = staydCooishyn[2];
-    const p4 = document.createElement("p");
-    p4.textContent = cleeahyn[0].children.length;
-    cons.append(p1, p2, p3, p4);
+    mooie(staydCooishyn[0]);
+    mooie(staydCooishyn[1]);
+    mooie(staydCooishyn[2]);
+    mooie(cleeahyn[0].children.length);
     // prow dagh cooish d'akin vel ad er n'gheddyn gorrym ny ny share
     for (let i = 0; i < staydCooishyn.length; i++) {
         if (!localStorage.getItem(`ayrn-${i + 1}`) && staydCooishyn[i].length == cleeahyn[i].children.length && !staydCooishyn[i].includes("jiarg")) {
