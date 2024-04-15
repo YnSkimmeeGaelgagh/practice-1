@@ -9,6 +9,7 @@ cleeahyn.forEach(c => {
 });
 
 function soieLessoon (t, cooish, jalloo, ennym) {
+    mooie("toshiaght soie lessoon");
     localStorage.setItem("ynnydY", t.target.parentNode.parentNode.parentNode.id);
     if (sfxGoll) foshley.play();
     document.body.style.overflow = "hidden";
