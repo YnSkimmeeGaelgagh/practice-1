@@ -4,11 +4,7 @@ cleeahyn.forEach(c => {
     const paitchyn = [...c.children];
     paitchyn.forEach(p => {
         const jalloo = p.childNodes[3].childNodes[1].src;
-        p.onclick = t => try {
-            soieLessoon(t, p.title, jalloo, p.textContent.trim());
-        } catch (error) {
-            mooie(error)
-        }
+        p.onclick = t => soieLessoon(t, p.title, jalloo, p.textContent.trim());
     });
 });
 
