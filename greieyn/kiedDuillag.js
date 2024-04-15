@@ -67,7 +67,7 @@ function soieRollageyn (cooish, caslys) {
 
 function fowRollageyn () {
     const caslyssyn = [...document.getElementsByClassName("rollage")];
-    mooie("cheu-sthie fowRollageyn");
+    mooie("mean fowRollageyn");
     Object.keys(focklynRyYnsagh).forEach((k, i) => soieRollageyn(k, caslyssyn[i].childNodes[1]));
 }
 fowRollageyn();
