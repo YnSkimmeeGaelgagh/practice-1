@@ -11,12 +11,6 @@ let neuChiart;
 let jerreyMie;
 let jerreyCadjin;
 
-const AudioContext = window.AudioContext || window.webkitAudioContext;
-const audioContext = new AudioContext();
-const audioElement = document.querySelector("audio");
-const track = audioContext.createMediaElementSource(audioElement);
-track.connect(audioContext.destination);
-
 if (veih.endsWith("/index.html")) {
     foshley = document.getElementById("sheean-foshley");
     dooney = document.getElementById("sheean-dooney");
