@@ -35,15 +35,15 @@ const raaghyn = {
         focklyn: ["Purt-le-Moirrey"]
     },
     6: {
-        baarle: "Do you live in Castletown? I'm excited! I live in Castletown!",
-        gaelg: "Vel oo beaghey ayns Balley Chashtal ? Ta mee greesit ! Ta mee beaghey ayns Balley Chashtal !",
+        baarle: "You don't live in Castletown. Are you excited? You're living in Douglas!",
+        gaelg: "Cha nel oo beaghey ayns Balley Chashtal . Vel oo greesit ? T'ou beaghey ayns Doolish !",
         caslys: "../caslyssyn/balley chashtal.webp",
         sheean: "../sheeanyn/buill-screeu-6.mp3",
         focklyn: ["Balley Chashtal"]
     },
     7: {
-        baarle: "Do you live in Port Erin. Are you cold? I'm hot!",
-        gaelg: "Vel oo beaghey ayns Purt Çhiarn ? Vel oo feayr ? Ta mee çheh !",
+        baarle: "Do you live in Port Erin. Are you cold? You're not hot!",
+        gaelg: "Vel oo beaghey ayns Purt Çhiarn ? Vel oo feayr ? Cha nel oo çheh !",
         caslys: "../caslyssyn/purt chiarn.webp",
         sheean: "../sheeanyn/buill-screeu-7.mp3",
         focklyn: ["Purt Çhiarn"]
