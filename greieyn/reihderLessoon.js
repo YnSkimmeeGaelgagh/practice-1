@@ -8,20 +8,14 @@ cleeahyn.forEach(c => {
     });
 });
 
-mooie(navigator.userAgent);
 function soieLessoon (t, cooish, jalloo, ennym) {
-    mooie("toshiaght");
     localStorage.setItem("ynnydY", t.target.parentNode.parentNode.parentNode.id);
     if (audioContext.state === "suspended") {
         audioContext.resume();
     }
     audioElement.play();
     // if (sfxGoll) foshley.play();
-    mooie("dean");
-    mooie(foshley);
-    mooie("sheean");
     document.body.style.overflow = "hidden";
-    mooie("overflow");
     const saaghLessoon = document.getElementById("saagh-lessoon");
     saaghLessoon.style.visibility = "visible";
     const coyrleLessoon = document.getElementById("coyrle-lessoon");
@@ -30,13 +24,11 @@ function soieLessoon (t, cooish, jalloo, ennym) {
     ennymLessoon.textContent = ennym;
     const caslysLessoon = document.getElementById("caslys-lessoon");
     caslysLessoon.src = jalloo;
-    mooie("ayrnyn");
     const saaghRolleyFocklyn = document.getElementById("saagh-rolley-focklyn");
     const hr = document.createElement("hr");
     saaghRolleyFocklyn.append(hr);
     let gammanynJeant = [true, true, true];
     let syCheead  = [[], [], []];
-    mooie("mean");
     focklynRyYnsagh[cooish].forEach((f, i) => {
         const dG = document.createElement("div");
             dG.textContent = f[0];
