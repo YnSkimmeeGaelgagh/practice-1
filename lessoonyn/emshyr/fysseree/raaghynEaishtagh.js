@@ -36,8 +36,8 @@ const raaghyn = {
         focklyn: ["cha nel eh", "sterrymagh"]
     },
     7: {
-        baarle: "Do you like the fish? I like fish in Peel on a Friday.",
-        gaelg: "Laik lhiat yn eeast ? S'laik lhiam eeast ayns Purt-ny-hInshey Jeheiney .",
+        baarle: "Do you like the fish? You like fish in Peel on a Friday!",
+        gaelg: "Laik lhiat yn eeast ? S'laik lhiat eeast ayns Purt-ny-hInshey Jeheiney !",
         sheean: "../sheeanyn/eaishtagh-7.mp3",
         focklyn: ["yn"]
     },
