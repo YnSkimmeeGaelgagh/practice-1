@@ -9,7 +9,6 @@ cleeahyn.forEach(c => {
 });
 
 function soieLessoon (t, cooish, jalloo, ennym) {
-    mooie("toshiaght soie lessoon");
     localStorage.setItem("ynnydY", t.target.parentNode.parentNode.parentNode.id);
     if (sfxGoll) foshley.play();
     document.body.style.overflow = "hidden";
@@ -26,6 +25,7 @@ function soieLessoon (t, cooish, jalloo, ennym) {
     saaghRolleyFocklyn.append(hr);
     let gammanynJeant = [true, true, true];
     let syCheead  = [[], [], []];
+    mooie("mean soie lessoon");
     focklynRyYnsagh[cooish].forEach((f, i) => {
         const dG = document.createElement("div");
             dG.textContent = f[0];
