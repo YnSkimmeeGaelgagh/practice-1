@@ -128,4 +128,8 @@ function nahAyrn () {
         };
     }
 }
-nahAyrn();
+try {
+    nahAyrn();
+} catch (errror {
+    mooie(error);
+}
