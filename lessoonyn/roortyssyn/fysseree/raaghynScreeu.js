@@ -16,7 +16,6 @@ const raaghyn = {
     3: {
         baarle: "I like watching television on a Sunday.",
         gaelg: "S'laik lhiam jeeaghyn er y çhellveeish Jedoonee .",
-        gaelgB: "s'laik lhiam jeeaghyn er yn çhellveeish Jedoonee",
         caslys: "../caslyssyn/chellveeish.webp",
         sheean: "../sheeanyn/roortyssyn-3.mp3",
         focklyn: ["jeeaghyn", "er", "y", "çhellveeish"]
@@ -64,8 +63,8 @@ const raaghyn = {
         focklyn: []
     },
     10: {
-        baarle: "Are you eating vegetables? Are you walking? I'm sleeping!",
-        gaelg: "Vel oo gee lossreeyn ? Vel oo shooyl ? Ta mee my chadley !",
+        baarle: "Am I eating vegetables? Am I walking? I'm sleeping!",
+        gaelg: "Vel mee gee lossreeyn ? Vel mee shooyl ? Ta mee my chadley !",
         caslys: "../caslyssyn/lossreeyn.webp",
         sheean: "../sheeanyn/roortyssyn-10.mp3",
         focklyn: ["shooyl", "cadley"]
