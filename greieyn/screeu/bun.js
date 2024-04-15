@@ -71,7 +71,7 @@ function troggDuillag () {
             trogAyrn({red: "div", ennym: "saagh-dooney", cheuSthie: [
                 trogAyrn({red: "button", ennym: "cramman-dooney", cheuSthie: ["exit game"], click: t => caghlaaDuillag(t, "../../../index.html")})
             ]})
-        ]})
+        ]});
         const saaghToshiaght = document.getElementById("saagh-toshiaght");
         const coyrleToshiaght = document.getElementById("coyrle-toshiaght");
         const yrjysCoyrle = coyrleToshiaght.offsetHeight;
