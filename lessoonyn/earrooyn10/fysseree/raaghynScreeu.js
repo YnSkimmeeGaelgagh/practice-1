@@ -28,8 +28,8 @@ const raaghyn = {
         focklyn: ["cre'n eash t'ort?", "jees"]
     },
     5: {
-        baarle: "I'm nine years old. Are you five?",
-        gaelg: "Ta mee nuy bleeaney d'eash . Vel oo queig ?",
+        baarle: "I'm nine years old. I'm not five!",
+        gaelg: "Ta mee nuy bleeaney d'eash . Cha nel mee queig !",
         caslys: "../caslyssyn/queig.webp",
         sheean: "../sheeanyn/earrooyn-10-screeu-5.mp3",
         focklyn: ["nuy"]
@@ -49,8 +49,8 @@ const raaghyn = {
         focklyn: ["hoght"]
     },
     8: {
-        baarle: "Are you sad? You're two years old. I'm five.",
-        gaelg: "Vel oo trimsagh ? T'ou daa vlein d'eash . Ta mee queig .",
+        baarle: "Are you sad? You're not sad, you're two years old.",
+        gaelg: "Vel oo trimsagh ? Cha nel oo trimshagh , t'ou daa vlein d'eash .",
         caslys: "../caslyssyn/queig.webp",
         sheean: "../sheeanyn/earrooyn-10-screeu-8.mp3",
         focklyn: ["daa vlein", "queig"]
