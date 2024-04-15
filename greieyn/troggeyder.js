@@ -9,6 +9,7 @@ function trogAyrn (mynphointyn) {
     if (mynphointyn.baare) ayrn.style.top = mynphointyn.baare;
     if (mynphointyn.hoshtal) ayrn.style.left = mynphointyn.hoshtal;
     if (mynphointyn.yesh) ayrn.style.right = mynphointyn.yesh;
+    if (mynphointyn.cheugheyHene) ayrn.style.alignSelf = mynphointyn.cheugheyHene;
     if (mynphointyn.sorch) {
         ayrn.type = mynphointyn.sorch;
         if (mynphointyn.sorch == "checkbox") ayrn.checked = mynphointyn.cowrit;
