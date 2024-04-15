@@ -30,8 +30,8 @@ const raaghyn = {
         focklyn: ["queig-jeig"]
     },
     6: {
-        baarle: "Do you have apples? I have twelve.",
-        gaelg: "Vel ooylyn ayd ? Ta daa-yeig aym .",
+        baarle: "Do you have apples? Do you have twelve?",
+        gaelg: "Vel ooylyn ayd ? Vel daa-yeig ayd ?",
         sheean: "../sheeanyn/eaishtagh-6.mp3",
         focklyn: ["daa-yeig"]
     },
