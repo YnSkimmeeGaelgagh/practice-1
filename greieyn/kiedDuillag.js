@@ -98,7 +98,7 @@ function nahAyrn () {
         }
     };
     let staydCooishyn = [
-        prowCooishyn(["fEnnaghtyn", "fEarrooyn10", "fBuill"]),
+        ["gorrym", "gorrym", "gorrym"],
         prowCooishyn(["fBee", "fLaaghyn", "fEmshyr", "fRoortyssyn"]),
         prowCooishyn(["fEmshyrChaie", "fBigginyn", "fEarrooyn20", "fDaahyn"])
     ];
