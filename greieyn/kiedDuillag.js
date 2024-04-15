@@ -1,4 +1,4 @@
-document.body.onload = () => {
+foshley.oncanplaythrough = () => {
     const screenLaadey = document.getElementById("screen-laadey");
     screenLaadey.remove();
 }
