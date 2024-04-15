@@ -7,7 +7,6 @@ cleeahyn.forEach(c => {
         p.onclick = t => soieLessoon(t, p.title, jalloo, p.textContent.trim());
     });
 });
-const cons = document.getElementById("cons");
 foshley.oncanplaythrough = () => cons.remove();
 mooie(navigator.userAgent);
 function soieLessoon (t, cooish, jalloo, ennym) {
