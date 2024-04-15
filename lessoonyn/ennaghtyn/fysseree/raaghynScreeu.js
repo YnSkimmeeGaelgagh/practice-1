@@ -63,8 +63,8 @@ const raaghyn = {
         focklyn: ["greesit"]
     },
     10: {
-        baarle: "Are you happy! How are you? You're not sad!",
-        gaelg: "Vel oo maynrey ! Kys t'ou ? Cha nel oo trimshagh !",
+        baarle: "Are you happy? How are you? You're not sad!",
+        gaelg: "Vel oo maynrey ? Kys t'ou ? Cha nel oo trimshagh !",
         caslys: "../caslyssyn/maynrey.webp",
         sheean: "../sheeanyn/ennaghtyn-screeu-10.mp3",
         focklyn: []
