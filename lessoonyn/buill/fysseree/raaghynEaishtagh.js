@@ -30,8 +30,8 @@ const raaghyn = {
         focklyn: ["Purt Çhiarn"]
     },
     6: {
-        baarle: "How old are you? I'm seven years old. I live in Port St. Mary.",
-        gaelg: "Cre'n eash t'ort ? Ta mee shiaght bleeaney d'eash . Ta mee beaghey ayns Purt-le-Moirrey .",
+        baarle: "How old are you? You're seven years old. You live in Port St. Mary.",
+        gaelg: "Cre'n eash t'ort ? T'ou shiaght bleeaney d'eash . T'ou beaghey ayns Purt-le-Moirrey .",
         sheean: "../sheeanyn/ennaghtyn-eaishtagh-6.mp3",
         focklyn: ["Purt-le-Moirrey"]
     },
@@ -54,8 +54,8 @@ const raaghyn = {
         focklyn: []
     },
     10: {
-        baarle: "I live in Peel. Where do you live? Are you cold?",
-        gaelg: "Ta mee beaghey ayns Purt-ny-hInshey . C'raad t'ou beaghey ? Vel oo feayr ?",
+        baarle: "Where do you live? Do you live in Peel? Are you cold?",
+        gaelg: "C'raad t'ou beaghey ? Vel oo beaghey ayns Purt-ny-hInshey ? Vel oo feayr ?",
         sheean: "../sheeanyn/ennaghtyn-eaishtagh-10.mp3",
         focklyn: []
     }
