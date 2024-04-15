@@ -73,6 +73,12 @@ function troggDuillag () {
         ]});
     }
     else eaishtReesht();
+    const saaghToshiaght = document.getElementById("saagh-toshiaght");
+    const coyrleToshiaght = document.getElementById("coyrle-toshiaght");
+    const yrjysCoyrle = coyrleToshiaght.offsetHeight;
+    let y = window.matchMedia(`(max-height: ${yrjysCoyrle}px)`);
+    if (y.matches) saaghToshiaght.style.justifyContent = "start";
+    else saaghToshiaght.style.justifyContent = "center";
     soieSaaghFreggyrt();
     focklyn();
     scugh();
