@@ -34,6 +34,7 @@ function focklyn () {
             || coipFocklynYnsit[r] == "yn" && rFocklynBeggey.includes("ta'n")
             || coipFocklynYnsit[r] == "y" && rFocklynBeggey.includes("ta")
             || coipFocklynYnsit[r] == "yn" && rFocklynBeggey.includes("ta")
+            || coipFocklynYnsit[r] == "vel" && rFocklynBeggey.includes("nel")
         ) continue;
         focklynElley.push(coipFocklynYnsit[r]);
         coipFocklynYnsit.splice(r, 1);
