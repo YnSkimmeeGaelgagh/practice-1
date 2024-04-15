@@ -1268,6 +1268,34 @@ input:checked + .skirreyder:before {
     -webkit-animation: greimmit .6s ease-out infinite;
 }
 
+.smooinaghtyn {
+    font-size: 1.5rem !important;
+    padding: 0.6rem 1rem !important;
+    background-color: whitesmoke !important;
+}
+
+.smooinaghtyn::after {
+    content: "\1F914";
+}
+
+.sheeigit, .meekey {
+    font-size: 1.8rem !important;
+    padding: 0.6rem 1rem !important;
+}
+
+.meekey {
+    animation: meekey-gaase 0.25s ease-out;
+    -webkit-animation: meekey-gaase 0.25s ease-out;
+}
+
+.sheeigit::after {
+    content: "\1FAE8";
+}
+
+.meekey::after {
+    content: "\1F44C";
+}
+
 @keyframes aase-agg {
     0% {transform: scale(1); background-color: transparent;}
     70% {transform: scale(1.5); background-color: var(--linney-mooie);}
@@ -1317,6 +1345,12 @@ input:checked + .skirreyder:before {
 }
 
 @keyframes goll-stiagh {
+    0% {transform: scale(1)}
+    70% {transform: scale(1.3)}
+    100% {transform: scale(1)}
+}
+
+@keyframes meekey-gaase {
     0% {transform: scale(1)}
     70% {transform: scale(1.3)}
     100% {transform: scale(1)}
