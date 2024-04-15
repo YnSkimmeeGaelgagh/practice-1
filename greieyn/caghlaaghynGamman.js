@@ -11,8 +11,14 @@ let neuChiart;
 let jerreyMie;
 let jerreyCadjin;
 
+const AudioContext = window.AudioContext || window.webkitAudioContext;
+const audioContext = new AudioContext();
+const audioElement = document.querySelector("audio");
+const track = audioContext.createMediaElementSource(audioElement);
+track.connect(audioContext.destination);
+
 if (veih.endsWith("/index.html")) {
-    foshley = new Audio("sheeanyn/foshley.mp3");
+    // foshley = new Audio("sheeanyn/foshley.mp3");
     dooney = new Audio("sheeanyn/dooney.mp3");
     ymHeidey = new Audio("sheeanyn/ym-heidey.mp3");
     glassBrishey = new Audio("sheeanyn/glass-brishey.mp3");
