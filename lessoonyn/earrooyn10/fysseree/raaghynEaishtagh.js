@@ -48,8 +48,8 @@ const raaghyn = {
         focklyn: ["nuy", "hoght"]
     },
     9: {
-        baarle: "I'm six years old. You're fine. You're one.",
-        gaelg: "Ta mee shey bleeaney d'eash . T'ou braew . T'ou nane .",
+        baarle: "You're six years old. You're fine. You're not one!",
+        gaelg: "T'ou shey bleeaney d'eash . T'ou braew . Cha nel oo nane !",
         sheean: "../sheeanyn/ennaghtyn-eaishtagh-9.mp3",
         focklyn: ["shey", "nane"]
     },
