@@ -1,8 +1,3 @@
-foshley.oncanplaythrough = () => {
-    const screenLaadey = document.getElementById("screen-laadey");
-    screenLaadey.remove();
-}
-
 const saaghToshiaght = document.getElementById("kied-saagh-toshiaght");
 const arraghToshiaght = () => {
     saaghToshiaght.remove();
