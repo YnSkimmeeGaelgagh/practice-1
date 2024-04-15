@@ -14,8 +14,8 @@ const raaghyn = {
         focklyn: ["kiare-jeig"]
     },
     3: {
-        baarle: "Do you have a pet? I have seventeen.",
-        gaelg: "Vel biggin ayd ? Ta shiaght-jeig aym .",
+        baarle: "Do you have a pet? Do you have seventeen?",
+        gaelg: "Vel biggin ayd ? Vel shiaght-jeig ayd ?",
         caslys: "../caslyssyn/shiaght-jeig.webp",
         sheean: "../sheeanyn/raaghyn-screeu-3.mp3",
         focklyn: ["shiaght-jeig"]
@@ -42,15 +42,15 @@ const raaghyn = {
         focklyn: ["queig-jeig"]
     },
     7: {
-        baarle: "Eleven played. I didn't eat.",
-        gaelg: "Ren nane-jeig cloie . Cha ren mee gee .",
+        baarle: "Eleven ate. Eleven didn't play!",
+        gaelg: "Ren nane-jeig gee . Cha ren nane-jeig cloie !",
         caslys: "../caslyssyn/nane-jeig.webp",
         sheean: "../sheeanyn/raaghyn-screeu-7.mp3",
         focklyn: ["nane-jeig"]
     },
     8: {
-        baarle: "Did you eat vegetables today? I like vegetables. I ate nineteen today.",
-        gaelg: "Ren oo gee lossreeyn jiu ? S'laik lhiam lossreeyn . Ren mee gee nuy-jeig jiu .",
+        baarle: "Did you eat vegetables today? You like vegetables, you ate nineteen today!",
+        gaelg: "Ren oo gee lossreeyn jiu ? S'laik lhiat lossreeyn , ren oo gee nuy-jeig jiu !",
         caslys: "../caslyssyn/nuy-jeig.webp",
         sheean: "../sheeanyn/raaghyn-screeu-8.mp3",
         focklyn: ["nuy-jeig"]
@@ -63,8 +63,8 @@ const raaghyn = {
         focklyn: ["hoght-jeig"]
     },
     10: {
-        baarle: "Did it rain today? Do you have apples? I have thirteen.",
-        gaelg: "Ren eh ceau fliaghey jiu ? Vel ooylyn ayd ? Ta tree-jeig aym .",
+        baarle: "Did it rain today? Do you have apples? You have thirteen!",
+        gaelg: "Ren eh ceau fliaghey jiu ? Vel ooylyn ayd ? Ta tree-jeig ayd !",
         caslys: "../caslyssyn/tree-jeig.webp",
         sheean: "../sheeanyn/raaghyn-screeu-10.mp3",
         focklyn: ["tree-jeig"]
