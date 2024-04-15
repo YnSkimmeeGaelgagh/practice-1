@@ -18,10 +18,10 @@ const track = audioContext.createMediaElementSource(audioElement);
 track.connect(audioContext.destination);
 
 if (veih.endsWith("/index.html")) {
-    // foshley = new Audio("sheeanyn/foshley.mp3");
-    dooney = new Audio("sheeanyn/dooney.mp3");
-    ymHeidey = new Audio("sheeanyn/ym-heidey.mp3");
-    glassBrishey = new Audio("sheeanyn/glass-brishey.mp3");
+    foshley = document.getElementById("sheean-foshley");
+    dooney = document.getElementById("sheean-dooney");
+    ymHeidey = document.getElementById("sheean-ym-heidey");
+    glassBrishey = document.getElementById("glass-brishey");
 } else if (!veih.endsWith("/index.html")) {
     fockleKiart = new Audio("../../../sheeanyn/fockle-kiart.mp3");
     kiart = new Audio("../../../sheeanyn/clinck.mp3");
