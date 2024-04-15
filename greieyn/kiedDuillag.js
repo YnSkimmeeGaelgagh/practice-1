@@ -72,7 +72,6 @@ function fowRollageyn () {
 fowRollageyn();
 
 function nahAyrn () {
-    mooie("toshiaght function");
     const linnaghynScarrey = document.getElementsByClassName("linney-scarrey");
     const glassyn = document.getElementsByClassName("glass");
     const cleeahyn = document.getElementsByClassName("cleeah-cooish");
@@ -81,7 +80,7 @@ function nahAyrn () {
         if (sfxGoll) ymHeidey.play();
         setTimeout(() => {
             glassBrishey.play();
-            glassyn[earroo].src = "caslyssyn/glass-brisht.webp";
+            glassyn[earroo].src = "../caslyssyn/glass-brisht.webp";
             glassyn[earroo].classList.add("glass-brisht");
             linnaghynScarrey[earroo].style.visibility = "hidden";
             cleeahyn[earroo + 1].classList.add("ayrn-jeant");
@@ -98,7 +97,7 @@ function nahAyrn () {
         }
     };
     let staydCooishyn = [
-        ["gorrym", "gorrym", "gorrym"],
+        prowCooishyn(["fEnnaghtyn", "fEarrooyn10", "fBuill"]),
         prowCooishyn(["fBee", "fLaaghyn", "fEmshyr", "fRoortyssyn"]),
         prowCooishyn(["fEmshyrChaie", "fBigginyn", "fEarrooyn20", "fDaahyn"])
     ];
@@ -109,8 +108,6 @@ function nahAyrn () {
         });
         return cArr;
     };
-    mooie(JSON.stringify(staydCooishyn));
-    mooie(cleeahyn[0].children.length);
     // prow dagh cooish d'akin vel ad er n'gheddyn gorrym ny ny share
     for (let i = 0; i < staydCooishyn.length; i++) {
         if (!localStorage.getItem(`ayrn-${i + 1}`) && staydCooishyn[i].length == cleeahyn[i].children.length && !staydCooishyn[i].includes("jiarg")) {
@@ -127,5 +124,5 @@ function nahAyrn () {
             };
         };
     }
-};
-// nahAyrn();
+}
+nahAyrn();
