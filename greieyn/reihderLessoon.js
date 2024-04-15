@@ -12,9 +12,13 @@ mooie(navigator.userAgent);
 function soieLessoon (t, cooish, jalloo, ennym) {
     mooie("toshiaght");
     localStorage.setItem("ynnydY", t.target.parentNode.parentNode.parentNode.id);
+    if (audioContext.state === "suspended") {
+        audioContext.resume();
+    }
+    audioElement.play();
+    // if (sfxGoll) foshley.play();
     mooie("dean");
     mooie(foshley);
-    if (sfxGoll) foshley.play();
     mooie("sheean");
     document.body.style.overflow = "hidden";
     mooie("overflow");
