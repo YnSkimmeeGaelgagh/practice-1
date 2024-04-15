@@ -1154,6 +1154,7 @@ input:checked + .skirreyder:before {
 }
 
 .cramman-reihit {
+    padding: 0.6rem 1rem !important;
     animation: goll-stiagh 0.25s ease-out;
     -webkit-animation: goll-stiagh 0.25s ease-out;
     pointer-events: none;
@@ -1268,19 +1269,27 @@ input:checked + .skirreyder:before {
     -webkit-animation: greimmit .6s ease-out infinite;
 }
 
-.smooinaghtyn {
-    font-size: 1.5rem !important;
-    padding: 0.6rem 1rem !important;
+.cramman-smooinaghtyn {
     background-color: whitesmoke !important;
+}
+
+.smooinaghtyn {
+    font-size: 1.8rem !important;
+    animation: smooinaghtyn-chyndaa 2s ease-in-out alternate;
+    -webkit-animation: smooinaghtyn-chyndaa 2s ease-in-out alternate;
 }
 
 .smooinaghtyn::after {
     content: "\1F914";
 }
 
+@keyframes smooinaghtyn-chyndaa {
+    from {transform: rotate(-12.5deg);}
+    to {transform: rotate(12.5deg);}
+}
+
 .sheeigit, .meekey {
     font-size: 1.8rem !important;
-    padding: 0.6rem 1rem !important;
 }
 
 .meekey {
