@@ -1275,8 +1275,8 @@ input:checked + .skirreyder:before {
 
 .smooinaghtyn {
     font-size: 1.8rem !important;
-    animation: smooinaghtyn-chyndaa 2s ease-in-out alternate;
-    -webkit-animation: smooinaghtyn-chyndaa 2s ease-in-out alternate;
+    animation: smooinaghtyn-chyndaa 2s ease-in-out alternate infinite;
+    -webkit-animation: smooinaghtyn-chyndaa 2s ease-in-out alternate infinite;
 }
 
 .smooinaghtyn::after {
