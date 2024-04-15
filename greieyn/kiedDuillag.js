@@ -1,3 +1,10 @@
+const cons = document.createElement("div");
+cons.style.width = "100%";
+cons.style.height = "300px";
+cons.style.border = "4px solid black";
+cons.textContent = "------ console ------";
+document.body.append(cons);
+
 const saaghToshiaght = document.getElementById("kied-saagh-toshiaght");
 const arraghToshiaght = () => {
     saaghToshiaght.remove();
@@ -108,6 +115,15 @@ function nahAyrn () {
         });
         return cArr;
     };
+    const p1 = document.createElement("p");
+    p1.textContent = staydCooishyn[0];
+    const p2 = document.createElement("p");
+    p2.textContent = staydCooishyn[1];
+    const p3 = document.createElement("p");
+    p3.textContent = staydCooishyn[2];
+    const p4 = document.createElement("p");
+    p4.textContent = cleeahyn[0].children.length;
+    cons.append(p1, p2, p3, p4);
     // prow dagh cooish d'akin vel ad er n'gheddyn gorrym ny ny share
     for (let i = 0; i < staydCooishyn.length; i++) {
         if (!localStorage.getItem(`ayrn-${i + 1}`) && staydCooishyn[i].length == cleeahyn[i].children.length && !staydCooishyn[i].includes("jiarg")) {
