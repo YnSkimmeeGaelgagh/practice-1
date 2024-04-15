@@ -48,8 +48,8 @@ const raaghyn = {
         focklyn: ["çhing"]
     },
     9: {
-        baarle: "Are you excited? I'm not sick.",
-        gaelg: "Vel oo greesit ? Cha nel mee çhing .",
+        baarle: "Are you excited? You're not sick!",
+        gaelg: "Vel oo greesit ? Cha nel oo çhing !",
         sheean: "../sheeanyn/ennaghtyn-eaishtagh-9.mp3",
         focklyn: []
     },
