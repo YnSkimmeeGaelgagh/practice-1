@@ -123,6 +123,7 @@ function scugh () {
                 c.style.pointerEvents = "all";
                 c.classList.remove("fockle-kiart", "fockle-neuchiart");
             });
+            [...saaghFocklyn.children].forEach(f => f.style.pointerEvents = "all");
             if (daah == "#B3D334") troggDuillag();
         }, farkiaght);
     }
@@ -133,6 +134,7 @@ function scugh () {
         crammanFreggyrt.classList.add("cramman-reihit");
         const arrFreggyrtKiart = freggyrt.split(" ");
         function prowFreggyrt () {
+            [...saaghFocklyn.children].forEach(f => f.style.pointerEvents = "none");
             if (arrCurStiagh.length == 0) {
                 if (sfxGoll) neuChiart.play();
                 freggyrtNeuChiart();
