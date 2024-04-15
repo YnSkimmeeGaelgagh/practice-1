@@ -49,24 +49,24 @@ const raaghyn = {
         focklyn: ["kys t'ou?"]
     },
     8: {
-        baarle: "I'm fine. Are you happy?",
-        gaelg: "Ta mee braew . Vel oo maynrey ?",
+        baarle: "Are you fine? Are you happy?",
+        gaelg: "Vel oo braew ? Vel oo maynrey ?",
         caslys: "../caslyssyn/braew.webp",
         sheean: "../sheeanyn/ennaghtyn-screeu-8.mp3",
-        focklyn: ["braew"]
+        focklyn: ["braew", "maynrey"]
     },
     9: {
-        baarle: "Are you tired? I'm not tired. I'm excited!",
-        gaelg: "Vel oo skee ? Cha nel mee skee . Ta mee greesit !",
+        baarle: "Are you tired? You're not tired, you're excited!",
+        gaelg: "Vel oo skee ? Cha nel oo skee , t'ou greesit !",
         caslys: "../caslyssyn/greesit.webp",
         sheean: "../sheeanyn/ennaghtyn-screeu-9.mp3",
         focklyn: ["greesit"]
     },
     10: {
-        baarle: "I'm happy! How are you? You're not sad!",
-        gaelg: "Ta mee maynrey ! Kys t'ou ? Cha nel oo trimshagh !",
+        baarle: "Are you happy! How are you? You're not sad!",
+        gaelg: "Vel oo maynrey ! Kys t'ou ? Cha nel oo trimshagh !",
         caslys: "../caslyssyn/maynrey.webp",
         sheean: "../sheeanyn/ennaghtyn-screeu-10.mp3",
-        focklyn: ["maynrey"]
+        focklyn: []
     }
 }
