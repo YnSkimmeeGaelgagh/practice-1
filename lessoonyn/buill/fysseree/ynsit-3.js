@@ -1,7 +1,7 @@
 focklynYnsit = [...focklynYnsit].concat([
     "c'raad",
     "ayns",
-    "cummal",
+    "beaghey",
     "Doolish",
     "Laksaa",
     "Rhumsaa",
