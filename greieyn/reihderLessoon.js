@@ -12,7 +12,6 @@ function soieLessoon (t, cooish, jalloo, ennym) {
     localStorage.setItem("ynnydY", t.target.parentNode.parentNode.parentNode.id);
     if (sfxGoll) foshley.play();
     document.body.style.overflow = "hidden";
-    mooie("mean soie lessoon");
     const saaghLessoon = document.getElementById("saagh-lessoon");
     saaghLessoon.style.visibility = "visible";
     const coyrleLessoon = document.getElementById("coyrle-lessoon");
