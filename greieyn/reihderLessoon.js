@@ -11,7 +11,7 @@ cleeahyn.forEach(c => {
 function soieLessoon (t, cooish, jalloo, ennym) {
     mooie("toshiaght");
     localStorage.setItem("ynnydY", t.target.parentNode.parentNode.parentNode.id);
-    mooie(t.target);
+    mooie("dean");
     if (sfxGoll) foshley.play();
     mooie("sheean");
     document.body.style.overflow = "hidden";
