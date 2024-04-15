@@ -81,7 +81,7 @@ function nahAyrn () {
         if (sfxGoll) ymHeidey.play();
         setTimeout(() => {
             glassBrishey.play();
-            glassyn[earroo].src = "../caslyssyn/glass-brisht.webp";
+            glassyn[earroo].src = "caslyssyn/glass-brisht.webp";
             glassyn[earroo].classList.add("glass-brisht");
             linnaghynScarrey[earroo].style.visibility = "hidden";
             cleeahyn[earroo + 1].classList.add("ayrn-jeant");
