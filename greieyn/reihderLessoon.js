@@ -4,7 +4,11 @@ cleeahyn.forEach(c => {
     const paitchyn = [...c.children];
     paitchyn.forEach(p => {
         const jalloo = p.childNodes[3].childNodes[1].src;
-        p.onclick = t => soieLessoon(t, p.title, jalloo, p.textContent.trim());
+        p.onclick = t => try {
+            soieLessoon(t, p.title, jalloo, p.textContent.trim());
+        } catch (error) {
+            mooie(error)
+        }
     });
 });
 
@@ -12,6 +16,7 @@ function soieLessoon (t, cooish, jalloo, ennym) {
     localStorage.setItem("ynnydY", t.target.parentNode.parentNode.parentNode.id);
     if (sfxGoll) foshley.play();
     document.body.style.overflow = "hidden";
+    mooie("mean soie lessoon");
     const saaghLessoon = document.getElementById("saagh-lessoon");
     saaghLessoon.style.visibility = "visible";
     const coyrleLessoon = document.getElementById("coyrle-lessoon");
@@ -25,7 +30,6 @@ function soieLessoon (t, cooish, jalloo, ennym) {
     saaghRolleyFocklyn.append(hr);
     let gammanynJeant = [true, true, true];
     let syCheead  = [[], [], []];
-    mooie("mean soie lessoon");
     focklynRyYnsagh[cooish].forEach((f, i) => {
         const dG = document.createElement("div");
             dG.textContent = f[0];
