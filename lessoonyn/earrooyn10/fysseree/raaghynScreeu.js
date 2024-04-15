@@ -50,7 +50,7 @@ const raaghyn = {
     },
     8: {
         baarle: "Are you sad? You're not sad, you're two years old.",
-        gaelg: "Vel oo trimsagh ? Cha nel oo trimshagh , t'ou daa vlein d'eash .",
+        gaelg: "Vel oo trimshagh ? Cha nel oo trimshagh , t'ou daa vlein d'eash .",
         caslys: "../caslyssyn/queig.webp",
         sheean: "../sheeanyn/earrooyn-10-screeu-8.mp3",
         focklyn: ["daa vlein", "queig"]
