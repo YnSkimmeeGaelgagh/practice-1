@@ -49,8 +49,8 @@ const raaghyn = {
         focklyn: []
     },
     8: {
-        baarle: "I have a snake. It's green. Do you have a snake?",
-        gaelg: "Ta ardnieu aym . T'eh glass . Vel ardnieu ayd ?",
+        baarle: "I have a snake. It's green. Where's my snake?",
+        gaelg: "Ta ardnieu aym . T'eh glass . C'raad ta'n ardnieu aym ?",
         caslys: "../../bigginyn/caslyssyn/ardnieu.webp",
         sheean: "../sheeanyn/raaghyn-screeu-8.mp3",
         focklyn: []
