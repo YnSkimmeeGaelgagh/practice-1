@@ -63,8 +63,8 @@ const raaghyn = {
         focklyn: ["bodjallagh"]
     },
     10: {
-        baarle: "Do you like chips in Laxey in fine weather? Wednesday, I like sausages in windy weather.",
-        gaelg: "Laik lhiat spollagyn ayns Laksaa ayns emshyr braew ? Jecrean , s'laik lhiam pronnagyn ayns emshyr geayagh .",
+        baarle: "Wednesday, you like sausages in windy weather! Do you like chips in Laxey in fine weather?",
+        gaelg: "Jecrean , s'laik lhiat pronnagyn ayns emshyr geayagh ! Laik lhiat spollagyn ayns Laksaa ayns emshyr braew ?",
         caslys: "../caslyssyn/geayagh.webp",
         sheean: "../sheeanyn/screeu-10.mp3",
         focklyn: []
