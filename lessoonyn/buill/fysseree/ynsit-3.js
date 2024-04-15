@@ -7,6 +7,6 @@ focklynYnsit = [...focklynYnsit].concat([
     "Rhumsaa",
     "Purt-ny-hInshey",
     "Purt Çhiarn",
-    "Purt le Moirrey",
+    "Purt-le-Moirrey",
     "Balley Chashtal"
 ]);
