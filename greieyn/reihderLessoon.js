@@ -12,6 +12,7 @@ function soieLessoon (t, cooish, jalloo, ennym) {
     mooie("toshiaght");
     localStorage.setItem("ynnydY", t.target.parentNode.parentNode.parentNode.id);
     mooie("dean");
+    mooie(foshley);
     if (sfxGoll) foshley.play();
     mooie("sheean");
     document.body.style.overflow = "hidden";
