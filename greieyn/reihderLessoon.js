@@ -13,7 +13,9 @@ function soieLessoon (t, cooish, jalloo, ennym) {
     localStorage.setItem("ynnydY", t.target.parentNode.parentNode.parentNode.id);
     mooie(t.target);
     if (sfxGoll) foshley.play();
+    mooie("sheean");
     document.body.style.overflow = "hidden";
+    mooie("overflow");
     const saaghLessoon = document.getElementById("saagh-lessoon");
     saaghLessoon.style.visibility = "visible";
     const coyrleLessoon = document.getElementById("coyrle-lessoon");
@@ -22,6 +24,7 @@ function soieLessoon (t, cooish, jalloo, ennym) {
     ennymLessoon.textContent = ennym;
     const caslysLessoon = document.getElementById("caslys-lessoon");
     caslysLessoon.src = jalloo;
+    mooie("ayrnyn");
     const saaghRolleyFocklyn = document.getElementById("saagh-rolley-focklyn");
     const hr = document.createElement("hr");
     saaghRolleyFocklyn.append(hr);
