@@ -108,16 +108,19 @@ function scugh () {
     const saagh = document.getElementById("saagh");
     function caghlaaSaagh (daah, farkiaght = 500) {
         cleeah.style.outlineColor = daah;
+        crammanFreggyrt.classList.remove("smooinaghtyn");
         crammanFreggyrt.style.backgroundColor = daah;
-        if (daah == "crimson") crammanFreggyrt.style.color = "white";
+        if (daah == "crimson") crammanFreggyrt.classList.add("sheeigit");
+        else crammanFreggyrt.classList.add("meekey");
         setTimeout(() => {
             if (earrooFeysht - 1 == Object.keys(raaghyn).length) {
                 jerreyGamman();
                 return;
             };
-            crammanFreggyrt.classList.remove("cramman-reihit");
+            crammanFreggyrt.classList.remove("cramman-reihit", "meekey", "sheeigit");
             crammanFreggyrt.style.backgroundColor = "lightblue";
             crammanFreggyrt.style.color = "black";
+            crammanFreggyrt.textContent = "check";
             cleeah.style.outlineColor = "transparent";
             [...saaghFreggyrt.children].forEach(c => {
                 c.style.pointerEvents = "all";
@@ -135,6 +138,8 @@ function scugh () {
         const arrFreggyrtKiart = freggyrt.split(" ");
         function prowFreggyrt () {
             [...saaghFocklyn.children].forEach(f => f.style.pointerEvents = "none");
+            t.target.textContent = "";
+            t.target.classList.add("smooinaghtyn");
             if (arrCurStiagh.length == 0) {
                 neuChiart.play();
                 freggyrtNeuChiart();
