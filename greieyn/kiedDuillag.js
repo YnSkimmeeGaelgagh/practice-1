@@ -72,6 +72,10 @@ function soieRollageyn (cooish, caslys) {
     }
 }
 
+const m = document.createElement("p");
+m.textContent = "roish function";
+cons.append(m);
+
 function fowRollageyn () {
     const caslyssyn = [...document.getElementsByClassName("rollage")];
     Object.keys(focklynRyYnsagh).forEach((k, i) => soieRollageyn(k, caslyssyn[i].childNodes[1]));
