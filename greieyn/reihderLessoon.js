@@ -7,7 +7,7 @@ cleeahyn.forEach(c => {
         p.onclick = t => soieLessoon(t, p.title, jalloo, p.textContent.trim());
     });
 });
-
+mooie(navigator.userAgent);
 function soieLessoon (t, cooish, jalloo, ennym) {
     mooie("toshiaght");
     localStorage.setItem("ynnydY", t.target.parentNode.parentNode.parentNode.id);
