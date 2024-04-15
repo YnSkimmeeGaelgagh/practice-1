@@ -1,6 +1,6 @@
 focklynYnsit = [...focklynYnsit].concat([
     "cre",
-    "s'mie",
+    "s'laik",
     "lhiam",
     "lhiat",
     "ooylyn",
