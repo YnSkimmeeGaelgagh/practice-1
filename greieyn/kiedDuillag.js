@@ -77,9 +77,9 @@ function nahAyrn () {
     const cleeahyn = document.getElementsByClassName("cleeah-cooish");
     function foshilGlass (earroo) {
         linnaghynScarrey[earroo].classList.add("nah-ayrn");
-        if (sfxGoll) ymHeidey.play();
+        if (sfxGoll) cloieSheean(ymHeidey);
         setTimeout(() => {
-            glassBrishey.play();
+            cloieSheean(glassBrishey);
             glassyn[earroo].src = "../caslyssyn/glass-brisht.webp";
             glassyn[earroo].classList.add("glass-brisht");
             linnaghynScarrey[earroo].style.visibility = "hidden";
@@ -114,7 +114,7 @@ function nahAyrn () {
             localStorage.setItem(`ayrn-${i + 1}`, "jeant");
             if (i < staydCooishyn.length - 1) foshilGlass(i);
             else {
-                jerreyMie.play();
+                cloieSheean(jerreyMie);
                 const saaghOoilleyJeant = document.getElementById("saagh-ooilley-jeant");
                 saaghOoilleyJeant.style.visibility = "visible";
                 const coyrleOoilleyJeant = document.getElementById("coyrle-ooilley-jeant");
