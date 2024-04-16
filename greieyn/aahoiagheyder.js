@@ -8,16 +8,12 @@ crammanAahoiaghey.onclick = () => {
         soieCaghlaaghynYnnydagh();
         const daghCaslys = [...document.getElementsByClassName("caslys-chooish")];
         daghCaslys.forEach(c => c.classList.add("aahoit"));
-        if (sfxGoll) {
-            const sheeanAahoit = new Audio("sheeanyn/aahoit.mp3");
-            sheeanAahoit.play();
-        };
+        if (sfxGoll) cloieSheean(sheeanAahoit);
         fowRollageyn();
         setTimeout(() => {
             localStorage.clear();
             window.location.reload();
         }, 600);
-        // will need to put padlocks back in place, too
     };
     const neuHickyrAahoiaghey = document.getElementById("neuhickyr-aahoiaghey");
     neuHickyrAahoiaghey.onclick = () => raue.style.visibility = "hidden";
