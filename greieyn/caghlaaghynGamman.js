@@ -1,10 +1,10 @@
 let kiaullGoll = sessionStorage.getItem("kiaullGoll") == "true" ? true : false;
 let sfxGoll = sessionStorage.getItem("sfxGoll") == "true" ? true : false;
 const veih = location.pathname;
-// let foshley;
-let dooney;
-let ymHeidey;
-let glassBrishey;
+const foshley = "sheeanyn/foshley.mp3";
+let dooney = "sheeanyn/dooney.mp3";
+let ymHeidey = "sheeanyn/ym-heidey.mp3";
+let glassBrishey = "sheeanyn/glass-brishey.mp3";
 let fockleKiart;
 let kiart;
 let neuChiart;
@@ -12,10 +12,10 @@ let jerreyMie;
 let jerreyCadjin;
 
 if (veih.endsWith("/index.html") || veih.endsWith("/")) {
-    foshley = document.getElementById("sheean-foshley");
-    dooney = document.getElementById("sheean-dooney");
-    ymHeidey = document.getElementById("sheean-ym-heidey");
-    glassBrishey = document.getElementById("glass-brishey");
+    // foshley = document.getElementById("sheean-foshley");
+    // dooney = document.getElementById("sheean-dooney");
+    // ymHeidey = document.getElementById("sheean-ym-heidey");
+    // glassBrishey = document.getElementById("glass-brishey");
 } else if (!veih.endsWith("/index.html")) {
     fockleKiart = new Audio("../../../sheeanyn/fockle-kiart.mp3");
     kiart = new Audio("../../../sheeanyn/clinck.mp3");
