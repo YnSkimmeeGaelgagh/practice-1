@@ -6,5 +6,5 @@ function eaishtReesht () {
             caslysEaishtagh.classList.remove("sheean");
         }, raaghyn[earrooFeysht].sheean.duration * 1000);
     }, 100);
-    raaghyn[earrooFeysht].sheean.play();
+    cloieSheean(raaghyn[earrooFeysht].sheean);
 }
