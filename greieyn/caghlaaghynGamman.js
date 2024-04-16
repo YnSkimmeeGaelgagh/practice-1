@@ -1,7 +1,7 @@
 let kiaullGoll = sessionStorage.getItem("kiaullGoll") == "true" ? true : false;
 let sfxGoll = sessionStorage.getItem("sfxGoll") == "true" ? true : false;
 const veih = location.pathname;
-let foshley;
+// let foshley;
 let dooney;
 let ymHeidey;
 let glassBrishey;
@@ -11,7 +11,7 @@ let neuChiart;
 let jerreyMie;
 let jerreyCadjin;
 
-if (veih.endsWith("/index.html")) {
+if (veih.endsWith("/index.html") || veih.endsWith("/")) {
     foshley = document.getElementById("sheean-foshley");
     dooney = document.getElementById("sheean-dooney");
     ymHeidey = document.getElementById("sheean-ym-heidey");
