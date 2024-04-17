@@ -13,13 +13,12 @@ function soieKiaull () {
             lhoob = new Audio("../../../sheeanyn/lhoob-eaishtagh.mp3");
             break;
         default:
-            lhoob = document.getElementById("sheean-lhoob");
+            lhoob = new Audio("sheeanyn/lhoob-thie.mp3");
     }
     lhoob.loop = true;
 }
 soieKiaull();
 
-const LhoobCoheks = window.AudioContext || window.webkitAudioContext;
-const lhoobCoheks = new AudioContext();
+const lhoobCoheks = new AudioContext() || window.AudioContext || window.webkitAudioContext;
 const bolleyLhoob = lhoobCoheks.createMediaElementSource(lhoob);
 bolleyLhoob.connect(lhoobCoheks.destination);
