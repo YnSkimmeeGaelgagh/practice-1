@@ -95,7 +95,6 @@ function soieLessoon (t, cooish, jalloo, ennym) {
         if (gammanynJeant[i]) c.style.visibility = "visible"
     });
     function faagailLessoon () {
-        // if (sfxGoll) dooney.play();
         if (sfxGoll) cloieSheean(dooney);
         cowraghynJeant.forEach(c => c.style.visibility = "hidden");
         gridImmeeaght.forEach(s => s.style.visibility = "hidden");
