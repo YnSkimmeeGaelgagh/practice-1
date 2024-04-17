@@ -2,7 +2,12 @@ const ardSkirreyderKiaull = document.getElementById("ard-skirreyder-kiaull");
 ardSkirreyderKiaull.onchange = () => {
     sessionStorage.setItem("kiaullGoll", ardSkirreyderKiaull.checked);
     kiaullGoll = sessionStorage.getItem("kiaullGoll") == "true" ? true : false;
-    kiaullGoll ? lhoob.play() : lhoob.pause();
+    if (kiaullGoll) {
+        if (lhoobCoheks.state === "suspended") {
+            lhoobCoheks.resume();
+        };
+        lhoob.play();
+    } else lhoob.pause();
 }
 const caghlaaArdSkirreyderKiaull = (stayd) => ardSkirreyderKiaull.checked = stayd;
 
