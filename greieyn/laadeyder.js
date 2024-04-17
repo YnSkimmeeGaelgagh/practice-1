@@ -22,7 +22,8 @@ function cloieSheean (s) {
         const bufferSource = context.createBufferSource();
         bufferSource.buffer = buffer;
         bufferSource.connect(context.destination);
-        bufferSource.start(s.traa);
+        bufferSource.stop();
+        bufferSource.start(context.currentTime + s.traa);
         if (s.caslys) {
             let mayrnaght = bufferSource.buffer.duration;
             setTimeout(() => {
