@@ -5,8 +5,8 @@ function clickit () {
         const daghCramman = document.getElementsByClassName("reih-creshoh");
         [...daghCramman].forEach(c => c.style.pointerEvents = "none");
         if (sfxGoll) {
-            cloieSheean(kiart);
-            cloieSheean(raaghyn[reihyn[feysht]].sheean);
+            cloieSheean({raad: kiart});
+            cloieSheean({raad: raaghyn[reihyn[feysht]].sheean});
         };
         this.style.backgroundColor = "chartreuse";
         feysht++;
@@ -20,7 +20,7 @@ function clickit () {
                 if (kiaullGoll) {
                     lhoob.pause();
                     let kiaullJerrinagh = agg >= 108 ? jerreyMie : jerreyCadjin;
-                    kiaullJerrinagh.play();
+                    cloieSheean({raad: kiaullJerrinagh});
                 };
                 const nynAgg = (smoo, sloo) => {
                     if (agg >= smoo * earrooFeyshtyn && agg < sloo * earrooFeyshtyn) {
@@ -48,7 +48,7 @@ function clickit () {
         };
         setTimeout(caghlaaMean, 500);
     } else {
-        if (sfxGoll) cloieSheean(neuChiart);
+        if (sfxGoll) cloieSheean({raad: neuChiart});
         if (agg > 0) { 
             agg--;
             roie = 0;
