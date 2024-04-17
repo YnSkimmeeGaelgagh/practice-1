@@ -9,7 +9,7 @@ function gowToshiaght (sk, sfx) {
     localStorage.setItem("foRaad", true);
     sessionStorage.setItem("kiaullGoll", sk.checked);
     kiaullGoll = sessionStorage.getItem("kiaullGoll") == "true" ? true : false;
-        if (kiaullGoll) {
+    if (kiaullGoll) {
         if (lhoobCoheks.state === "suspended") {
             lhoobCoheks.resume();
         };
@@ -31,7 +31,12 @@ if (localStorage.getItem("trooidGamman")) {
     arraghToshiaght();
     caghlaaArdSkirreyderKiaull(sessionStorage.getItem("kiaullGoll") == "true" ? true : false);
     caghlaaArdSkirreyderSFX(skirreyderSFX.checked = sessionStorage.getItem("sfxGoll") == "true" ? true : false);
-    if (kiaullGoll) lhoob.play();
+    if (kiaullGoll) {
+        if (lhoobCoheks.state === "suspended") {
+            lhoobCoheks.resume();
+        };
+        lhoob.play();
+    };
 }
 else {
     saaghToshiaght.style.visibility = "visible";
@@ -84,7 +89,7 @@ function nahAyrn () {
         linnaghynScarrey[earroo].classList.add("nah-ayrn");
         if (sfxGoll) cloieSheean(ymHeidey);
         setTimeout(() => {
-            cloieSheean(glassBrishey);
+            if (sfxGoll) cloieSheean(glassBrishey);
             glassyn[earroo].src = "../caslyssyn/glass-brisht.webp";
             glassyn[earroo].classList.add("glass-brisht");
             linnaghynScarrey[earroo].style.visibility = "hidden";
@@ -119,7 +124,7 @@ function nahAyrn () {
             localStorage.setItem(`ayrn-${i + 1}`, "jeant");
             if (i < staydCooishyn.length - 1) foshilGlass(i);
             else {
-                cloieSheean(jerreyMie);
+                if (sfxGoll) cloieSheean(jerreyMie);
                 const saaghOoilleyJeant = document.getElementById("saagh-ooilley-jeant");
                 saaghOoilleyJeant.style.visibility = "visible";
                 const coyrleOoilleyJeant = document.getElementById("coyrle-ooilley-jeant");
