@@ -2,7 +2,7 @@ function jerreyGamman () {
     if (kiaullGoll) {
         lhoob.pause();
         let kiaullJerrinagh = agg > Math.round(mooadys / 2) ? jerreyMie : jerreyCadjin;
-        kiaullJerrinagh.play();
+        cloieSheean({raad: kiaullJerrinagh});
     };
     const saaghJeant = document.getElementById("saagh-jeant");
     saaghJeant.style.visibility = "visible";
@@ -19,7 +19,6 @@ function jerreyGamman () {
     let ayrn = 1;
     for (let i = 0; i < 5; i++) {
         const earroo = Math.round(mooadys * ayrn);
-        // aggyn[i].children[1].textContent = earroo;
         aggyn[i].classList.add(nynAgg(earroo));
         ayrn -= .2;
     }
