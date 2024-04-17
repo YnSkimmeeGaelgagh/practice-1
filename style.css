@@ -550,9 +550,11 @@ figcaption {
     width: var(--yrjid-crammanyn);
 }
 
-.cramman-lessoon:hover {
-    transform: scale(1.1);
-    filter: brightness(var(--sollyssid));
+@media (hover:hover) {
+    .cramman-lessoon:hover {
+        transform: scale(1.1);
+        filter: brightness(var(--sollyssid));
+    }
 }
 
 .ennym-gamman {
@@ -619,8 +621,10 @@ figcaption {
     border-radius: var(--corneillyn);
 }
 
-#cramman-lessoon-doon:hover {
-    filter: brightness(var(--sollyssid));
+@media (hover:hover) {
+    #cramman-lessoon-doon:hover {
+        filter: brightness(var(--sollyssid));
+    }
 }
 
 #cramman-aahoiaghey {
@@ -926,9 +930,11 @@ input:checked + .skirreyder:before {
     z-index: 1;
 }
 
-#caslys-eaishtagh:hover {
-    filter: brightness(120%);
-    cursor: pointer;
+@media (hover:hover) {
+    #caslys-eaishtagh:hover {
+        filter: brightness(120%);
+        cursor: pointer;
+    }
 }
 
 #saraghyn-eaishtagh {
@@ -952,10 +958,12 @@ input:checked + .skirreyder:before {
     border-radius: var(--corneillyn);
 }
 
-#cramman-faaue:hover {
-    cursor: pointer;
-    background-color: grey;
-    color: white;
+@media (hover:hover) {
+    #cramman-faaue:hover {
+        cursor: pointer;
+        background-color: grey;
+        color: white;
+    }
 }
 
 .cramman-faaue-follit {
