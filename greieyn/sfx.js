@@ -1,5 +1,5 @@
 function cloieSheean (s) {
-    const context = new AudioContext() || new webkitAudioContext();
+    const context = new AudioContext() || window.AudioContext || window.webkitAudioContext;
     const request = new XMLHttpRequest();
     request.open("GET", s, true);
     request.responseType = "arraybuffer";
