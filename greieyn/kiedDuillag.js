@@ -9,7 +9,12 @@ function gowToshiaght (sk, sfx) {
     localStorage.setItem("foRaad", true);
     sessionStorage.setItem("kiaullGoll", sk.checked);
     kiaullGoll = sessionStorage.getItem("kiaullGoll") == "true" ? true : false;
-    if (kiaullGoll) lhoob.play();
+        if (kiaullGoll) {
+        if (lhoobCoheks.state === "suspended") {
+            lhoobCoheks.resume();
+        };
+        lhoob.play();
+    }
     sessionStorage.setItem("sfxGoll", sfx.checked);
     sfxGoll = sessionStorage.getItem("sfxGoll") == "true" ? true : false;
     arraghToshiaght();
