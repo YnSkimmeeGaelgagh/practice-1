@@ -13,6 +13,7 @@
 })();
 
 function cloieSheean (s) {
+    if (!s.traa) s.traa = 0;
     const context = new AudioContext() || new webkitAudioContext();
     const request = new XMLHttpRequest();
     request.open("GET", s.raad, true);
