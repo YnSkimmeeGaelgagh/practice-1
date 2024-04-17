@@ -1,5 +1,10 @@
 function gowToshiaght (t, keintGamman) {
-    if (kiaullGoll) lhoob.play();
+    if (kiaullGoll) {
+        if (lhoobCoheks.state === "suspended") {
+            lhoobCoheks.resume();
+        };
+        lhoob.play();
+    };
     document.body.style.overflow = "scroll";
     if (keintGamman == "creshoh") traa();
     if (keintGamman == "eaishtagh") setTimeout(eaishtReesht, 500);
