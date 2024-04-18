@@ -13,7 +13,6 @@
 })();
 
 function cloieSheean (s) {
-    if (!s.traa) s.traa = 0;
     const context = new AudioContext() || new webkitAudioContext();
     const request = new XMLHttpRequest();
     request.open("GET", s.raad, true);
@@ -23,15 +22,16 @@ function cloieSheean (s) {
         const bufferSource = context.createBufferSource();
         bufferSource.buffer = buffer;
         bufferSource.connect(context.destination);
-        bufferSource.start(context.currentTime + s.traa);
+        bufferSource.start(context.currentTime);
         if (s.caslys) {
             let mayrnaght = bufferSource.buffer.duration;
             setTimeout(() => {
                 s.caslys.classList.remove("sheean");
             }, mayrnaght * 1000);
         };
-        if (s.screeu) {
-            bufferSource.onended = () => curSaaghBack(true);
+        bufferSource.onended = () => {
+            bufferSource.stop(context.currentTime);
+            if (s.screeu) curSaaghBack(true);
         }
     };
     request.send();
