@@ -12,17 +12,18 @@
     document.body.onload = () => screenLaadey.remove();
 })();
 
+const sfxCoheks = new AudioContext() || new webkitAudioContext();
+
 function cloieSheean (s) {
-    const context = new AudioContext() || new webkitAudioContext();
     const request = new XMLHttpRequest();
     request.open("GET", s.raad, true);
     request.responseType = "arraybuffer";
-    request.onload = () => context.decodeAudioData(request.response, onDecoded);
+    request.onload = () => sfxCoheks.decodeAudioData(request.response, onDecoded);
     function onDecoded(buffer) {
-        const bufferSource = context.createBufferSource();
+        const bufferSource = sfxCoheks.createBufferSource();
         bufferSource.buffer = buffer;
-        bufferSource.connect(context.destination);
-        bufferSource.start(context.currentTime);
+        bufferSource.connect(sfxCoheks.destination);
+        bufferSource.start(sfxCoheks.currentTime);
         if (s.caslys) {
             let mayrnaght = bufferSource.buffer.duration;
             setTimeout(() => {
@@ -30,7 +31,8 @@ function cloieSheean (s) {
             }, mayrnaght * 1000);
         };
         bufferSource.onended = () => {
-            bufferSource.stop(context.currentTime);
+            bufferSource.stop(sfxCoheks.currentTime);
+            bufferSource.disconnect(sfxCoheks);
             if (s.screeu) curSaaghBack(true);
         }
     };
