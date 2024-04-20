@@ -7,12 +7,10 @@ function scugh () {
     const saaghFreggyrt = document.getElementById("saagh-freggyrt");
     const saaghFocklyn = document.getElementById("saagh-focklyn");
     const focklyn = [...document.getElementsByClassName("fockle")];
-    const sheeanClick = "../../../sheeanyn/click.mp3";
-    const sheeanArraghey = "../../../sheeanyn/arraghey.mp3";
     let pointRyGheddyn = true;
     focklyn.forEach(w => w.onpointerdown = greim);
     function curFockleStiagh (f) {
-        cloieSheean({raad: sheeanClick});
+        cloieSheean("sheeanClick");
         const cloan = f.cloneNode(true);
         const cloanXY = [f.offsetWidth, f.offsetHeight];
         [cloan.style.width, cloan.style.height] = [cloanXY[0] + "px", cloanXY[1] + "px"];
@@ -20,7 +18,7 @@ function scugh () {
         cloan.classList.add("cloan");
         saaghFocklyn.replaceChild(cloan, f);
         f.onpointerdown = () => {
-            cloieSheean({raad: sheeanArraghey});
+            cloieSheean("sheeanArraghey");
             f.remove();
             f.onpointerdown = greim;
             f.classList.remove("reihit");
@@ -145,7 +143,7 @@ function scugh () {
             const emoji = trogAyrn({red: "div", ennym: "emoji", keint: ["smooinaghtyn"]});
             t.target.append(emoji);
             if (arrCurStiagh.length == 0) {
-                cloieSheean({raad: neuChiart});
+                cloieSheean("neuChiart");
                 freggyrtNeuChiart();
                 return;
             };
@@ -153,7 +151,7 @@ function scugh () {
             let i = 0;
             const nahReggyrt = () => {
                 if (arrCurStiagh[i] == arrFreggyrtKiart[i]) {
-                    cloieSheean({raad:fockleKiart});
+                    cloieSheean("fockleKiart");
                     saaghFreggyrt.children[i].classList.add("fockle-kiart");
                     const lhiurid = arrCurStiagh.length;
                     if (i < arrCurStiagh.length - 1) setTimeout(nahReggyrt, (500 / lhiurid) * (lhiurid - i));
@@ -174,7 +172,7 @@ function scugh () {
         }
         prowFreggyrt();
         function freggyrtKiart () {
-            cloieSheean({raad: kiart});
+            cloieSheean("kiart");
             const caslys = document.getElementById("caslys-eaishtagh");
             caslys.classList.add("kiart");
             for (let i = 0; i < 6; i++) {
@@ -204,7 +202,7 @@ function scugh () {
             caghlaaSaagh("#B3D334", 2000);
         }
         function freggyrtNeuChiart () {
-            cloieSheean({raad: neuChiart});
+            cloieSheean("neuChiart");
             saagh.classList.add("freggyrt-neuchiart");
             Promise.all(saagh.getAnimations().map(a => a.finished)).then(() => saagh.classList.remove("freggyrt-neuchiart"));
             pointRyGheddyn = false;
