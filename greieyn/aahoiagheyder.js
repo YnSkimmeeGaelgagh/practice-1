@@ -8,7 +8,7 @@ crammanAahoiaghey.onclick = () => {
         soieCaghlaaghynYnnydagh();
         const daghCaslys = [...document.getElementsByClassName("caslys-chooish")];
         daghCaslys.forEach(c => c.classList.add("aahoit"));
-        if (sfxGoll) cloieSheean(sheeanAahoit);
+        if (sfxGoll) cloieSheean("sheeanAahoit");
         fowRollageyn();
         setTimeout(() => {
             localStorage.clear();
