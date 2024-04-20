@@ -10,7 +10,7 @@ cleeahyn.forEach(c => {
 
 function soieLessoon (t, cooish, jalloo, ennym) {
     localStorage.setItem("ynnydY", t.target.parentNode.parentNode.parentNode.id);
-    if (sfxGoll) cloieSheean(foshley);
+    if (sfxGoll) cloieSheean("foshley");
     document.body.style.overflow = "hidden";
     const saaghLessoon = document.getElementById("saagh-lessoon");
     saaghLessoon.style.visibility = "visible";
@@ -95,7 +95,7 @@ function soieLessoon (t, cooish, jalloo, ennym) {
         if (gammanynJeant[i]) c.style.visibility = "visible"
     });
     function faagailLessoon () {
-        if (sfxGoll) cloieSheean(dooney);
+        if (sfxGoll) cloieSheean("dooney");
         cowraghynJeant.forEach(c => c.style.visibility = "hidden");
         gridImmeeaght.forEach(s => s.style.visibility = "hidden");
         saaghLessoon.style.visibility = "hidden";
