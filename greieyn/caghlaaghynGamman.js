@@ -1,29 +1,29 @@
 let kiaullGoll = sessionStorage.getItem("kiaullGoll") == "true" ? true : false;
 let sfxGoll = sessionStorage.getItem("sfxGoll") == "true" ? true : false;
 const veih = location.pathname;
-const foshley = "sheeanyn/foshley.mp3";
-const dooney = "sheeanyn/dooney.mp3";
-const ymHeidey = "sheeanyn/ym-heidey.mp3";
-const glassBrishey = "sheeanyn/glass-brishey.mp3";
-const sheeanAahoit = "sheeanyn/aahoit.mp3";
-const fockleKiart = "../../../sheeanyn/fockle-kiart.mp3";
-const kiart = "../../../sheeanyn/clinck.mp3";
-const neuChiart = "../../../sheeanyn/neu-chiart.mp3";
-const jerreyMie = "../../../sheeanyn/jerrey-mie.mp3";
-const jerreyCadjin = "../../../sheeanyn/jerrey-cadjin.mp3";
+const sfxThieObj = {
+    foshley: "../../../sheeanyn/foshley_reduced.mp3",
+    dooney: "../../../sheeanyn/dooney_reduced.mp3",
+    ymHeidey: "../../../sheeanyn/ym-heidey_reduced.mp3",
+    glassBrishey: "../../../sheeanyn/glass-brishey_reduced.mp3",
+    sheeanAahoit: "../../../sheeanyn/aahoit_reduced.mp3",
+    jerreyMie: "../../../sheeanyn/jerrey-mie.mp3"
+};
+const sfxObj = {
+    fockleKiart: "../../../sheeanyn/fockle-kiart_reduced.mp3",
+    fockleKiart_jeenane: "../../../sheeanyn/fockle-kiart_reduced.mp3",
+    kiart: "../../../sheeanyn/clinck.mp3",
+    kiart_jeenane: "../../../sheeanyn/clinck.mp3",
+    sheeanClick: "../../../sheeanyn/click_reduced.mp3",
+    sheeanClick_jeenane: "../../../sheeanyn/click_reduced.mp3",
+    sheeanArraghey: "../../../sheeanyn/arraghey_reduced.mp3",
+    sheeanArraghey_jeenane: "../../../sheeanyn/arraghey_reduced.mp3",
+    neuChiart: "../../../sheeanyn/neu-chiart.mp3",
+    neuChiart_jeenane: "../../../sheeanyn/neu-chiart.mp3",
+    jerreyMie: "../../../sheeanyn/jerrey-mie.mp3",
+    jerreyCadjin: "../../../sheeanyn/jerrey-cadjin.mp3"
+};
 
-// if (veih.endsWith("/index.html") || veih.endsWith("/")) {
-    // foshley = document.getElementById("sheean-foshley");
-    // dooney = document.getElementById("sheean-dooney");
-    // ymHeidey = document.getElementById("sheean-ym-heidey");
-    // glassBrishey = document.getElementById("glass-brishey");
-// } else if (!veih.endsWith("/index.html")) {
-    // fockleKiart = new Audio("../../../sheeanyn/fockle-kiart.mp3");
-    // kiart = new Audio("../../../sheeanyn/clinck.mp3");
-    // neuChiart = new Audio("../../../sheeanyn/neu-chiart.mp3");
-    // jerreyMie = new Audio("../../../sheeanyn/jerrey-mie.mp3");
-    // jerreyCadjin = new Audio("../../../sheeanyn/jerrey-cadjin.mp3");
-// }
 let earrooFeysht = 1;
 let agg = 0;
 
