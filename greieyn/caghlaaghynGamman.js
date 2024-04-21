@@ -2,12 +2,12 @@ let kiaullGoll = sessionStorage.getItem("kiaullGoll") == "true" ? true : false;
 let sfxGoll = sessionStorage.getItem("sfxGoll") == "true" ? true : false;
 const veih = location.pathname;
 const sfxThieObj = {
-    foshley: "../../../sheeanyn/foshley_reduced.mp3",
-    dooney: "../../../sheeanyn/dooney_reduced.mp3",
-    ymHeidey: "../../../sheeanyn/ym-heidey_reduced.mp3",
-    glassBrishey: "../../../sheeanyn/glass-brishey_reduced.mp3",
-    sheeanAahoit: "../../../sheeanyn/aahoit_reduced.mp3",
-    jerreyMie: "../../../sheeanyn/jerrey-mie.mp3"
+    foshley: "sheeanyn/foshley_reduced.mp3",
+    dooney: "sheeanyn/dooney_reduced.mp3",
+    ymHeidey: "sheeanyn/ym-heidey_reduced.mp3",
+    glassBrishey: "sheeanyn/glass-brishey_reduced.mp3",
+    sheeanAahoit: "sheeanyn/aahoit_reduced.mp3",
+    jerreyMie: "sheeanyn/jerrey-mie.mp3"
 };
 const sfxObj = {
     fockleKiart: "../../../sheeanyn/fockle-kiart_reduced.mp3",
