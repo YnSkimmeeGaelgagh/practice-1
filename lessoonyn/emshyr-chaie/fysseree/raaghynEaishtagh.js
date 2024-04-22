@@ -54,8 +54,8 @@ const raaghyn = {
         focklyn: []
     },
     10: {
-        baarle: "I live in Port Erin. I didn't run. I did read!",
-        gaelg: "Ta mee beaghey ayns Purt Chiarn . Cha ren mee roie . Ren mee lhaih !",
+        baarle: "I live in Port Erin. I didn't read, I ran!",
+        gaelg: "Ta mee beaghey ayns Purt Chiarn . Cha ren mee lhaih , ren mee roie !",
         sheean: "../sheeanyn/ennaghtyn-eaishtagh-10.mp3",
         focklyn: []
     }
