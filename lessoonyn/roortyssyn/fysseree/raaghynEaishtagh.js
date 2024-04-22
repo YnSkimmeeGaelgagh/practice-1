@@ -24,8 +24,8 @@ const raaghyn = {
         focklyn: ["shooyl"]
     },
     5: {
-        baarle: "I'm sleeping. I'm tired in hot weather.",
-        gaelg: "Ta mee my chadley . Ta mee skee ayns emshyr çheh .",
+        baarle: "I'm sleeping! I'm tired in hot weather!",
+        gaelg: "Ta mee my chadley ! Ta mee skee ayns emshyr çheh !",
         sheean: "../sheeanyn/eaishtagh-5.mp3",
         focklyn: ["cadley"]
     },
