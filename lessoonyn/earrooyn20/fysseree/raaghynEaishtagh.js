@@ -42,8 +42,8 @@ const raaghyn = {
         focklyn: ["nane-jeig"]
     },
     8: {
-        baarle: "Did it rain on Tuesday? I ate nineteen eggs.",
-        gaelg: "Ren eh ceau fliaghey Jemayrt ? Ren mee gee nuy oohyn jeig .",
+        baarle: "Did it rain on Tuesday? Did I eat nineteen eggs?",
+        gaelg: "Ren eh ceau fliaghey Jemayrt ? Ren mee gee nuy oohyn jeig ?",
         sheean: "../sheeanyn/eaishtagh-8.mp3",
         focklyn: ["nuy-jeig"]
     },
