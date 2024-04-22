@@ -2,7 +2,7 @@ function jerreyGamman () {
     if (kiaullGoll) {
         lhoob.pause();
         let kiaullJerrinagh = agg > Math.round(mooadys / 2) ? "jerreyMie" : "jerreyCadjin";
-        cloieSheean("kiaullJerrinagh");
+        cloieSheean(kiaullJerrinagh);
     };
     const saaghJeant = document.getElementById("saagh-jeant");
     saaghJeant.style.visibility = "visible";
