@@ -24,7 +24,7 @@ const raaghyn = {
         focklyn: ["Jemayrt"]
     },
     5: {
-        baarle: "It's not Sunday. I'm angry!",
+        baarle: "It's not Sunday! I'm angry!",
         gaelg: "Cha nee Jedoonee t'ayn ! Ta mee corree !",
         sheean: "../sheeanyn/eaishtagh-5.mp3",
         focklyn: ["Jedoonee"]
@@ -42,14 +42,14 @@ const raaghyn = {
         focklyn: ["Jerdein"]
     },
     8: {
-        baarle: "I don't like bread. I don't like Saturday. I'm five.",
-        gaelg: "Cha laik lhiam arran . Cha laik lhiam Jesarn . Ta mee queig .",
+        baarle: "I don't like bread! I don't like Saturday! I'm five!",
+        gaelg: "Cha laik lhiam arran ! Cha laik lhiam Jesarn ! Ta mee queig !",
         sheean: "../sheeanyn/eaishtagh-8.mp3",
         focklyn: ["Jesarn"]
     },
     9: {
-        baarle: "How are you? Are you in Ramsey? It's Wednesday.",
-        gaelg: "Kys t'ou ? Vel oo ayns Rhumsaa ? She Jecrean t'ayn .",
+        baarle: "How are you? Are you in Ramsey? It's Wednesday!",
+        gaelg: "Kys t'ou ? Vel oo ayns Rhumsaa ? She Jecrean t'ayn !",
         sheean: "../sheeanyn/eaishtagh-9.mp3",
         focklyn: []
     },
