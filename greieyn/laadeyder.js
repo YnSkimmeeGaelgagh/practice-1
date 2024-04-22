@@ -53,7 +53,6 @@ function cloieSheean (s, keint, caslys) {
         b.start(sfxCoheks.currentTime);
     } catch (marran) {
         if (keint != "reesht") {
-            console.log(marran);
             cloieSheean(s + "_jeenane", "reesht");
             return;
         }
