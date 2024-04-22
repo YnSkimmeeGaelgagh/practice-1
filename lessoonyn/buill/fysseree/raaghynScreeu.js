@@ -42,7 +42,7 @@ const raaghyn = {
         focklyn: ["Balley Chashtal"]
     },
     7: {
-        baarle: "Do you live in Port Erin. Are you cold? You're not hot!",
+        baarle: "Do you live in Port Erin? Are you cold? You're not hot!",
         gaelg: "Vel oo beaghey ayns Purt Çhiarn ? Vel oo feayr ? Cha nel oo çheh !",
         caslys: "../caslyssyn/purt chiarn.webp",
         sheean: "../sheeanyn/buill-screeu-7.mp3",
