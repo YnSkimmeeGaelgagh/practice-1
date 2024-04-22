@@ -5,6 +5,7 @@ for (let s of Object.entries(sfxThieObj)) {
 const sfxCoheksThie = new AudioContext() || new webkitAudioContext();
 const sfxBufferynThie = {};
 let ayrnJeant = false;
+let ooilleyJeant = false;
 
 function gaarlagheySheeanyn (s) {
     const request = new XMLHttpRequest();
@@ -17,6 +18,10 @@ function gaarlagheySheeanyn (s) {
         sfxBufferynThie[s[0]] = bufferSource;
         if (s[0] == "ymHeidey" && ayrnJeant) {
             ayrnJeant = false;
+            cloieSheean(s[0]);
+        };
+        if (s[0] == "jerreyMie" && ooilleyJeant) {
+            ooilleyJeant = false;
             cloieSheean(s[0]);
         };
     };
