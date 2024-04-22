@@ -43,8 +43,7 @@ function cloieSheean (s, keint, caslys) {
     if (typeof s == "number" && keint != "creShoh") {
         if (!(s % 2)) {
             for (let i = s + 1; i < s + 3; i++) {
-                if (i <= Object.keys(raaghyn).length) gaarlagheySheeanyn([i, Object.values(raaghyn)[s - 1].sheean], true);
-                console.log(raaghynBufferyn);
+                if (i <= Object.keys(raaghyn).length) gaarlagheySheeanyn([i, Object.values(raaghyn)[i - 1].sheean], true);
             };
         };
     }
@@ -53,6 +52,7 @@ function cloieSheean (s, keint, caslys) {
         b.start(sfxCoheks.currentTime);
     } catch (marran) {
         if (keint != "reesht") {
+            console.log(marran);
             cloieSheean(s + "_jeenane", "reesht");
             return;
         }
