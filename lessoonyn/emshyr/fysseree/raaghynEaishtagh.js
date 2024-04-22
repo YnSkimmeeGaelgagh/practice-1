@@ -1,6 +1,6 @@
 const raaghyn = {
     1: {
-        baarle: "Is it cold in Doulgas?",
+        baarle: "Is it cold in Douglas?",
         gaelg: "Vel eh feayr ayns Doolish ?",
         sheean: "../sheeanyn/eaishtagh-1.mp3",
         focklyn: ["vel eh?"]
@@ -30,8 +30,8 @@ const raaghyn = {
         focklyn: ["vel yn emshyr?"]
     },
     6: {
-        baarle: "It's not stormy. I like stormy weather.",
-        gaelg: "Cha nel eh sterrymagh . S'laik lhiam emshyr sterrymagh .",
+        baarle: "It's not stormy! I like stormy weather!",
+        gaelg: "Cha nel eh sterrymagh ! S'laik lhiam emshyr sterrymagh !",
         sheean: "../sheeanyn/eaishtagh-6.mp3",
         focklyn: ["cha nel eh", "sterrymagh"]
     },
