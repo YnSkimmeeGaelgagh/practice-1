@@ -172,6 +172,7 @@ function scugh () {
         }
         prowFreggyrt();
         function freggyrtKiart () {
+            delete raaghynBufferyn[earrooFeysht];
             cloieSheean("kiart");
             const caslys = document.getElementById("caslys-eaishtagh");
             caslys.classList.add("kiart");
