@@ -1100,6 +1100,7 @@ input:checked + .skirreyder:before {
 
 #cramman-jeant {
     border: var(--cheeid-oirr) solid var(--doo);
+    color: var(--doo);
     background-color: white;
 }
 
