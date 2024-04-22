@@ -12,8 +12,8 @@ const raaghyn = {
         focklyn: ["cha nee ... t'ayn", "Jelune"]
     },
     3: {
-        baarle: "It's Friday today. I'm excited!",
-        gaelg: "She Jeheiney t'ayn jiu . Ta mee greesit .",
+        baarle: "It's Friday today! I'm excited!",
+        gaelg: "She Jeheiney t'ayn jiu ! Ta mee greesit !",
         sheean: "../sheeanyn/eaishtagh-3.mp3",
         focklyn: ["she ... t'ayn", "Jeheiney"]
     },
