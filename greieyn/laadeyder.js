@@ -40,6 +40,7 @@ function gaarlagheySheeanyn (s, veihRaa) {
 };
 
 function cloieSheean (s, keint, caslys) {
+    console.log(s)
     if (typeof s == "number" && keint != "creShoh") {
         if (!(s % 2)) {
             for (let i = s + 1; i < s + 3; i++) {
@@ -64,8 +65,10 @@ function cloieSheean (s, keint, caslys) {
         b.disconnect(sfxCoheks.destination);
         if (typeof s == "number") {
             if (keint == "eaishtagh") caslys.classList.remove("sheean");
-            if (keint == "screeu") curSaaghBack(true);
-            if (keint != "creShoh") delete raaghynBufferyn[s];
+            if (keint == "screeu") {
+                delete raaghynBufferyn[s];
+                curSaaghBack(true);
+            }
             else gaarlagheySheeanyn([s, Object.values(raaghyn)[s - 1].sheean], true);
         }
         else gaarlagheySheeanyn([s, sfxObj[s]]);
