@@ -48,8 +48,8 @@ const raaghyn = {
         focklyn: ["nuy-jeig"]
     },
     9: {
-        baarle: "How's your dog? Are you seventeen years old?",
-        gaelg: "Kys ta'n moddey ayd ? Vel oo shiaght bleeaney jeig d'eash ?",
+        baarle: "How's your dog? Is he seventeen years old?",
+        gaelg: "Kys ta'n moddey ayd ? Vel eh shiaght bleeaney jeig d'eash ?",
         sheean: "../sheeanyn/eaishtagh-9.mp3",
         focklyn: ["shiaght-jeig"]
     },
