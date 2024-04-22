@@ -40,7 +40,6 @@ function gaarlagheySheeanyn (s, veihRaa) {
 };
 
 function cloieSheean (s, keint, caslys) {
-    console.log(s)
     if (typeof s == "number" && keint != "creShoh") {
         if (!(s % 2)) {
             for (let i = s + 1; i < s + 3; i++) {
