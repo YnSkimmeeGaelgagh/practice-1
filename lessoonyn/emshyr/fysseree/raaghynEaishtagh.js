@@ -48,8 +48,8 @@ const raaghyn = {
         focklyn: ["sterrymagh", "ceau fliaghey"]
     },
     9: {
-        baarle: "How old are you? It's windy. Where do you live?",
-        gaelg: "Cre'n eash t'ort ? T'eh geayagh . C'raad t'ou beaghey ?",
+        baarle: "How old are you? It's windy! Where do you live?",
+        gaelg: "Cre'n eash t'ort ? T'eh geayagh ! C'raad t'ou beaghey ?",
         sheean: "../sheeanyn/eaishtagh-9.mp3",
         focklyn: ["geayagh"]
     },
