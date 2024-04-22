@@ -87,7 +87,7 @@ function nahAyrn () {
     const cleeahyn = document.getElementsByClassName("cleeah-cooish");
     function foshilGlass (earroo) {
         linnaghynScarrey[earroo].classList.add("nah-ayrn");
-        if (sfxGoll) cloieSheean("ymHeidey");
+        ayrnJeant = true;
         setTimeout(() => {
             if (sfxGoll) cloieSheean("glassBrishey");
             glassyn[earroo].src = "../caslyssyn/glass-brisht.webp";
