@@ -4,8 +4,9 @@ for (let s of Object.entries(sfxThieObj)) {
 
 const sfxCoheksThie = new AudioContext() || new webkitAudioContext();
 const sfxBufferynThie = {};
+let ayrnJeant = false;
 
-function gaarlagheySheeanyn (s, veihRaa) {
+function gaarlagheySheeanyn (s) {
     const request = new XMLHttpRequest();
     request.open("GET", s[1], true);
     request.responseType = "arraybuffer";
@@ -13,7 +14,11 @@ function gaarlagheySheeanyn (s, veihRaa) {
     function onDecoded(buffer) {
         const bufferSource = sfxCoheksThie.createBufferSource();
         bufferSource.buffer = buffer;
-        veihRaa ? raaghynBufferyn[s[0]] = bufferSource : sfxBufferynThie[s[0]] = bufferSource;
+        sfxBufferynThie[s[0]] = bufferSource;
+        if (s[0] == "ymHeidey" && ayrnJeant) {
+            ayrnJeant = false;
+            cloieSheean(s[0]);
+        };
     };
     request.send();
 };
