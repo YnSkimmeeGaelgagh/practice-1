@@ -14,8 +14,8 @@ const raaghyn = {
         focklyn: ["vel yn emshyr?"]
     },
     3: {
-        baarle: "Is it stormy today? No, it's sunny.",
-        gaelg: "Vel eh sterrymagh jiu ? Cha nel , t'eh grianagh .",
+        baarle: "Is it stormy? No, it's sunny.",
+        gaelg: "Vel eh sterrymagh ? Cha nel , t'eh grianagh .",
         caslys: "../caslyssyn/neu-sterrymagh.webp",
         sheean: "../sheeanyn/screeu-3.mp3",
         focklyn: ["vel eh?", "sterrymagh", "grianagh"]
